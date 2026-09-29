@@ -1,6 +1,16 @@
 export type Random = () => number;
 
-export interface SourcePiece {
+export interface UnitArtworkProfile {
+  /** Stable member identity, shared by front/back poses and future artworks. */
+  memberId: string;
+  /** Other depicted members in a group picture; all share the hard-decoy cap. */
+  otherMemberIds?: readonly string[];
+  /** Content-reviewed color/form similarities, not inferred from filenames. */
+  similarityTags: readonly string[];
+}
+
+export interface SourcePiece extends UnitArtworkProfile {
+  /** The unique artwork ID (retained as characterId for existing callers). */
   characterId: string;
   pieceIndex: number;
   src: string;
@@ -66,14 +76,43 @@ export class RandomIndexCycle {
   }
 }
 
+export const UNIT_DECOY_COUNTS = { hard: 2, medium: 12 } as const;
+export type UnitPieceDifficulty = "target" | "hard" | "medium" | "easy";
+
+export function unitPieceDifficulty(target: SourcePiece, piece: SourcePiece): UnitPieceDifficulty {
+  if (piece.characterId === target.characterId) return "target";
+  // Same-member artworks must never leak into medium/easy, even if recolored.
+  const targetMembers = [target.memberId, ...target.otherMemberIds ?? []];
+  const pieceMembers = [piece.memberId, ...piece.otherMemberIds ?? []];
+  if (pieceMembers.some(memberId => targetMembers.includes(memberId))) return "hard";
+  return piece.similarityTags.some(tag => target.similarityTags.includes(tag)) ? "medium" : "easy";
+}
+
 export function createUnitBoard(targetId: string, pieces: readonly SourcePiece[], size = 49, random: Random = Math.random): UnitTile[] {
   const targets = pieces.filter((piece) => piece.characterId === targetId);
-  const decoys = shuffle(pieces.filter((piece) => piece.characterId !== targetId), random);
   if (!targets.length) throw new Error(`No pieces for ${targetId}`);
-  if (targets.length > size || decoys.length < size - targets.length) throw new Error("Not enough puzzle pieces");
+  if (!Number.isInteger(size) || targets.length > size) throw new Error("Invalid puzzle board size");
+
+  const pools: Record<Exclude<UnitPieceDifficulty, "target">, SourcePiece[]> = { hard: [], medium: [], easy: [] };
+  for (const piece of pieces) {
+    const difficulty = unitPieceDifficulty(targets[0]!, piece);
+    if (difficulty !== "target") pools[difficulty].push(piece);
+  }
+  const remaining = size - targets.length;
+  const hardCount = Math.min(UNIT_DECOY_COUNTS.hard, pools.hard.length, remaining);
+  const mediumCount = Math.min(UNIT_DECOY_COUNTS.medium, pools.medium.length, remaining - hardCount);
+  const easyCount = remaining - hardCount - mediumCount;
+  // Missing hard/medium pieces are replaced only by easier ones. Do not raise
+  // difficulty or repeat tiles to mask an incomplete future content roster.
+  if (pools.easy.length < easyCount) throw new Error(`Not enough easy puzzle pieces for ${targetId}`);
+  const decoys = [
+    ...shuffle(pools.hard, random).slice(0, hardCount),
+    ...shuffle(pools.medium, random).slice(0, mediumCount),
+    ...shuffle(pools.easy, random).slice(0, easyCount),
+  ];
 
   return shuffle(
-    [...targets, ...decoys.slice(0, size - targets.length)].map((piece, id) => ({ ...piece, id, target: piece.characterId === targetId })),
+    [...targets, ...decoys].map((piece, id) => ({ ...piece, id, target: piece.characterId === targetId })),
     random,
   );
 }

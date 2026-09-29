@@ -1,5 +1,9 @@
 # TAP to PICK 연구·개발 기록
 
+- [2026-09-29 — 만화 4종 무여백 크롭·9조각 퍼즐 추가](2026-09-29-comic-puzzles/README.md)
+
+- [2026-09-29 — PUZZLE 오답 난이도 배분·같은 캐릭터 다른 그림 최대 2조각](2026-09-29-puzzle-difficulty/README.md)
+
 - [2026-09-20 — POSITION 결과별 영상·최고기록 OH MY GOD](2026-09-20-position-movies/README.md)
 
 - [2026-09-20 — 태피 Unbelievable 영상 교체](2026-09-20-unbelievable/README.md)

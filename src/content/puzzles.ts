@@ -1,4 +1,6 @@
-export interface PuzzleCharacter {
+import type { SourcePiece, UnitArtworkProfile } from "../core/pick/game";
+
+export interface PuzzleCharacter extends UnitArtworkProfile {
   id: string;
   celebrationId: string;
   name: string;
@@ -27,6 +29,19 @@ const KOREAN_NAMES: Record<string, string> = {
   Hapee: "해피", Bbogles: "뽀글스", PinoPan: "피노팬",
 };
 
+// These are broad visual groups reviewed against the current artwork, not
+// automatic image analysis. Every new pose of a named member inherits its
+// stable identity, so it shares the two-tile hard-decoy cap with older poses.
+const UNIT_MEMBER_PROFILES: Record<string, UnitArtworkProfile> = {
+  Bbogles: { memberId: "bb", similarityTags: ["yellow-rounded", "instrument"] },
+  Hapee: { memberId: "ha", similarityTags: ["yellow-rounded", "white-face"] },
+  Hooopee: { memberId: "hoo", similarityTags: ["white-face", "instrument"] },
+  Zapee: { memberId: "ja", similarityTags: ["blue-yellow-details"] },
+  PinoPan: { memberId: "pino", similarityTags: ["white-face", "blue-yellow-details"] },
+  Tapee: { memberId: "tapee", similarityTags: ["blue-yellow-details"] },
+  Tepee: { memberId: "tepee", similarityTags: ["yellow-rounded"] },
+};
+
 function bilingualName(name: string): string {
   const korean = KOREAN_NAMES[name];
   if (!korean) throw new Error(`Missing Korean character name: ${name}`);
@@ -42,6 +57,10 @@ const pieceModules = import.meta.glob<string>(
     "/optimized/TapeeBack/*.webp",
     "/optimized/TepeeBack/*.webp",
     "/optimized/HooopeeBack/*.webp",
+    "/optimized/ComicA114/*.webp",
+    "/optimized/ComicA224/*.webp",
+    "/optimized/ComicA424/*.webp",
+    "/optimized/ComicA1634/*.webp",
     "/optimized/Hoo/*.webp",
     "/optimized/Ja/*.webp",
     "/optimized/Pino/*.webp",
@@ -67,19 +86,28 @@ const montageModules = import.meta.glob<string>(
 
 const natural = new Intl.Collator("en", { numeric: true });
 
-function character(id: string, name: string, folder: string, showGrid = false, celebrationId = id): PuzzleCharacter {
+function character(id: string, name: string, folder: string, showGrid = false, celebrationId = id, otherMembers: readonly string[] = []): PuzzleCharacter {
+  const profile = UNIT_MEMBER_PROFILES[name];
+  if (!profile) throw new Error(`Missing puzzle difficulty profile: ${name}`);
+  const otherMemberIds = otherMembers.map(member => {
+    const other = UNIT_MEMBER_PROFILES[member];
+    if (!other) throw new Error(`Missing puzzle difficulty profile: ${member}`);
+    return other.memberId;
+  });
   const files = Object.entries(pieceModules)
     .filter(([path]) => path.startsWith(`/optimized/${folder}/`))
     .sort(([a], [b]) => natural.compare(a, b));
   const pieces = files.map(([, url]) => url);
 
   if (pieces.length !== 9 && pieces.length !== 12) {
-    throw new Error(`${folder} must contain either 9 or 12 numbered JPG pieces`);
+    throw new Error(`${folder} must contain either 9 or 12 numbered WebP pieces`);
   }
   const preview = unitPreviewModules[`/optimized/unit/${folder}.webp`];
   if (!preview) throw new Error(`Missing unit preview: ${folder}.webp`);
 
   return {
+    ...profile,
+    otherMemberIds,
     id,
     celebrationId,
     name,
@@ -112,15 +140,35 @@ const ADDITIONAL_UNIT_PUZZLES: readonly PuzzleCharacter[] = [
   character("tepee-back", "Tepee", "TepeeBack", true, "tepee"),
   character("hooopee-back", "Hooopee", "HooopeeBack", true, "hoo"),
 ];
+
+function comic(id: string, name: string, folder: string, otherMembers: readonly string[] = []): PuzzleCharacter {
+  const primary = UNIT_MEMBER_PROFILES[name];
+  if (!primary) throw new Error(`Missing puzzle difficulty profile: ${name}`);
+  const artwork = character(id, name, folder, true, primary.memberId, otherMembers);
+  // Use the main subject's visual profile and a shared felt/comic texture tag.
+  // Depicted-member overlap is checked first, including secondary characters.
+  return { ...artwork, similarityTags: [...artwork.similarityTags, "felt-comic"] };
+}
+
+export const COMIC_UNIT_PUZZLES: readonly PuzzleCharacter[] = [
+  comic("comic-a-1-1-4", "Tapee", "ComicA114", ["Tepee"]),
+  comic("comic-a-2-2-4", "Tepee", "ComicA224"),
+  comic("comic-a-4-2-4", "Tapee", "ComicA424", ["Tepee", "Hooopee"]),
+  comic("comic-a-16-3-4", "Hooopee", "ComicA1634"),
+];
 export const UNIT_TARGET_CHARACTERS: readonly PuzzleCharacter[] = [
   ...PUZZLE_CHARACTERS,
   ...ADDITIONAL_UNIT_PUZZLES,
+  ...COMIC_UNIT_PUZZLES,
 ];
-const UNIT_PIECE_SOURCES = [...PUZZLE_CHARACTERS, ...ADDITIONAL_UNIT_PUZZLES];
+const UNIT_PIECE_SOURCES = UNIT_TARGET_CHARACTERS;
 
-export const ALL_PIECES = UNIT_PIECE_SOURCES.flatMap((entry) =>
+export const ALL_PIECES: readonly SourcePiece[] = UNIT_PIECE_SOURCES.flatMap((entry) =>
   // Natural filename order maps 1..9/12 to left-to-right, top-to-bottom cells.
-  entry.pieces.map((src, pieceIndex) => ({ characterId: entry.id, pieceIndex, src })),
+  entry.pieces.map((src, pieceIndex) => ({
+    characterId: entry.id, memberId: entry.memberId, otherMemberIds: entry.otherMemberIds,
+    similarityTags: entry.similarityTags, pieceIndex, src,
+  })),
 );
 
 export const PICTURE_PIECES_SCORE_BANDS = [

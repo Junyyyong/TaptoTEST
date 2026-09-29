@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { createMemoryBoard, createMontageBoard, createRandomIndexCycle, RandomIndexCycle, createUnitBoard, PICK_MISTAKE_LIMIT, pickChances, tieredTimeScore, timeScore, type SourcePiece } from "./game";
 
-const pieces: SourcePiece[] = Array.from({ length: 75 }, (_, index) => ({ characterId: `c${Math.floor(index / 12)}`, pieceIndex: index, src: `${index}.jpg` }));
+const pieces: SourcePiece[] = Array.from({ length: 75 }, (_, index) => ({
+  characterId: `c${Math.floor(index / 12)}`, memberId: `c${Math.floor(index / 12)}`,
+  similarityTags: [index < 24 ? "blue" : "yellow"], pieceIndex: index, src: `${index}.jpg`,
+}));
 
 describe("TAP to PICK game rules", () => {
   it("keeps a character bag through interrupted runs and all cycle boundaries", () => {

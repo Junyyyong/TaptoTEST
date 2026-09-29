@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { GAME_IMAGE_URLS, MEMORY_FACES, MEMORY_PREVIEW_MS, MEMORY_REVEAL_DELAY_MS, MONTAGE_CHARACTERS, PICTURE_PIECES_SCORE_BANDS } from "./puzzles";
 import { tieredTimeScore } from "../core/pick/game";
-import { ALL_PIECES, PUZZLE_CHARACTERS, UNIT_TARGET_CHARACTERS } from "./puzzles";
-import { createUnitBoard } from "../core/pick/game";
+import { ALL_PIECES, COMIC_UNIT_PUZZLES, PUZZLE_CHARACTERS, UNIT_TARGET_CHARACTERS } from "./puzzles";
+import { createUnitBoard, unitPieceDifficulty } from "../core/pick/game";
 import { createProgressiveMontageBoard } from "../core/pick/montage";
 import { PICK_MODES } from "./pickModes";
 import { APP_CONFIG } from "../config/app";
@@ -13,7 +13,7 @@ describe("Puzzle content", () => {
     expect(Object.values(PICK_MODES).map(mode => mode.title)).toEqual(["PUZZLE", "PORTRAIT", "POSITION"]);
   });
   it("keeps the original carrot alongside four new nine-piece artworks", () => {
-    expect(UNIT_TARGET_CHARACTERS).toHaveLength(12);
+    expect(UNIT_TARGET_CHARACTERS).toHaveLength(16);
     const target=UNIT_TARGET_CHARACTERS.find(c => c.folder === "HapeeCarrot")!;
     expect(target.id).toBe("hapee-carrot");
     expect(target.showGrid).toBe(true);
@@ -39,8 +39,10 @@ describe("Puzzle content", () => {
       ["Pino", "pino"], ["Tapee", "tapee"], ["Tepee", "tepee"],
       ["HapeeCarrot", "ha"], ["HapeeCarrot02", "ha"], ["TapeeBack", "tapee"],
       ["TepeeBack", "tepee"], ["HooopeeBack", "hoo"],
+      ["ComicA114", "tapee"], ["ComicA224", "tepee"],
+      ["ComicA424", "tapee"], ["ComicA1634", "hoo"],
     ]);
-    expect(new Set(UNIT_TARGET_CHARACTERS.map(c => c.id)).size).toBe(12);
+    expect(new Set(UNIT_TARGET_CHARACTERS.map(c => c.id)).size).toBe(16);
     for (const target of UNIT_TARGET_CHARACTERS) {
       if (!PUZZLE_CHARACTERS.includes(target)) expect(target.showGrid).toBe(true);
       expect(target.columns).toBe(3);
@@ -60,6 +62,59 @@ describe("Puzzle content", () => {
     const expected = ["태피 Tapee", "티피 Tepee", "후피 Hooopee", "재피 Zapee", "해피 Hapee", "뽀글스 Bbogles", "피노팬 PinoPan"].sort();
     expect(PUZZLE_CHARACTERS.map(c => c.displayName).sort()).toEqual(expected);
     expect(MONTAGE_CHARACTERS.map(c => c.displayName).sort()).toEqual(expected);
+  });
+  it("inherits stable member identity and difficulty metadata for every registered artwork", () => {
+    for (const artwork of UNIT_TARGET_CHARACTERS) {
+      const member = PUZZLE_CHARACTERS.find(original => original.name === artwork.name)!;
+      expect(artwork.memberId).toBe(member.id);
+      expect(artwork.similarityTags.length).toBeGreaterThan(0);
+      expect(artwork.similarityTags).toEqual(expect.arrayContaining([...member.similarityTags]));
+      for (const piece of ALL_PIECES.filter(piece => piece.characterId === artwork.id)) {
+        expect(piece.memberId).toBe(artwork.memberId);
+        expect(piece.otherMemberIds).toEqual(artwork.otherMemberIds);
+        expect(piece.similarityTags).toEqual(artwork.similarityTags);
+      }
+    }
+  });
+  it("has enough medium/easy pieces for all original and added 9/12-piece targets without duplicates", () => {
+    for (const artwork of UNIT_TARGET_CHARACTERS) {
+      const target = ALL_PIECES.find(piece => piece.characterId === artwork.id)!;
+      const members = [target.memberId, ...target.otherMemberIds ?? []];
+      const sharesMember = (piece: typeof target) => [piece.memberId, ...piece.otherMemberIds ?? []].some(id => members.includes(id));
+      const expectedHard = Math.min(2, ALL_PIECES.filter(piece => sharesMember(piece) && piece.characterId !== target.characterId).length);
+      let state = 1;
+      const random = () => { state = (Math.imul(state, 1664525) + 1013904223) >>> 0; return state / 4294967296; };
+      for (let run = 0; run < 50; run++) {
+        const board = createUnitBoard(artwork.id, ALL_PIECES, 49, random);
+        expect(board).toHaveLength(49);
+        expect(new Set(board.map(piece => piece.src)).size).toBe(49);
+        expect(board.filter(tile => tile.target)).toHaveLength(artwork.pieces.length);
+        expect(board.filter(tile => !tile.target && sharesMember(tile))).toHaveLength(expectedHard);
+        expect(board.filter(tile => unitPieceDifficulty(target, tile) === "medium")).toHaveLength(12);
+        expect(board.filter(tile => unitPieceDifficulty(target, tile) === "easy")).toHaveLength(49 - artwork.pieces.length - expectedHard - 12);
+      }
+    }
+  });
+  it("adds four comic panels with nine row-major pieces without changing PORTRAIT or POSITION", () => {
+    expect(COMIC_UNIT_PUZZLES.map(artwork => [artwork.id, artwork.memberId, artwork.otherMemberIds])).toEqual([
+      ["comic-a-1-1-4", "tapee", ["tepee"]],
+      ["comic-a-2-2-4", "tepee", []],
+      ["comic-a-4-2-4", "tapee", ["tepee", "hoo"]],
+      ["comic-a-16-3-4", "hoo", []],
+    ]);
+    for (const artwork of COMIC_UNIT_PUZZLES) {
+      expect(UNIT_TARGET_CHARACTERS).toContain(artwork);
+      expect([artwork.columns, artwork.rows, artwork.showGrid]).toEqual([3, 3, true]);
+      expect(artwork.similarityTags).toContain("felt-comic");
+      expect(artwork.pieces).toHaveLength(9);
+      expect(artwork.pieces.every((src, index) => src.includes(`/${artwork.folder}/${index + 1}.webp`))).toBe(true);
+      expect(artwork.preview).toContain(`/${artwork.folder}.webp`);
+      for (const src of [artwork.preview, ...artwork.pieces]) {
+        expect(GAME_IMAGE_URLS).toContain(src);
+        expect(MEMORY_FACES).not.toContain(src);
+        expect(MONTAGE_CHARACTERS.flatMap(member => [member.answer, ...member.variations])).not.toContain(src);
+      }
+    }
   });
   it("keeps five score bands without a completion deadline", () => {
     expect(PICTURE_PIECES_SCORE_BANDS).toEqual([
@@ -110,7 +165,7 @@ describe("Puzzle content", () => {
   });
 
   it("exposes every active game image once for splash-screen preloading", () => {
-    expect(GAME_IMAGE_URLS).toHaveLength(314);
+    expect(GAME_IMAGE_URLS).toHaveLength(354);
     expect(new Set(GAME_IMAGE_URLS)).toHaveLength(GAME_IMAGE_URLS.length);
     expect(GAME_IMAGE_URLS.every((url) => url.includes(".webp"))).toBe(true);
   });
