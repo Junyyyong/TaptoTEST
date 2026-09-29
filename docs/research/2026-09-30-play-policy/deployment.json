@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-29T15:18:48.981Z",
+  "deployedCodeCommit": "e74c12964afa4d56c2ef681279aa78d144ba2f2c",
+  "documents": [
+    {
+      "url": "https://taptotest.vercel.app/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "038dc3dfac52c4115cb5b0740e78af4c4037cc94b32128a30ce226fe034f9e5d",
+      "matchesLocal": true
+    },
+    {
+      "url": "https://taptotest.vercel.app/privacy.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "c1436baedeaba854008b244b75ddfed86c6fe1b5579555375b9879582415be90",
+      "matchesLocal": true
+    },
+    {
+      "url": "https://taptotest.vercel.app/licenses.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "7e9c7086e713048e4d896b7a58042580faab8ce83a4b1aea585f5e460c6fee6c",
+      "matchesLocal": true
+    },
+    {
+      "url": "https://taptotest.vercel.app/legal/legal.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "sha256": "dd0bc5f1db2cf776294697350d94e11b735c7bc57db56cc805ce613972d17c93",
+      "matchesLocal": true
+    }
+  ]
+}

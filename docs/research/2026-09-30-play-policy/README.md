@@ -56,7 +56,8 @@
 
 실제 코드에 맞춘 EN/KO 방침, 동봉 Sans/Serif 라이선스 출처, Android 권한과 실제 의존성, Google 공식 정책 링크, 개발 도구 audit 및 소유자 확인사항은 [Play 출시 확인표](../../PLAY_POLICY_CHECKLIST.md)에 모았다. 정책 전면 준수나 심사 승인을 보장하는 문서는 아니다.
 
-- 공개 정책 URL은 push 이후 별도 HTTP 확인이 필요하다: `https://taptotest.vercel.app/privacy.html`, `https://taptotest.vercel.app/licenses.html`.
+- 앱 코드 커밋 **`e74c12964afa4d56c2ef681279aa78d144ba2f2c`**을 origin/main에 푸시한 뒤 **2026-09-30 00:18:48 KST**에 공개 배포를 확인했다. 메인·Privacy·Licenses·문서 CSS 모두 HTTP 200, 로컬 배포 원본과 SHA-256 일치. 초기 00:17:31의 404는 배포 완료 뒤 해소됐다. [응답·해시 기록](deployment.json)
+- 공개 URL: [Privacy policy](https://taptotest.vercel.app/privacy.html) · [Licenses](https://taptotest.vercel.app/licenses.html). 소유자가 Play Console에 이 URL을 등록하는 단계는 별도다.
 - 새 ID의 최종 서명 AAB·Play Console 설문/업로드는 하지 않았다.
 - 실제 Android에서 오프라인 플레이, 시스템 뒤로가기, 강제 종료/재실행, 같은 ID/서명 업데이트 및 백업/삭제를 별도로 검증해야 한다.
 
