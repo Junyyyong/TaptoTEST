@@ -4,6 +4,9 @@ TAP to PICK은 TAPtoTALK의 화면 감각과 폰트를 유지하면서 이미지
 
 ## 자주 수정할 곳
 
+- 2026-09-30 출시 준비: 앱 표시명·탭 제목은 `TAPtoTEST`, Android ID는 `io.github.junyyyong.taptotest`다. 이전 09-29의 네이티브 ID 유지 메모를 이 승인된 변경으로 대체한다. 폴더·origin은 그대로이며 서명 키는 변경하지 않았다. Android 설정·기록은 `ui/pickStorage.ts`의 Preferences 어댑터, 웹은 기존 localStorage를 사용한다. **`taptopick.preferences.v1` / `taptopick.records.v1` 키와 결과 비교 규칙은 변경하지 않는다.** `main.ts`는 `persistentStore.ts`의 읽기·검증·같은 앱의 WebView 이관을 완료한 뒤 UI를 만든다. 원본 웹 데이터는 남기고 native가 우선하며, 유효한 `.backup` 복구·직렬 쓰기·Retry를 지원한다. 다른 패키지 설치본의 자동 이관은 불가능하다. `storageNotice.ts`의 숨김은 blocking 클래스·inert를 함께 해제해야 한다. 실제 기기 업데이트 검증은 아직 별도다.
+- 2026-09-30 정책 문서: `public/privacy.html`의 영어/한국어 연락처는 `wnsdydtml@gmail.com`, 운영자는 `TapeeTepee openstudio`다. `screens/legalDocuments.ts`가 Settings에서 동봉 문서를 열고 Close/Escape 후 초점을 되돌린다. `styles/legal.css`는 TEN의 링크 크기·간격을 사용한다. 의존성 변경 시 `scripts/list-release-dependencies.gradle`로 실제 Android release 목록을 만들고 `scripts/build-license-notices.mjs`로 고지를 재생성한다. Sans와 Serif 두 동봉 서체의 OFL을 모두 포함한다. 개인정보·Play 설문·실제 Android 검증 범위는 [출시 확인표](PLAY_POLICY_CHECKLIST.md)에서 관리한다.
+
 - 2026-09-29 브라우저 탭 제목: `index.html`의 `<title>`과 `src/config/app.ts`의 `APP_CONFIG.name`을 `TAP to TEST`로 통일했다. `src/main.ts`가 로드 후 제목을 다시 설정하므로 두 곳을 함께 유지한다. 로컬 Git `origin`은 이름이 바뀐 동일 저장소 `Junyyyong/TaptoTEST`를 가리킨다. 이번에는 게임 규칙·저장 키·네이티브 앱 ID·앱 표시 이름·에셋 경로를 바꾸지 않는다.
 
 - 2026-09-20 POSITION 영상은 실패 notbad, 일반 완주 마지막 정답 페어의 캐릭터, 이전 완주 시간 경신 OH MY GOD다. 첫 완주·동률은 일반 영상. `MEMORY_FACE_CHARACTERS`가 얼굴을 영상 ID로 연결하고 `isMemoryRecordBreak`가 경신 여부를 판단한다. 태피는 Unbelievable로 교체했다. 아래 과거 랜덤 영상 설명보다 이 규칙을 우선한다.

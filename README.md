@@ -1,5 +1,7 @@
 # TAP to TEST
 
+2026-09-30: 최초 Play 출시 준비로 Android 패키지를 **`io.github.junyyyong.taptotest`**, 표시 이름을 **TAPtoTEST**로 변경했습니다. Android 기록·설정은 Preferences, 웹은 기존 localStorage를 사용하며 기존 저장 키를 유지합니다. 같은 앱의 WebView 데이터만 안전하게 이관하며 이전 `taptopick` 패키지 설치본은 별도 앱입니다. Settings에 TEN과 같은 **Privacy policy · Licenses** 링크와 동봉 문서를 추가했습니다. 게임 규칙·START 화면은 그대로이며 새 서명 AAB·스토어 업로드·실제 기기 업데이트 검증은 별도입니다. [검증·모바일 화면](docs/research/2026-09-30-play-policy/README.md) · [출시 확인표](docs/PLAY_POLICY_CHECKLIST.md)
+
 2026-09-29: PUZZLE은 **16종을 한 번씩 모두 보여준 뒤 다시 섞는 순환 방식**입니다. 메뉴 복귀·Play again에도 남은 순서를 유지하고, 다음 묶음 첫 그림은 직전 그림과 겹치지 않습니다. 실제 START를 눌렀을 때만 순서를 소비하며, 새로고침·페이지 재실행은 새 순서로 시작합니다. 새 그림을 목록에 등록하면 순환 대상도 자동으로 늘어납니다. [순환·재시작 검증 기록](docs/research/2026-09-29-puzzle-cycle/README.md)
 
 2026-09-29: 제공된 만화 JPG 4장을 **720×702 → 702×702 무여백 크롭** 후 3×3 퍼즐로 추가했습니다. 기존 12종을 유지해 총 16종입니다. 제시 그림과 9조각은 동일한 픽셀을 사용하며, 함께 나온 캐릭터도 어려운 오답 최대 2조각 제한에 포함합니다. [크롭 기준·모바일 화면](docs/research/2026-09-29-comic-puzzles/README.md)

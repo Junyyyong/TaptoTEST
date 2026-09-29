@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "TAP Sans KR";
+  src: url("../assets/fonts/NotoSansKR-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root { color-scheme: light; font-family: "Apple SD Gothic Neo", "TAP Sans KR", system-ui, sans-serif; color: #3a0f0a; background: #fffdf8; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px 20px 40px; font-size: 15px; line-height: 1.7; overflow-wrap: anywhere; }
+main { max-width: 680px; margin: auto; }
+h1 { margin: 0 0 8px; font-size: 26px; line-height: 1.3; }
+h2 { margin: 28px 0 8px; font-size: 18px; line-height: 1.5; }
+p, ul { margin: 8px 0 16px; }
+ul { padding-left: 22px; }
+a { color: #8a381a; text-underline-offset: 3px; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 20px 0; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.meta { color: #775643; font-size: 13px; }
+.summary { padding: 16px; border-radius: 12px; background: #fff1de; }
+section[lang="ko"] { margin-top: 36px; border-top: 1px solid #e8d3ba; padding-top: 16px; }
+details { margin: 16px 0; border-top: 1px solid #e8d3ba; padding-top: 12px; }
+summary { padding: 8px 0; cursor: pointer; font-weight: 600; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.65 ui-monospace, monospace; }
+:focus-visible { outline: 2px solid #d43600; outline-offset: 3px; }
+@media print { body { background: white; color: black; } }

@@ -24,13 +24,21 @@ function mockStorage() {
   return { entries, storage };
 }
 
+async function loadRecords() {
+  const records = await import("./pickRecords");
+  const { pickStore, PICK_STORAGE_KEYS } = await import("./pickStorage");
+  const { validatePickSave } = await import("./pickSaveValidation");
+  await pickStore.initialize(PICK_STORAGE_KEYS, validatePickSave);
+  return records;
+}
+
 beforeEach(() => { vi.resetModules(); });
 afterEach(() => { vi.unstubAllGlobals(); });
 
 describe("TAPtoPICK local result records", () => {
   it("awards the memory record movie only for a faster subsequent completion", async () => {
     mockStorage();
-    const { savePickResult, isMemoryRecordBreak } = await import("./pickRecords");
+    const { savePickResult, isMemoryRecordBreak } = await loadRecords();
     const run = memory({ won: true, stage: 3, found: 18, total: 18, elapsedMs: 30000, memoryVersion: 2 });
     expect(isMemoryRecordBreak(savePickResult(run))).toBe(false);
     expect(isMemoryRecordBreak(savePickResult(run))).toBe(false);
@@ -40,7 +48,7 @@ describe("TAPtoPICK local result records", () => {
   });
   it("separates new three-stage memory records from the preserved four-stage best", async () => {
     const { entries } = mockStorage();
-    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await import("./pickRecords");
+    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await loadRecords();
     const legacy = memory({ won: true, stage: 4, found: 24, total: 24 });
     savePickResult(legacy);
     const current = memory({ won: true, stage: 3, found: 18, total: 18, elapsedMs: 30000, memoryVersion: 2 });
@@ -53,7 +61,7 @@ describe("TAPtoPICK local result records", () => {
   });
   it("stores a first completion and only improves unit time, not a tie or slower run", async () => {
     const { entries } = mockStorage();
-    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await import("./pickRecords");
+    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await loadRecords();
     expect(savePickResult(unit())).toMatchObject({ isNewBest: true, storageAvailable: true });
     expect(savePickResult(unit()).isNewBest).toBe(false);
     expect(savePickResult(unit({ elapsedMs: 30_000 })).best.elapsedMs).toBe(20_000);
@@ -65,7 +73,7 @@ describe("TAPtoPICK local result records", () => {
 
   it("never promotes a loss over a completed unit puzzle", async () => {
     mockStorage();
-    const { savePickResult } = await import("./pickRecords");
+    const { savePickResult } = await loadRecords();
     savePickResult(unit({ won: false, found: 4, elapsedMs: 5000, mistakes: 5 }));
     expect(savePickResult(unit({ won: false, found: 5, elapsedMs: 9000, mistakes: 5 })).isNewBest).toBe(true);
     expect(savePickResult(unit()).best.won).toBe(true);
@@ -76,7 +84,7 @@ describe("TAPtoPICK local result records", () => {
 
   it("separates unit records by character and piece count", async () => {
     mockStorage();
-    const { savePickResult, comparePickResults } = await import("./pickRecords");
+    const { savePickResult, comparePickResults } = await loadRecords();
     savePickResult(unit({ elapsedMs: 1000 }));
     const otherCharacter = unit({ characterId: "tapee", elapsedMs: 30_000 });
     const morePieces = unit({ total: 12, found: 12, elapsedMs: 40_000 });
@@ -89,7 +97,7 @@ describe("TAPtoPICK local result records", () => {
 
   it("compares montage by found count then mistakes, regardless of last character", async () => {
     mockStorage();
-    const { savePickResult } = await import("./pickRecords");
+    const { savePickResult } = await loadRecords();
     savePickResult(montage());
     expect(savePickResult(montage({ found: 7, mistakes: 0 })).isNewBest).toBe(false);
     expect(savePickResult(montage({ mistakes: 4, characterId: "tapee" })).isNewBest).toBe(true);
@@ -99,7 +107,7 @@ describe("TAPtoPICK local result records", () => {
 
   it("compares memory by completion, stage, pairs, then equivalent-progress time", async () => {
     mockStorage();
-    const { comparePickResults } = await import("./pickRecords");
+    const { comparePickResults } = await loadRecords();
     expect(comparePickResults(memory({ stage: 3, total: 18, found: 0 }), memory())).toBe(1);
     expect(comparePickResults(memory({ found: 6 }), memory())).toBe(1);
     expect(comparePickResults(memory({ elapsedMs: 110_000 }), memory())).toBe(1);
@@ -111,7 +119,7 @@ describe("TAPtoPICK local result records", () => {
 
   it("does not celebrate or persist an initial zero-progress loss", async () => {
     const { entries } = mockStorage();
-    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await import("./pickRecords");
+    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await loadRecords();
     expect(savePickResult(unit({ won: false, found: 0, score: 0 })).isNewBest).toBe(false);
     expect(savePickResult(montage({ found: 0, stage: 1, score: 0 })).isNewBest).toBe(false);
     expect(savePickResult(memory({ found: 0, stage: 1, total: 8 })).isNewBest).toBe(false);
@@ -121,63 +129,64 @@ describe("TAPtoPICK local result records", () => {
 
   it("loads a saved record after a fresh session", async () => {
     mockStorage();
-    const first = await import("./pickRecords");
+    const first = await loadRecords();
     first.savePickResult(unit());
     vi.resetModules();
-    const next = await import("./pickRecords");
+    const next = await loadRecords();
     expect(next.savePickResult(unit({ elapsedMs: 30_000 }))).toMatchObject({
       isNewBest: false, best: { elapsedMs: 20_000 }, storageAvailable: true,
     });
   });
 
   it.each(["{broken", "null", "[]", '{"version":2,"bestByKey":{}}'])
-    ("recovers from malformed or unsupported storage: %s", async (raw) => {
-      const { entries } = mockStorage();
-      const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await import("./pickRecords");
+    ("preserves malformed or unsupported storage and blocks startup: %s", async raw => {
+      const { entries, storage } = mockStorage();
+      const { PICK_RECORDS_STORAGE_KEY } = await import("./pickStorage");
       entries.set(PICK_RECORDS_STORAGE_KEY, raw);
-      expect(savePickResult(unit())).toMatchObject({ isNewBest: true, storageAvailable: true });
-      expect(JSON.parse(entries.get(PICK_RECORDS_STORAGE_KEY)!).version).toBe(1);
+      await expect(loadRecords()).rejects.toThrow();
+      expect(entries.get(PICK_RECORDS_STORAGE_KEY)).toBe(raw);
+      expect(storage.setItem).not.toHaveBeenCalled();
     });
 
-  it("rejects invalid stored fields and mismatched record keys while retaining valid data", async () => {
+  it("recovers schema-damaged records from a valid backup without resetting the best", async () => {
     const { entries } = mockStorage();
-    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await import("./pickRecords");
-    entries.set(PICK_RECORDS_STORAGE_KEY, JSON.stringify({ version: 1, bestByKey: {
-      "unit:tepee:9": unit({ elapsedMs: -1 }),
-      "unit:tapee:9": unit({ elapsedMs: 1 }),
-      montage: montage({ found: 999_999 }),
-      memory: memory(),
-    } }));
-    expect(savePickResult(unit()).isNewBest).toBe(true);
-    expect(savePickResult(memory({ found: 3 })).isNewBest).toBe(false);
-    expect(savePickResult(montage()).isNewBest).toBe(true);
-    expect(JSON.parse(entries.get(PICK_RECORDS_STORAGE_KEY)!).bestByKey["unit:tapee:9"]).toBeUndefined();
+    const { PICK_RECORDS_STORAGE_KEY } = await import("./pickStorage");
+    entries.set(PICK_RECORDS_STORAGE_KEY, JSON.stringify({version:1,bestByKey:{"unit:tepee:9":unit({elapsedMs:-1})}}));
+    entries.set(PICK_RECORDS_STORAGE_KEY+".backup", JSON.stringify({version:1,bestByKey:{"unit:tepee:9":unit()}}));
+    const { savePickResult } = await loadRecords();
+    expect(savePickResult(unit({elapsedMs:30_000}))).toMatchObject({isNewBest:false,best:{elapsedMs:20_000}});
   });
 
-  it("retains session records when storage is unavailable", async () => {
-    vi.stubGlobal("localStorage", undefined);
-    const { savePickResult } = await import("./pickRecords");
-    expect(savePickResult(unit())).toMatchObject({ isNewBest: true, storageAvailable: false });
-    expect(savePickResult(unit({ elapsedMs: 30_000 }))).toMatchObject({
-      isNewBest: false, best: { elapsedMs: 20_000 }, storageAvailable: false,
-    });
-  });
-
-  it("handles read and quota failures without losing the session best", async () => {
+  it("blocks saves while initial reads are unavailable and supports retry", async () => {
     const { storage } = mockStorage();
-    storage.getItem.mockImplementation(() => { throw new Error("SecurityError"); });
+    storage.getItem.mockImplementation(()=>{throw Error("SecurityError");});
+    await expect(loadRecords()).rejects.toThrow("SecurityError");
     const { savePickResult } = await import("./pickRecords");
-    expect(savePickResult(unit()).storageAvailable).toBe(false);
-    storage.getItem.mockImplementation(() => null);
-    storage.setItem.mockImplementation(() => { throw new Error("QuotaExceededError"); });
-    expect(savePickResult(unit({ elapsedMs: 30_000 }))).toMatchObject({
-      isNewBest: false, best: { elapsedMs: 20_000 }, storageAvailable: false,
-    });
+    expect(()=>savePickResult(unit())).toThrow("Load saved progress");
+    expect(storage.setItem).not.toHaveBeenCalled();
+    storage.getItem.mockImplementation(()=>null);
+    await loadRecords();
+    expect(savePickResult(unit()).storageAvailable).toBe(true);
+  });
+
+  it("keeps a failed save in memory and retries the latest best without losing the older backup", async () => {
+    const { entries, storage } = mockStorage();
+    const { savePickResult, PICK_RECORDS_STORAGE_KEY } = await loadRecords();
+    savePickResult(unit());
+    const set=storage.setItem.getMockImplementation()!;
+    storage.setItem.mockImplementation(()=>{throw Error("QuotaExceededError");});
+    expect(savePickResult(unit({elapsedMs:10_000}))).toMatchObject({isNewBest:true,storageAvailable:false});
+    expect(savePickResult(unit({elapsedMs:30_000}))).toMatchObject({isNewBest:false,best:{elapsedMs:10_000},storageAvailable:false});
+    storage.setItem.mockImplementation(set);
+    const {pickStore}=await import("./pickStorage");
+    await pickStore.flush();
+    expect(JSON.parse(entries.get(PICK_RECORDS_STORAGE_KEY)!).bestByKey["unit:tepee:9"].elapsedMs).toBe(10_000);
+    expect(JSON.parse(entries.get(PICK_RECORDS_STORAGE_KEY+".backup")!).bestByKey["unit:tepee:9"].elapsedMs).toBe(20_000);
   });
 
   it("does not expose mutable best records to the presentation layer", async () => {
     mockStorage();
-    const { savePickResult } = await import("./pickRecords");
+    const { savePickResult } = await loadRecords();
     const result = savePickResult(unit());
     result.best.elapsedMs = 0;
     result.summary.elapsedMs = 0;
@@ -190,7 +199,7 @@ describe("TAPtoPICK local result records", () => {
     { characterId: "../unsafe" }, { found: 8 },
   ])("rejects an invalid caller summary: %o", async (changes) => {
     mockStorage();
-    const { savePickResult } = await import("./pickRecords");
+    const { savePickResult } = await loadRecords();
     expect(() => savePickResult(unit(changes))).toThrow(RangeError);
   });
 });

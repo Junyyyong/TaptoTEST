@@ -10,10 +10,10 @@ if (hasSigningConfig) {
 }
 
 android {
-    namespace = "io.github.junyyyong.taptopick"
+    namespace = "io.github.junyyyong.taptotest"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.github.junyyyong.taptopick"
+        applicationId "io.github.junyyyong.taptotest"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

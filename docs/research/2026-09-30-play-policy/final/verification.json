@@ -1,0 +1,527 @@
+{
+  "capturedAt": "2026-09-29T15:11:31.019Z",
+  "baseline": "36848af66490811127803f5400b3553e1df1982c",
+  "reference": "cae2e49b5af230a95b2f1890daf01b47b321b621",
+  "conditions": {
+    "locale": "en-US",
+    "timezone": "Asia/Seoul",
+    "viewport": "390×844",
+    "deviceScaleFactor": 2
+  },
+  "layouts": [
+    {
+      "name": "TEN",
+      "width": 390,
+      "height": 844,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 327,
+          "width": 358,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 114.90625,
+          "y": 327,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 217.59375,
+          "y": 327,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      },
+      "btn-privacy": {
+        "x": 19,
+        "y": 42,
+        "width": 352,
+        "height": 760
+      },
+      "btn-licenses": {
+        "x": 19,
+        "y": 42,
+        "width": 352,
+        "height": 760
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 390,
+      "height": 844,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 327,
+          "width": 358,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 114.90625,
+          "y": 327,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 217.59375,
+          "y": 327,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      },
+      "btn-privacy": {
+        "x": 19,
+        "y": 42,
+        "width": 352,
+        "height": 760
+      },
+      "btn-licenses": {
+        "x": 19,
+        "y": 42,
+        "width": 352,
+        "height": 760
+      }
+    },
+    {
+      "name": "TEN",
+      "width": 390,
+      "height": 844,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 361.796875,
+          "width": 358,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 114.90625,
+          "y": 361.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 217.59375,
+          "y": 361.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 390,
+      "height": 844,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 361.796875,
+          "width": 358,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 114.90625,
+          "y": 361.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 217.59375,
+          "y": 361.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEN",
+      "width": 320,
+      "height": 568,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 364,
+          "width": 288,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 79.90625,
+          "y": 364,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 182.59375,
+          "y": 364,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 320,
+      "height": 568,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 349,
+          "width": 288,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 79.90625,
+          "y": 349,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 182.59375,
+          "y": 349,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEN",
+      "width": 320,
+      "height": 568,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 398.796875,
+          "width": 288,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 79.90625,
+          "y": 398.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 182.59375,
+          "y": 398.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 320,
+      "height": 568,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 383.796875,
+          "width": 288,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 79.90625,
+          "y": 383.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 182.59375,
+          "y": 383.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEN",
+      "width": 768,
+      "height": 1024,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 327,
+          "width": 736,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 303.90625,
+          "y": 327,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 406.59375,
+          "y": 327,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 768,
+      "height": 1024,
+      "haptics": false,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 327,
+          "width": 736,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 303.90625,
+          "y": 327,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 406.59375,
+          "y": 327,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEN",
+      "width": 768,
+      "height": 1024,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 361.796875,
+          "width": 736,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 303.90625,
+          "y": 361.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 406.59375,
+          "y": 361.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    },
+    {
+      "name": "TEST",
+      "width": 768,
+      "height": 1024,
+      "haptics": true,
+      "layout": {
+        ".settings-links": {
+          "x": 16,
+          "y": 361.796875,
+          "width": 736,
+          "height": 44,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-privacy": {
+          "x": 303.90625,
+          "y": 361.796875,
+          "width": 85.828125,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        },
+        "#btn-licenses": {
+          "x": 406.59375,
+          "y": 361.796875,
+          "width": 57.5,
+          "height": 44,
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+          "lineHeight": "normal"
+        }
+      }
+    }
+  ],
+  "checks": [
+    "TEN/TEST exact legal link metrics at 390×844 (vibration off and unsupported/on)",
+    "320×568 and 768×1024: local documents fit; close remains accessible",
+    "Privacy/KO/licenses, Close and both Escape paths restore Settings and opener focus",
+    "No external HTTP requests; document viewing preserves all localStorage values",
+    "Three game start boards retain 49/4/4 tiles",
+    "Native adapter simulation: failed initial reads block play and preserve data; Retry migrates exact legacy bytes and removes blocking UI (normal Settings clicks work)",
+    "Failed native saves show Retry; queued latest settings survive reload, stale localStorage does not overwrite native data"
+  ],
+  "errors": [],
+  "browser": "154.0.8037.58",
+  "files": {
+    "after-licenses.png": "046e04db2d8b25161c562ba89c95092ace9470c9f96019e8e392bc54fde54913",
+    "after-privacy-korean.png": "87d3db4495cc3ddb9bdbbbf8eeac8d5a054ddb4efb44b7a9a4aebd8a6e4365d3",
+    "after-privacy.png": "66832e61baad79bc2aca512c8ca37b53159278cba59d607f0de44511d670ff05",
+    "after-settings-small-note.png": "da4adaed7f37e1ffd029d19c0b6e3abb9f7e479e0ec63625eb758eb8658c0e09",
+    "after-settings.png": "5ea707bdb922a9f3b0c49e5a4a5c37b198104a194a3b0f8b59dd0e95b2cdb5dd",
+    "before-settings.png": "cf493139cb1f6347c0e23b2c5c373e640e5964b49110f8c79a61cbeffd7838e1",
+    "reference-ten-settings.png": "22014c026e67157472f45b6ae75948eb97f3dbc512133175165f3d90e7eb2a70",
+    "storage-read-retry.png": "4ecb79a65cc8f1f0c4715cc3f978e628b79f33d90d1a4a479e973827248b4713",
+    "storage-write-retry.png": "0a74149dc6b2f933ea2256c0bd3e9868ea1ed79395d02ae1fcb8fffee2ac0670"
+  },
+  "sources": {
+    "src/main.ts": "006c8911c19b879e876611ac56a28cd08364a9c64ec66d913747e002b2bcc19e",
+    "src/ui/persistentStore.ts": "566bd0df8e3cca4db27a597dd56d2c0b1bc21328af408b955a91aff89532c46d",
+    "src/ui/pickStorage.ts": "36b8a9b914f2b6d29a78a95821e9d691a2cc53ccb826722af37e38c410177ebd",
+    "src/ui/storageNotice.ts": "ebf82400e999872ea2df0fc1943e858e1d44982bf44d2c51375ea6dda6d0b4f8",
+    "src/ui/styles/storage.css": "3a911300be356911b5b53871e0801f02598fae44c6242eeab282a527ea1967da",
+    "src/ui/talkApp.ts": "0ef17b4178178ac19627f3e803d408a098ebebe0813134a8f83426a8c6fdccd6",
+    "public/privacy.html": "c1436baedeaba854008b244b75ddfed86c6fe1b5579555375b9879582415be90",
+    "public/licenses.html": "7e9c7086e713048e4d896b7a58042580faab8ce83a4b1aea585f5e460c6fee6c",
+    "src/ui/styles/legal.css": "2df2c3cb85aa291aef245ce21fc736f959685259ccddadefd1653570b51366dd"
+  },
+  "headAtCapture": "36848af66490811127803f5400b3553e1df1982c"
+}

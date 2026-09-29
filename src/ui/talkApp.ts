@@ -7,6 +7,7 @@ import { el } from "./dom";
 import { MEMORY_QUESTION_ICON } from "./memoryQuestionIcon";
 import { feedback } from "./feedback";
 import { Cheer } from "./screens/cheer";
+import { LegalDocuments } from "./screens/legalDocuments";
 import { loadTalkPreferences, saveTalkPreferences, type TalkPreferences } from "./talkPreferences";
 import { SceneMusic } from "./sceneMusic";
 import type { MusicPlaybackState } from "./backgroundMusic";
@@ -29,6 +30,7 @@ function formatTime(ms: number): string {
 }
 
 export class TalkApp {
+  private readonly legal = new LegalDocuments();
   private readonly cheer = new Cheer();
   private readonly music: SceneMusic;
   private readonly studioSplash = el("screen-studio-splash");
@@ -116,6 +118,7 @@ export class TalkApp {
       if (!this.intro.classList.contains("hidden")) this.startMode(this.introMode);
     });
     document.addEventListener("keydown", (event) => {
+      if (event.defaultPrevented || this.legal.isOpen) return;
       if (event.key === "Escape" && !this.settings.classList.contains("hidden")) this.closeSettings();
       if (event.key === "Escape" && !this.intro.classList.contains("hidden")) this.closeModeIntro();
     });
@@ -806,10 +809,17 @@ export class TalkApp {
         const enabled = button.dataset.setting === "sound" ? this.preferences.soundOn
           : button.dataset.setting === "haptics" ? this.preferences.hapticsOn : this.preferences.musicOn;
         button.setAttribute("aria-checked", String(enabled));
+        this.updateSettingsNote();
       });
     });
     this.updateMusicScene();
     el("btn-settings-back").focus();
+    this.updateSettingsNote();
+  }
+
+  private updateSettingsNote(): void {
+    el("settings-note").textContent = this.preferences.hapticsOn && typeof navigator.vibrate !== "function"
+      ? "This phone (or browser) cannot vibrate." : "";
   }
 
   private closeSettings(): void {

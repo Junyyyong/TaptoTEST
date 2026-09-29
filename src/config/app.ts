@@ -63,7 +63,7 @@ const CHARACTER_CELEBRATIONS = {
  * Keep the public paths stable and a redesign only needs new asset files.
  */
 export const APP_CONFIG = {
-  name: "TAP to TEST",
+  name: "TAPtoTEST",
   board: { columns: 7, rows: 7 },
   timing: { studioSplashMs: 1_800, productSplashMs: 4_000 },
   assets: {

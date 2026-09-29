@@ -1,4 +1,4 @@
-package io.github.junyyyong.taptopick;
+package io.github.junyyyong.taptotest;
 
 import com.getcapacitor.BridgeActivity;
 

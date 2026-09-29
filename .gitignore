@@ -1,4 +1,5 @@
 node_modules/
+.android-tools/
 dist/
 dist-single/
 *.local

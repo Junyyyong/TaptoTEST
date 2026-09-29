@@ -1,5 +1,7 @@
 # TAP to PICK 연구·개발 기록
 
+- [2026-09-30 — Android ID·기록 저장소 보강·Settings 정책/라이선스](2026-09-30-play-policy/README.md)
+
 - [2026-09-29 — PUZZLE 전체 16종 중복 없는 순환](2026-09-29-puzzle-cycle/README.md)
 
 - [2026-09-29 — 만화 4종 무여백 크롭·9조각 퍼즐 추가](2026-09-29-comic-puzzles/README.md)

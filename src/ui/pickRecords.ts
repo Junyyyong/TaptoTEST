@@ -1,3 +1,6 @@
+import { PICK_RECORDS_STORAGE_KEY, pickStore } from "./pickStorage";
+export { PICK_RECORDS_STORAGE_KEY } from "./pickStorage";
+
 export interface RunSummary {
   mode: "unit" | "montage" | "memory";
   won: boolean;
@@ -20,7 +23,6 @@ export interface ResultRecord {
   storageAvailable: boolean;
 }
 
-export const PICK_RECORDS_STORAGE_KEY = "taptopick.records.v1";
 /** A first completion establishes the baseline; only a faster later completion earns the special movie. */
 export function isMemoryRecordBreak(record: ResultRecord): boolean {
   return record.summary.mode === "memory" && record.summary.won && record.isNewBest
@@ -99,6 +101,15 @@ function hasProgress(summary: RunSummary): boolean {
   return summary.won || summary.found > 0 || (summary.mode !== "unit" && summary.stage > 1);
 }
 
+export function validatePickRecords(raw: string): void {
+  if (raw.length > MAX_STORED_LENGTH) throw Error("Saved records are too large");
+  const parsed: unknown = JSON.parse(raw);
+  if (!isObject(parsed) || parsed.version !== 1 || !isObject(parsed.bestByKey)) throw Error("Invalid saved records");
+  const entries = Object.entries(parsed.bestByKey);
+  if (entries.length > MAX_RECORDS || entries.some(([key, value]) =>
+    !isRunSummary(value) || key !== recordKey(value) || !hasProgress(value))) throw Error("Invalid saved result");
+}
+
 function readStoredBests(raw: string | null): Map<string, RunSummary> {
   const bests = new Map<string, RunSummary>();
   if (!raw || raw.length > MAX_STORED_LENGTH) return bests;
@@ -116,22 +127,14 @@ function readStoredBests(raw: string | null): Map<string, RunSummary> {
   return bests;
 }
 
-/** Persist a best result when possible; private/blocked storage keeps session records. */
+/** Read only after startup hydration; failed writes stay queued for Retry. */
 export function savePickResult(summary: RunSummary): ResultRecord {
-  if (!isRunSummary(summary)) throw new RangeError("Invalid TAPtoPICK result summary");
+  if (!isRunSummary(summary)) throw new RangeError("Invalid TAPtoTEST result summary");
   const current = copySummary(summary);
-  let storage: Storage | undefined;
-  let storageAvailable = false;
-  try {
-    storage = globalThis.localStorage;
-    const stored = readStoredBests(storage.getItem(PICK_RECORDS_STORAGE_KEY));
-    for (const [key, value] of stored) {
-      const session = sessionBests.get(key);
-      if (!session || comparePickResults(value, session) > 0) sessionBests.set(key, value);
-    }
-    storageAvailable = true;
-  } catch {
-    // Storage may be missing entirely or its getter may throw a SecurityError.
+  const stored = readStoredBests(pickStore.read(PICK_RECORDS_STORAGE_KEY));
+  for (const [key, value] of stored) {
+    const session = sessionBests.get(key);
+    if (!session || comparePickResults(value, session) > 0) sessionBests.set(key, value);
   }
 
   const key = recordKey(current);
@@ -140,16 +143,10 @@ export function savePickResult(summary: RunSummary): ResultRecord {
   if (isNewBest) sessionBests.set(key, current);
   const best = sessionBests.get(key) ?? current;
 
-  if (storageAvailable && storage) {
-    try {
-      storage.setItem(PICK_RECORDS_STORAGE_KEY, JSON.stringify({
-        version: 1,
-        bestByKey: Object.fromEntries(sessionBests),
-      }));
-    } catch {
-      storageAvailable = false;
-    }
-  }
+  pickStore.write(PICK_RECORDS_STORAGE_KEY, JSON.stringify({
+    version: 1,
+    bestByKey: Object.fromEntries(sessionBests),
+  }));
 
   // Return copies so UI presentation cannot mutate persisted/session results.
   return {
@@ -157,6 +154,7 @@ export function savePickResult(summary: RunSummary): ResultRecord {
     best: copySummary(best),
     isNewBest,
     ...(previous ? { previousBest: copySummary(previous) } : {}),
-    storageAvailable,
+    // A queued native write is not a failure. Later failures use StorageNotice.
+    storageAvailable: !pickStore.hasSaveFailure,
   };
 }
