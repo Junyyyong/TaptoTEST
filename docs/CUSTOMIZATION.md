@@ -4,6 +4,8 @@ TAP to PICK은 TAPtoTALK의 화면 감각과 폰트를 유지하면서 이미지
 
 ## 자주 수정할 곳
 
+- 2026-09-29 브라우저 탭 제목: `index.html`의 `<title>`과 `src/config/app.ts`의 `APP_CONFIG.name`을 `TAP to TEST`로 통일했다. `src/main.ts`가 로드 후 제목을 다시 설정하므로 두 곳을 함께 유지한다. 로컬 Git `origin`은 이름이 바뀐 동일 저장소 `Junyyyong/TaptoTEST`를 가리킨다. 이번에는 게임 규칙·저장 키·네이티브 앱 ID·앱 표시 이름·에셋 경로를 바꾸지 않는다.
+
 - 2026-09-20 POSITION 영상은 실패 notbad, 일반 완주 마지막 정답 페어의 캐릭터, 이전 완주 시간 경신 OH MY GOD다. 첫 완주·동률은 일반 영상. `MEMORY_FACE_CHARACTERS`가 얼굴을 영상 ID로 연결하고 `isMemoryRecordBreak`가 경신 여부를 판단한다. 태피는 Unbelievable로 교체했다. 아래 과거 랜덤 영상 설명보다 이 규칙을 우선한다.
 
 - 2026-09-20: POSITION은 MEMORY_STAGES의 2×2/4×4/6×6(60/60/90초), 총 3단계다. 결과의 단계 수는 배열 길이를 사용한다. 새 기록은 memoryVersion=2를 저장하고 memory:2x2-4x4-6x6 키를 사용해 기존 memory 기록을 보존·분리한다. 완주 시 현재/최고 시간, 미완주 시 단계·쌍 수를 표시한다. PORTRAIT는 현재/최고 찾은 수를 표시한다. 점수·오답 수·기기 저장 안내는 결과에서 생략한다.

@@ -1,4 +1,7 @@
-# TAP to PICK
+# TAP to TEST
+
+2026-09-29: 저장소 이름 변경에 맞춰 로컬 `origin`을 `https://github.com/Junyyyong/TaptoTEST.git`로 갱신하고 브라우저 탭 제목을 **TAP to TEST**로 통일했습니다. 서비스 주소는 `https://taptotest.vercel.app`입니다. 기존 폴더명·저장 키·네이티브 앱 ID는 변경하지 않습니다.
+
 
 2026-09-20: POSITION은 **2×2 → 4×4 → 6×6**의 3단계(60초/60초/90초)로 변경했습니다. 완주 결과는 현재·최고 완주 시간을 표시하며 과거 4단계 기록과 분리합니다. 아래 이전 단계 설명보다 이 규칙이 우선합니다.
 
@@ -66,4 +69,4 @@ npm run build
 
 ## 원본 보호
 
-이 저장소의 변경은 `Junyyyong/TaptoPick`에만 커밋하고 푸시합니다. 기반이 된 `Junyyyong/TAPtoTALK` 저장소에는 어떤 변경도 푸시하지 않습니다.
+이 저장소의 변경은 `Junyyyong/TaptoTEST`(기존 `Junyyyong/TaptoPick`과 동일한 저장소)에만 커밋하고 푸시합니다. 기반이 된 `Junyyyong/TAPtoTALK` 저장소에는 어떤 변경도 푸시하지 않습니다.
