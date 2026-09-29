@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-29T15:27:56.774Z",
+  "browser": "154.0.8037.58",
+  "viewport": "390×844 CSS px; DPR 2; PNG 780×1688",
+  "checks": [
+    "EN/KO policy and license text contain no previous brand",
+    "Splash/logo accessible names and page title are TAPtoTEST",
+    "Document reading leaves preferences unchanged",
+    "No browser page errors"
+  ],
+  "errors": [],
+  "files": {
+    "privacy-english.png": "d56d2be78ef20420f9b53f538991e589386ad400cd2c549afa69b45fbfc13f0f",
+    "privacy-korean.png": "3c49ade3835fb116a49678e3481cee697de0107f19c140b2024ed887891ceff8"
+  }
+}

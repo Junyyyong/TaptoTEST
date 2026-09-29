@@ -3,6 +3,18 @@ import { describe, expect, it } from "vitest";
 const read = (file: string) => readFileSync(new URL(`../${file}`, import.meta.url), "utf8");
 
 describe("TAPtoTEST policy and packaging", () => {
+  it.each(["public/privacy.html", "public/licenses.html"])("uses only the current brand in %s", file => {
+    expect(read(file)).toContain("TAPtoTEST");
+    expect(read(file)).not.toMatch(/pick/i);
+  });
+  it("uses the current brand in the title and accessible splash/logo labels", () => {
+    const html = read("index.html");
+    expect(html).not.toMatch(/tap\s*to\s*pick|탭투픽/i);
+    expect(html).toContain('<title>TAPtoTEST</title>');
+    expect(html).toMatch(/id="screen-splash" aria-label="TAPtoTEST"/);
+    expect(html).toMatch(/id="product-cover" alt="TAPtoTEST"/);
+    expect(html).toMatch(/id="brand-mark" alt="TAPtoTEST"/);
+  });
   it.each(["english", "korean"])("has the verified contact and app identity in %s", language => {
     const section=read("public/privacy.html").match(new RegExp(`<section id="${language}"[^>]*>([\\s\\S]*?)</section>`))![1]!;
     expect(section).toContain("TAPtoTEST");expect(section).toContain("TapeeTepee openstudio");
