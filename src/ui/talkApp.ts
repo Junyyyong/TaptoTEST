@@ -73,6 +73,7 @@ export class TalkApp {
   private runVersion = 0;
   private memoryStageHoldRemaining = 0;
   private targetCharacter = PUZZLE_CHARACTERS[0]!;
+  private readonly unitArtworkOrder = new RandomIndexCycle(UNIT_TARGET_CHARACTERS.length);
   private montageCharacter: MontageCharacter = MONTAGE_CHARACTERS[0]!;
   private readonly montageCharacterOrder = new RandomIndexCycle(MONTAGE_CHARACTERS.length);
   private unitFound = new Set<number>();
@@ -240,7 +241,7 @@ export class TalkApp {
   }
 
   private startUnitRound(): void {
-    this.targetCharacter = UNIT_TARGET_CHARACTERS[Math.floor(Math.random() * UNIT_TARGET_CHARACTERS.length)]!;
+    this.targetCharacter = UNIT_TARGET_CHARACTERS[this.unitArtworkOrder.next()]!;
     const tiles = createUnitBoard(this.targetCharacter.id, ALL_PIECES);
     this.setBoardSize(7);
     this.runMode.textContent = PICK_MODES.unit.title;

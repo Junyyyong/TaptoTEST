@@ -2,13 +2,33 @@ import { describe, expect, it } from "vitest";
 import { GAME_IMAGE_URLS, MEMORY_FACES, MEMORY_PREVIEW_MS, MEMORY_REVEAL_DELAY_MS, MONTAGE_CHARACTERS, PICTURE_PIECES_SCORE_BANDS } from "./puzzles";
 import { tieredTimeScore } from "../core/pick/game";
 import { ALL_PIECES, COMIC_UNIT_PUZZLES, PUZZLE_CHARACTERS, UNIT_TARGET_CHARACTERS } from "./puzzles";
-import { createUnitBoard, unitPieceDifficulty } from "../core/pick/game";
+import { createUnitBoard, RandomIndexCycle, unitPieceDifficulty } from "../core/pick/game";
 import { createProgressiveMontageBoard } from "../core/pick/montage";
 import { PICK_MODES } from "./pickModes";
 import { APP_CONFIG } from "../config/app";
 import { MEMORY_FACE_CHARACTERS } from "./puzzles";
 
 describe("Puzzle content", () => {
+  it("cycles through every registered artwork once independently of PORTRAIT", () => {
+    let state = 42;
+    const random = () => { state = (Math.imul(state, 1664525) + 1013904223) >>> 0; return state / 4294967296; };
+    const puzzleOrder = new RandomIndexCycle(UNIT_TARGET_CHARACTERS.length, random);
+    const portraitOrder = new RandomIndexCycle(MONTAGE_CHARACTERS.length, random);
+    const expectedIds = UNIT_TARGET_CHARACTERS.map(artwork => artwork.id).sort();
+    let previousIds: string[] = [];
+    for (let cycle = 0; cycle < 5; cycle++) {
+      const ids = UNIT_TARGET_CHARACTERS.map(() => {
+        portraitOrder.next();
+        return UNIT_TARGET_CHARACTERS[puzzleOrder.next()]!.id;
+      });
+      expect([...ids].sort()).toEqual(expectedIds);
+      if (previousIds.length) {
+        expect(ids[0]).not.toBe(previousIds.at(-1));
+        expect(ids).not.toEqual(previousIds);
+      }
+      previousIds = ids;
+    }
+  });
   it("uses the three approved single-word mode names", () => {
     expect(Object.values(PICK_MODES).map(mode => mode.title)).toEqual(["PUZZLE", "PORTRAIT", "POSITION"]);
   });

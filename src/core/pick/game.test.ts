@@ -7,15 +7,15 @@ const pieces: SourcePiece[] = Array.from({ length: 75 }, (_, index) => ({
 }));
 
 describe("TAP to PICK game rules", () => {
-  it("keeps a character bag through interrupted runs and all cycle boundaries", () => {
+  it.each([7, 16, 17])("keeps a %i-item bag through interrupted runs and all cycle boundaries", (itemCount) => {
     for (let seed=1; seed<=50; seed++) {
       let state=seed;
       const random=()=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return state/4294967296;};
-      const cycle=new RandomIndexCycle(7,random);
+      const cycle=new RandomIndexCycle(itemCount,random);
       // Call groups simulate 1-question exits, failures, full 18-question runs and replays.
-      const sequence=[1,3,18,2,11].flatMap(length=>Array.from({length},()=>cycle.next()));
-      for(let i=0;i<sequence.length;i+=7) {
-        const group=sequence.slice(i,i+7);
+      const sequence=[1,3,18,2,itemCount*4].flatMap(length=>Array.from({length},()=>cycle.next()));
+      for(let i=0;i<sequence.length;i+=itemCount) {
+        const group=sequence.slice(i,i+itemCount);
         expect(new Set(group).size).toBe(group.length);
         if(i>0)expect(group[0]).not.toBe(sequence[i-1]);
       }
