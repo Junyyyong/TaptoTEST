@@ -1,0 +1,3979 @@
+{
+  "capturedAt": "2026-10-01T06:00:08.032Z",
+  "nativeDeviceTested": false,
+  "aabCreated": false,
+  "coverOnly": true,
+  "coverSizing": "width100%-heightAuto-center",
+  "profiles": [
+    {
+      "id": "reference",
+      "physical": [
+        780,
+        1688
+      ],
+      "bars": [
+        48,
+        96
+      ],
+      "densities": [
+        2
+      ],
+      "capture": true
+    },
+    {
+      "id": "phone",
+      "physical": [
+        1080,
+        2340
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "tall-phone",
+      "physical": [
+        1080,
+        2700
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "capture": true
+    },
+    {
+      "id": "short-phone",
+      "physical": [
+        1080,
+        1944
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "tablet-16x10",
+      "physical": [
+        1620,
+        2592
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "tablet-4x3",
+      "physical": [
+        1728,
+        2304
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "capture": true
+    },
+    {
+      "id": "wide-window",
+      "physical": [
+        2304,
+        1728
+      ],
+      "bars": [
+        72,
+        144
+      ],
+      "densities": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "right": 390,
+          "bottom": 844,
+          "lx": 0,
+          "ly": -24,
+          "lw": 390,
+          "lh": 844,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 113.09375,
+          "y": 364.390625,
+          "w": 163.796875,
+          "h": 115.203125,
+          "right": 276.890625,
+          "bottom": 479.59375,
+          "lx": 113.09375,
+          "ly": 340.390625,
+          "lw": 163.796875,
+          "lh": 115.203125,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "logical": [
+        390,
+        772
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "right": 390,
+          "bottom": 844,
+          "lx": 0,
+          "ly": -24,
+          "lw": 390,
+          "lh": 844,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "right": 390,
+          "bottom": 844,
+          "lx": 0,
+          "ly": -24,
+          "lw": 390,
+          "lh": 844,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "logical": [
+        390,
+        772
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1170,
+          "right": 540,
+          "bottom": 1170,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 156.5913543701172,
+          "y": 505.2331848144531,
+          "w": 226.79566955566406,
+          "h": 159.51205444335938,
+          "right": 383.38702392578125,
+          "bottom": 664.7452392578125,
+          "lx": 113.09375593397353,
+          "ly": 338.89063347710504,
+          "lw": 163.7968724568685,
+          "lh": 115.20315043131511,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1170
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1170,
+          "right": 540,
+          "bottom": 1170,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1170,
+          "right": 540,
+          "bottom": 1170,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1170
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1242,
+        "right": 540,
+        "bottom": 1278
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1350,
+          "right": 540,
+          "bottom": 1350,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 156.5913543701172,
+          "y": 595.2332153320312,
+          "w": 226.79566955566406,
+          "h": 159.51202392578125,
+          "right": 383.38702392578125,
+          "bottom": 754.7452392578125,
+          "lx": 113.09375593397353,
+          "ly": 403.8906555175781,
+          "lw": 163.7968724568685,
+          "lh": 115.20312839084201,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1350
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1242,
+        "right": 540,
+        "bottom": 1278
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1350,
+          "right": 540,
+          "bottom": 1350,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1350,
+          "right": 540,
+          "bottom": 1350,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1350
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 864,
+        "right": 540,
+        "bottom": 900
+      },
+      "scale": 1.35,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.01406097412109375,
+          "w": 540,
+          "h": 972.0000610351562,
+          "right": 540,
+          "bottom": 972.0141220092773,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 159.3000030517578,
+          "y": 408.15704345703125,
+          "w": 221.40000915527344,
+          "h": 155.71405029296875,
+          "right": 380.70001220703125,
+          "bottom": 563.87109375,
+          "lx": 118.00000226056133,
+          "ly": 275.6718840422453,
+          "lw": 164.00000678168402,
+          "lh": 115.34374095775462,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        972
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 864,
+        "right": 540,
+        "bottom": 900
+      },
+      "scale": 1.35,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.01406097412109375,
+          "w": 540,
+          "h": 972.0000610351562,
+          "right": 540,
+          "bottom": 972.0141220092773,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0.01406097412109375,
+          "w": 540,
+          "h": 972.0000610351562,
+          "right": 540,
+          "bottom": 972.0141220092773,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        972
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 809.9921264648438,
+        "h": 1188,
+        "right": 809.9921264648438,
+        "bottom": 1224
+      },
+      "scale": 1.8562516791560246,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.006153106689453125,
+          "w": 809.9921264648438,
+          "h": 1295.9815673828125,
+          "right": 809.9921264648438,
+          "bottom": 1295.987720489502,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 252.76904296875,
+          "y": 540.9290161132812,
+          "w": 304.42498779296875,
+          "h": 214.10687255859375,
+          "right": 557.1940307617188,
+          "bottom": 755.035888671875,
+          "lx": 136.17175181960002,
+          "ly": 272.0153855121928,
+          "lw": 163.99984507024425,
+          "lh": 115.34366538913568,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        810,
+        1296
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 809.9921264648438,
+        "h": 1188,
+        "right": 809.9921264648438,
+        "bottom": 1224
+      },
+      "scale": 1.8562516791560246,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.006153106689453125,
+          "w": 809.9921264648438,
+          "h": 1295.9815673828125,
+          "right": 809.9921264648438,
+          "bottom": 1295.987720489502,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0.006153106689453125,
+          "w": 809.9921264648438,
+          "h": 1295.9815673828125,
+          "right": 809.9921264648438,
+          "bottom": 1295.987720489502,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        810,
+        1296
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 863.9762573242188,
+        "h": 1044,
+        "right": 863.9762573242188,
+        "bottom": 1080
+      },
+      "scale": 1.6312488219836054,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.010547637939453125,
+          "w": 863.9762573242188,
+          "h": 1151.993896484375,
+          "right": 863.9762573242188,
+          "bottom": 1152.0044441223145,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 298.212890625,
+          "y": 481.91748046875,
+          "w": 267.5250244140625,
+          "h": 188.15447998046875,
+          "right": 565.7379150390625,
+          "bottom": 670.0719604492188,
+          "lx": 182.81263201917403,
+          "ly": 273.3595724081581,
+          "lw": 164.00013340009707,
+          "lh": 115.34382581295728,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        864,
+        1152
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 863.9762573242188,
+        "h": 1044,
+        "right": 863.9762573242188,
+        "bottom": 1080
+      },
+      "scale": 1.6312488219836054,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.010547637939453125,
+          "w": 863.9762573242188,
+          "h": 1151.993896484375,
+          "right": 863.9762573242188,
+          "bottom": 1152.0044441223145,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0.010547637939453125,
+          "w": 863.9762573242188,
+          "h": 1151.993896484375,
+          "right": 863.9762573242188,
+          "bottom": 1152.0044441223145,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        864,
+        1152
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 2,
+      "phase": "before",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 1151.99560546875,
+        "h": 756,
+        "right": 1151.99560546875,
+        "bottom": 792
+      },
+      "scale": 1.1812504542179108,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0087890625,
+          "w": 1151.99560546875,
+          "h": 863.9920654296875,
+          "right": 1151.99560546875,
+          "bottom": 864.0008544921875,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 479.1260681152344,
+          "y": 363.8706970214844,
+          "w": 193.72500610351562,
+          "h": 136.24978637695312,
+          "right": 672.85107421875,
+          "bottom": 500.1204833984375,
+          "lx": 405.60921386689074,
+          "ly": 277.562388103853,
+          "lw": 163.99994210523138,
+          "lh": 115.34369014669474,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        1152,
+        864
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 2,
+      "phase": "before",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 1151.99560546875,
+        "h": 756,
+        "right": 1151.99560546875,
+        "bottom": 792
+      },
+      "scale": 1.1812504542179108,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0087890625,
+          "w": 1151.99560546875,
+          "h": 863.9920654296875,
+          "right": 1151.99560546875,
+          "bottom": 864.0008544921875,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 0.0087890625,
+          "w": 1151.99560546875,
+          "h": 863.9920654296875,
+          "right": 1151.99560546875,
+          "bottom": 864.0008544921875,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        1152,
+        864
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "right": 390,
+          "bottom": 844,
+          "lx": 0,
+          "ly": -24,
+          "lw": 390,
+          "lh": 844,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 113.09375,
+          "y": 364.390625,
+          "w": 163.796875,
+          "h": 115.203125,
+          "right": 276.890625,
+          "bottom": 479.59375,
+          "lx": 113.09375,
+          "ly": 340.390625,
+          "lw": 163.796875,
+          "lh": 115.203125,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "logical": [
+        390,
+        772
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "right": 390,
+          "bottom": 844,
+          "lx": 0,
+          "ly": -24,
+          "lw": 390,
+          "lh": 844,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 37.28125,
+          "w": 390,
+          "h": 769.4375,
+          "right": 390,
+          "bottom": 806.71875,
+          "lx": 0,
+          "ly": 13.28125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "logical": [
+        390,
+        772
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1170,
+          "right": 540,
+          "bottom": 1170,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 156.5913543701172,
+          "y": 505.2331848144531,
+          "w": 226.79566955566406,
+          "h": 159.51205444335938,
+          "right": 383.38702392578125,
+          "bottom": 664.7452392578125,
+          "lx": 113.09375593397353,
+          "ly": 338.89063347710504,
+          "lw": 163.7968724568685,
+          "lh": 115.20315043131511,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1170
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1170,
+          "right": 540,
+          "bottom": 1170,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 52.3125,
+          "w": 540,
+          "h": 1065.375,
+          "right": 540,
+          "bottom": 1117.6875,
+          "lx": 0,
+          "ly": 11.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1170
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 708,
+        "right": 360,
+        "bottom": 732
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 780,
+          "right": 360,
+          "bottom": 780,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 104.39423370361328,
+          "y": 336.8221130371094,
+          "w": 151.19711303710938,
+          "h": 106.34133911132812,
+          "right": 255.59134674072266,
+          "bottom": 443.1634521484375,
+          "lx": 113.09375317891438,
+          "ly": 338.89062245686847,
+          "lw": 163.79687245686847,
+          "lh": 115.20311737060547,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        780
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 708,
+        "right": 360,
+        "bottom": 732
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 780,
+          "right": 360,
+          "bottom": 780,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 34.875,
+          "w": 360,
+          "h": 710.25,
+          "right": 360,
+          "bottom": 745.125,
+          "lx": 0,
+          "ly": 11.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        780
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 270,
+          "h": 585,
+          "right": 270,
+          "bottom": 585,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 78.2956771850586,
+          "y": 252.61659240722656,
+          "w": 113.39783477783203,
+          "h": 79.75602722167969,
+          "right": 191.69351196289062,
+          "bottom": 332.37261962890625,
+          "lx": 113.09375593397353,
+          "ly": 338.89063347710504,
+          "lw": 163.7968724568685,
+          "lh": 115.20315043131511,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        585
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "phone",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 270,
+          "h": 585,
+          "right": 270,
+          "bottom": 585,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 845,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 26.15625,
+          "w": 270,
+          "h": 532.6875,
+          "right": 270,
+          "bottom": 558.84375,
+          "lx": 0,
+          "ly": 11.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        585
+      ],
+      "logical": [
+        390,
+        767
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1242,
+        "right": 540,
+        "bottom": 1278
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1350,
+          "right": 540,
+          "bottom": 1350,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 156.5913543701172,
+          "y": 595.2332153320312,
+          "w": 226.79566955566406,
+          "h": 159.51202392578125,
+          "right": 383.38702392578125,
+          "bottom": 754.7452392578125,
+          "lx": 113.09375593397353,
+          "ly": 403.8906555175781,
+          "lw": 163.7968724568685,
+          "lh": 115.20312839084201,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1350
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1242,
+        "right": 540,
+        "bottom": 1278
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 540,
+          "h": 1350,
+          "right": 540,
+          "bottom": 1350,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 142.3125,
+          "w": 540,
+          "h": 1065.375,
+          "right": 540,
+          "bottom": 1207.6875,
+          "lx": 0,
+          "ly": 76.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        1350
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 900,
+          "right": 360,
+          "bottom": 900,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 104.39423370361328,
+          "y": 396.8221130371094,
+          "w": 151.19711303710938,
+          "h": 106.34133911132812,
+          "right": 255.59134674072266,
+          "bottom": 503.1634521484375,
+          "lx": 113.09375317891438,
+          "ly": 403.89062245686847,
+          "lw": 163.79687245686847,
+          "lh": 115.20311737060547,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        900
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 900,
+          "right": 360,
+          "bottom": 900,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 94.875,
+          "w": 360,
+          "h": 710.25,
+          "right": 360,
+          "bottom": 805.125,
+          "lx": 0,
+          "ly": 76.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        900
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 621,
+        "right": 270,
+        "bottom": 639
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 270,
+          "h": 675,
+          "right": 270,
+          "bottom": 675,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 78.2956771850586,
+          "y": 297.6166076660156,
+          "w": 113.39783477783203,
+          "h": 79.75601196289062,
+          "right": 191.69351196289062,
+          "bottom": 377.37261962890625,
+          "lx": 113.09375593397353,
+          "ly": 403.8906555175781,
+          "lw": 163.7968724568685,
+          "lh": 115.20312839084201,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        675
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 621,
+        "right": 270,
+        "bottom": 639
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0,
+          "w": 270,
+          "h": 675,
+          "right": 270,
+          "bottom": 675,
+          "lx": 0,
+          "ly": -26,
+          "lw": 390,
+          "lh": 975,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": 71.15625,
+          "w": 270,
+          "h": 532.6875,
+          "right": 270,
+          "bottom": 603.84375,
+          "lx": 0,
+          "ly": 76.78125,
+          "lw": 390,
+          "lh": 769.4375,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        675
+      ],
+      "logical": [
+        390,
+        897
+      ],
+      "screen": "screen-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 864,
+        "right": 540,
+        "bottom": 900
+      },
+      "scale": 1.35,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.01406097412109375,
+          "w": 540,
+          "h": 972.0000610351562,
+          "right": 540,
+          "bottom": 972.0141220092773,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 159.3000030517578,
+          "y": 408.15704345703125,
+          "w": 221.40000915527344,
+          "h": 155.71405029296875,
+          "right": 380.70001220703125,
+          "bottom": 563.87109375,
+          "lx": 118.00000226056133,
+          "ly": 275.6718840422453,
+          "lw": 164.00000678168402,
+          "lh": 115.34374095775462,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        972
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 864,
+        "right": 540,
+        "bottom": 900
+      },
+      "scale": 1.35,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.01406097412109375,
+          "w": 540,
+          "h": 972.0000610351562,
+          "right": 540,
+          "bottom": 972.0141220092773,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -46.666404724121094,
+          "w": 540,
+          "h": 1065.3609619140625,
+          "right": 540,
+          "bottom": 1018.6945571899414,
+          "lx": 0,
+          "ly": -61.23437386971933,
+          "lw": 400,
+          "lh": 789.1562680844906,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        972
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 35,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.00937652587890625,
+          "w": 360,
+          "h": 647.9999389648438,
+          "right": 360,
+          "bottom": 648.0093154907227,
+          "lx": 0,
+          "ly": -26.65624830457899,
+          "lw": 400,
+          "lh": 719.9999321831597,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 106.19999694824219,
+          "y": 272.10467529296875,
+          "w": 147.59999084472656,
+          "h": 103.80938720703125,
+          "right": 253.79998779296875,
+          "bottom": 375.9140625,
+          "lx": 117.99999660915799,
+          "ly": 275.67186143663196,
+          "lw": 163.99998982747397,
+          "lh": 115.34376356336806,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        648
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.00937652587890625,
+          "w": 360,
+          "h": 647.9999389648438,
+          "right": 360,
+          "bottom": 648.0093154907227,
+          "lx": 0,
+          "ly": -26.65624830457899,
+          "lw": 400,
+          "lh": 719.9999321831597,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -31.11093521118164,
+          "w": 360,
+          "h": 710.2406616210938,
+          "right": 360,
+          "bottom": 679.1297264099121,
+          "lx": 0,
+          "ly": -61.234372456868485,
+          "lw": 400,
+          "lh": 789.1562906901041,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        360,
+        648
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 35,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 432,
+        "right": 270,
+        "bottom": 450
+      },
+      "scale": 0.675,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.007030487060546875,
+          "w": 270,
+          "h": 486.0000305175781,
+          "right": 270,
+          "bottom": 486.0070610046387,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 79.6500015258789,
+          "y": 204.07852172851562,
+          "w": 110.70000457763672,
+          "h": 77.85702514648438,
+          "right": 190.35000610351562,
+          "bottom": 281.935546875,
+          "lx": 118.00000226056133,
+          "ly": 275.6718840422453,
+          "lw": 164.00000678168402,
+          "lh": 115.34374095775462,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        486
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 432,
+        "right": 270,
+        "bottom": 450
+      },
+      "scale": 0.675,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.007030487060546875,
+          "w": 270,
+          "h": 486.0000305175781,
+          "right": 270,
+          "bottom": 486.0070610046387,
+          "lx": 0,
+          "ly": -26.65625113028067,
+          "lw": 400,
+          "lh": 720.0000452112268,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -23.333202362060547,
+          "w": 270,
+          "h": 532.6804809570312,
+          "right": 270,
+          "bottom": 509.3472785949707,
+          "lx": 0,
+          "ly": -61.23437386971933,
+          "lw": 400,
+          "lh": 789.1562680844906,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        270,
+        486
+      ],
+      "logical": [
+        400,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 35,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 809.9921264648438,
+        "h": 1188,
+        "right": 809.9921264648438,
+        "bottom": 1224
+      },
+      "scale": 1.8562516791560246,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.006153106689453125,
+          "w": 809.9921264648438,
+          "h": 1295.9815673828125,
+          "right": 809.9921264648438,
+          "bottom": 1295.987720489502,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 252.76904296875,
+          "y": 540.9290161132812,
+          "w": 304.42498779296875,
+          "h": 214.10687255859375,
+          "right": 557.1940307617188,
+          "bottom": 755.035888671875,
+          "lx": 136.17175181960002,
+          "ly": 272.0153855121928,
+          "lw": 163.99984507024425,
+          "lh": 115.34366538913568,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        810,
+        1296
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 809.9921264648438,
+        "h": 1188,
+        "right": 809.9921264648438,
+        "bottom": 1224
+      },
+      "scale": 1.8562516791560246,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.006153106689453125,
+          "w": 809.9921264648438,
+          "h": 1295.9815673828125,
+          "right": 809.9921264648438,
+          "bottom": 1295.987720489502,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -151.0316925048828,
+          "w": 809.9921264648438,
+          "h": 1598.0283203125,
+          "right": 809.9921264648438,
+          "bottom": 1446.9966278076172,
+          "lx": 0,
+          "ly": -100.75772299902772,
+          "lw": 436.359,
+          "lh": 860.889898852008,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        810,
+        1296
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 82,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 539.9946899414062,
+        "h": 792,
+        "right": 539.9946899414062,
+        "bottom": 816
+      },
+      "scale": 1.2375009795636305,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0041027069091796875,
+          "w": 539.9946899414062,
+          "h": 863.9876708984375,
+          "right": 539.9946899414062,
+          "bottom": 863.9917736053467,
+          "lx": 0,
+          "ly": -19.390608726267264,
+          "lw": 436.35900000000004,
+          "lh": 698.1713026224013,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 168.5126953125,
+          "y": 360.61932373046875,
+          "w": 202.94998168945312,
+          "h": 142.73788452148438,
+          "right": 371.4626770019531,
+          "bottom": 503.3572082519531,
+          "lx": 136.1717672109813,
+          "ly": 272.01539981743525,
+          "lw": 163.99985538679547,
+          "lh": 115.34365376568577,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        864
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 539.9946899414062,
+        "h": 792,
+        "right": 539.9946899414062,
+        "bottom": 816
+      },
+      "scale": 1.2375009795636305,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0041027069091796875,
+          "w": 539.9946899414062,
+          "h": 863.9876708984375,
+          "right": 539.9946899414062,
+          "bottom": 863.9917736053467,
+          "lx": 0,
+          "ly": -19.390608726267264,
+          "lw": 436.35900000000004,
+          "lh": 698.1713026224013,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -100.68778991699219,
+          "w": 539.9946899414062,
+          "h": 1065.35205078125,
+          "right": 539.9946899414062,
+          "bottom": 964.6642608642578,
+          "lx": 0,
+          "ly": -100.75773027748211,
+          "lw": 436.35900000000004,
+          "lh": 860.8898646342212,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        540,
+        864
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 82,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 404.9960632324219,
+        "h": 594,
+        "right": 404.9960632324219,
+        "bottom": 612
+      },
+      "scale": 0.9281258395780123,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0030765533447265625,
+          "w": 404.9960632324219,
+          "h": 647.9907836914062,
+          "right": 404.9960632324219,
+          "bottom": 647.993860244751,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 126.384521484375,
+          "y": 270.4645080566406,
+          "w": 152.21249389648438,
+          "h": 107.05343627929688,
+          "right": 278.5970153808594,
+          "bottom": 377.5179443359375,
+          "lx": 136.17175181960002,
+          "ly": 272.0153855121928,
+          "lw": 163.99984507024425,
+          "lh": 115.34366538913568,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        405,
+        648
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 404.9960632324219,
+        "h": 594,
+        "right": 404.9960632324219,
+        "bottom": 612
+      },
+      "scale": 0.9281258395780123,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0030765533447265625,
+          "w": 404.9960632324219,
+          "h": 647.9907836914062,
+          "right": 404.9960632324219,
+          "bottom": 647.993860244751,
+          "lx": 0,
+          "ly": -19.390607048326412,
+          "lw": 436.359,
+          "lh": 698.1712565895439,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -75.5158462524414,
+          "w": 404.9960632324219,
+          "h": 799.01416015625,
+          "right": 404.9960632324219,
+          "bottom": 723.4983139038086,
+          "lx": 0,
+          "ly": -100.75772299902772,
+          "lw": 436.359,
+          "lh": 860.889898852008,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        405,
+        648
+      ],
+      "logical": [
+        436,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 82,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 863.9762573242188,
+        "h": 1044,
+        "right": 863.9762573242188,
+        "bottom": 1080
+      },
+      "scale": 1.6312488219836054,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.010547637939453125,
+          "w": 863.9762573242188,
+          "h": 1151.993896484375,
+          "right": 863.9762573242188,
+          "bottom": 1152.0044441223145,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 298.212890625,
+          "y": 481.91748046875,
+          "w": 267.5250244140625,
+          "h": 188.15447998046875,
+          "right": 565.7379150390625,
+          "bottom": 670.0719604492188,
+          "lx": 182.81263201917403,
+          "ly": 273.3595724081581,
+          "lw": 164.00013340009707,
+          "lh": 115.34382581295728,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        864,
+        1152
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 863.9762573242188,
+        "h": 1044,
+        "right": 863.9762573242188,
+        "bottom": 1080
+      },
+      "scale": 1.6312488219836054,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.010547637939453125,
+          "w": 863.9762573242188,
+          "h": 1151.993896484375,
+          "right": 863.9762573242188,
+          "bottom": 1152.0044441223145,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -276.2696838378906,
+          "w": 863.9762573242188,
+          "h": 1704.52880859375,
+          "right": 863.9762573242188,
+          "bottom": 1428.2591247558594,
+          "lx": 0,
+          "ly": -191.4298294837506,
+          "lw": 529.641,
+          "lh": 1044.9226295967746,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        864,
+        1152
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 170,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0070323944091796875,
+          "w": 575.9841918945312,
+          "h": 767.9959106445312,
+          "right": 575.9841918945312,
+          "bottom": 768.0029430389404,
+          "lx": 0,
+          "ly": -22.062514100941907,
+          "lw": 529.641,
+          "lh": 706.2036212691103,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 198.80859375,
+          "y": 321.2783203125,
+          "w": 178.35000610351562,
+          "h": 125.43630981445312,
+          "right": 377.1585998535156,
+          "bottom": 446.7146301269531,
+          "lx": 182.81262556182227,
+          "ly": 273.35956275248554,
+          "lw": 164.00011825319157,
+          "lh": 115.34381238470156,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        576,
+        768
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0070323944091796875,
+          "w": 575.9841918945312,
+          "h": 767.9959106445312,
+          "right": 575.9841918945312,
+          "bottom": 768.0029430389404,
+          "lx": 0,
+          "ly": -22.062514100941907,
+          "lw": 529.641,
+          "lh": 706.2036212691103,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -184.17977905273438,
+          "w": 575.9841918945312,
+          "h": 1136.3525390625,
+          "right": 575.9841918945312,
+          "bottom": 952.1727600097656,
+          "lx": 0,
+          "ly": -191.42981336796677,
+          "lw": 529.641,
+          "lh": 1044.9225926877662,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        576,
+        768
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 170,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 431.9881286621094,
+        "h": 522,
+        "right": 431.9881286621094,
+        "bottom": 540
+      },
+      "scale": 0.8156244109918027,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0052738189697265625,
+          "w": 431.9881286621094,
+          "h": 575.9969482421875,
+          "right": 431.9881286621094,
+          "bottom": 576.0022220611572,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 149.1064453125,
+          "y": 240.958740234375,
+          "w": 133.76251220703125,
+          "h": 94.07723999023438,
+          "right": 282.86895751953125,
+          "bottom": 335.0359802246094,
+          "lx": 182.81263201917403,
+          "ly": 273.3595724081581,
+          "lw": 164.00013340009707,
+          "lh": 115.34382581295728,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        432,
+        576
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 431.9881286621094,
+        "h": 522,
+        "right": 431.9881286621094,
+        "bottom": 540
+      },
+      "scale": 0.8156244109918027,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0052738189697265625,
+          "w": 431.9881286621094,
+          "h": 575.9969482421875,
+          "right": 431.9881286621094,
+          "bottom": 576.0022220611572,
+          "lx": 0,
+          "ly": -22.062515464867722,
+          "lw": 529.641,
+          "lh": 706.2036649219127,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -138.1348419189453,
+          "w": 431.9881286621094,
+          "h": 852.264404296875,
+          "right": 431.9881286621094,
+          "bottom": 714.1295623779297,
+          "lx": 0,
+          "ly": -191.4298294837506,
+          "lw": 529.641,
+          "lh": 1044.9226295967746,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        432,
+        576
+      ],
+      "logical": [
+        530,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 170,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 2,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 1151.99560546875,
+        "h": 756,
+        "right": 1151.99560546875,
+        "bottom": 792
+      },
+      "scale": 1.1812504542179108,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.0087890625,
+          "w": 1151.99560546875,
+          "h": 863.9920654296875,
+          "right": 1151.99560546875,
+          "bottom": 864.0008544921875,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 479.1260681152344,
+          "y": 363.8706970214844,
+          "w": 193.72500610351562,
+          "h": 136.24978637695312,
+          "right": 672.85107421875,
+          "bottom": 500.1204833984375,
+          "lx": 405.60921386689074,
+          "ly": 277.562388103853,
+          "lw": 163.99994210523138,
+          "lh": 115.34369014669474,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        1152,
+        864
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 2,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 1151.99560546875,
+        "h": 756,
+        "right": 1151.99560546875,
+        "bottom": 792
+      },
+      "scale": 1.1812504542179108,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.0087890625,
+          "w": 1151.99560546875,
+          "h": 863.9920654296875,
+          "right": 1151.99560546875,
+          "bottom": 864.0008544921875,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -704.3945922851562,
+          "w": 1151.99560546875,
+          "h": 2272.7802734375,
+          "right": 1151.99560546875,
+          "bottom": 1568.3856811523438,
+          "lx": 0,
+          "ly": -626.7888318192106,
+          "lw": 975.234,
+          "lh": 1924.0460524878915,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        1152,
+        864
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 597,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 3,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 767.9970703125,
+        "h": 504,
+        "right": 767.9970703125,
+        "bottom": 528
+      },
+      "scale": 0.7875003028119405,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.005859375,
+          "w": 767.9970703125,
+          "h": 575.9947509765625,
+          "right": 767.9970703125,
+          "bottom": 576.0006103515625,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4216247534742,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 319.4173889160156,
+          "y": 242.58047485351562,
+          "w": 129.14999389648438,
+          "h": 90.83322143554688,
+          "right": 448.5673828125,
+          "bottom": 333.4136962890625,
+          "lx": 405.60922678437913,
+          "ly": 277.56240102134143,
+          "lw": 163.99992918774296,
+          "lh": 115.34372889916,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        768,
+        576
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 3,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 767.9970703125,
+        "h": 504,
+        "right": 767.9970703125,
+        "bottom": 528
+      },
+      "scale": 0.7875003028119405,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.005859375,
+          "w": 767.9970703125,
+          "h": 575.9947509765625,
+          "right": 767.9970703125,
+          "bottom": 576.0006103515625,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4216247534742,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -469.5964050292969,
+          "w": 767.9970703125,
+          "h": 1515.18701171875,
+          "right": 767.9970703125,
+          "bottom": 1045.5906066894531,
+          "lx": 0,
+          "ly": -626.788844736699,
+          "lw": 975.234,
+          "lh": 1924.0462591677062,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        768,
+        576
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 597,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 4,
+      "phase": "after",
+      "label": "studio",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 575.997802734375,
+        "h": 378,
+        "right": 575.997802734375,
+        "bottom": 396
+      },
+      "scale": 0.5906252271089554,
+      "boxes": {
+        ".studio-splash-screen": {
+          "x": 0,
+          "y": 0.00439453125,
+          "w": 575.997802734375,
+          "h": 431.99603271484375,
+          "right": 575.997802734375,
+          "bottom": 432.00042724609375,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        ".studio-splash-cover": {
+          "x": 239.5630340576172,
+          "y": 181.9353485107422,
+          "w": 96.86250305175781,
+          "h": 68.12489318847656,
+          "right": 336.425537109375,
+          "bottom": 250.06024169921875,
+          "lx": 405.60921386689074,
+          "ly": 277.562388103853,
+          "lw": 163.99994210523138,
+          "lh": 115.34369014669474,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        576,
+        432
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-studio-splash",
+      "overflow": 0,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 4,
+      "phase": "after",
+      "label": "cover",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 575.997802734375,
+        "h": 378,
+        "right": 575.997802734375,
+        "bottom": 396
+      },
+      "scale": 0.5906252271089554,
+      "boxes": {
+        ".splash-screen": {
+          "x": 0,
+          "y": 0.00439453125,
+          "w": 575.997802734375,
+          "h": 431.99603271484375,
+          "right": 575.997802734375,
+          "bottom": 432.00042724609375,
+          "lx": 0,
+          "ly": -30.46873828406633,
+          "lw": 975.234,
+          "lh": 731.4215730835206,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        },
+        "#product-cover": {
+          "x": 0,
+          "y": -352.1972961425781,
+          "w": 575.997802734375,
+          "h": 1136.39013671875,
+          "right": 575.997802734375,
+          "bottom": 784.1928405761719,
+          "lx": 0,
+          "ly": -626.7888318192106,
+          "lw": 975.234,
+          "lh": 1924.0460524878915,
+          "font": "16px",
+          "color": "rgb(54, 60, 70)"
+        }
+      },
+      "viewport": [
+        576,
+        432
+      ],
+      "logical": [
+        975,
+        640
+      ],
+      "screen": "screen-splash",
+      "overflow": 597,
+      "boardCount": 0,
+      "cover": {
+        "source": [
+          1440,
+          2841
+        ],
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "bodyOverflow": 0
+    }
+  ],
+  "captures": [
+    {
+      "file": "before/reference-studio.png",
+      "physical": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/reference-cover.png",
+      "physical": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/tall-phone-studio.png",
+      "physical": [
+        1080,
+        2700
+      ]
+    },
+    {
+      "file": "before/tall-phone-cover.png",
+      "physical": [
+        1080,
+        2700
+      ]
+    },
+    {
+      "file": "before/tablet-4x3-studio.png",
+      "physical": [
+        1728,
+        2304
+      ]
+    },
+    {
+      "file": "before/tablet-4x3-cover.png",
+      "physical": [
+        1728,
+        2304
+      ]
+    },
+    {
+      "file": "after/reference-studio.png",
+      "physical": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/reference-cover.png",
+      "physical": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/tall-phone-studio.png",
+      "physical": [
+        1080,
+        2700
+      ]
+    },
+    {
+      "file": "after/tall-phone-cover.png",
+      "physical": [
+        1080,
+        2700
+      ]
+    },
+    {
+      "file": "after/tablet-4x3-studio.png",
+      "physical": [
+        1728,
+        2304
+      ]
+    },
+    {
+      "file": "after/tablet-4x3-cover.png",
+      "physical": [
+        1728,
+        2304
+      ]
+    }
+  ],
+  "densityComparisons": [
+    {
+      "profile": "phone",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "profile": "tall-phone",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "profile": "short-phone",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "profile": "tablet-16x10",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "profile": "tablet-4x3",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "profile": "wide-window",
+      "label": "cover",
+      "densities": [
+        2,
+        3,
+        4
+      ],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "coverCrops": [
+    {
+      "profile": "reference",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 37.28125
+    },
+    {
+      "profile": "phone",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 52.3125
+    },
+    {
+      "profile": "phone",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 34.875
+    },
+    {
+      "profile": "phone",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 26.15625
+    },
+    {
+      "profile": "tall-phone",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 142.3125
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 94.875
+    },
+    {
+      "profile": "tall-phone",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2841
+      ],
+      "removedPercent": [
+        0,
+        0
+      ],
+      "whiteSpaceAboveBelowEach": 71.15625
+    },
+    {
+      "profile": "short-phone",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2592
+      ],
+      "removedPercent": [
+        0,
+        8.76451953537487
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2592
+      ],
+      "removedPercent": [
+        0,
+        8.76451953537487
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2592
+      ],
+      "removedPercent": [
+        0,
+        8.76451953537487
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2304
+      ],
+      "removedPercent": [
+        0,
+        18.901795142555432
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2304
+      ],
+      "removedPercent": [
+        0,
+        18.901795142555432
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-16x10",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        2304
+      ],
+      "removedPercent": [
+        0,
+        18.901795142555432
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1920
+      ],
+      "removedPercent": [
+        0,
+        32.418162618796195
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1920
+      ],
+      "removedPercent": [
+        0,
+        32.418162618796195
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "tablet-4x3",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1920
+      ],
+      "removedPercent": [
+        0,
+        32.418162618796195
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 2,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1080
+      ],
+      "removedPercent": [
+        0,
+        61.98521647307287
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 3,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1080
+      ],
+      "removedPercent": [
+        0,
+        61.98521647307287
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    },
+    {
+      "profile": "wide-window",
+      "density": 4,
+      "original": [
+        1440,
+        2841
+      ],
+      "visibleSource": [
+        1440,
+        1080
+      ],
+      "removedPercent": [
+        0,
+        61.98521647307287
+      ],
+      "whiteSpaceAboveBelowEach": 0
+    }
+  ],
+  "browser": "154.0.8037.58"
+}

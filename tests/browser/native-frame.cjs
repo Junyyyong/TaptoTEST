@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const root = path.resolve(__dirname, '../..');
 const out = process.env.FRAME_REPORT_DIR;
 const baseline = process.env.BASELINE_WEB;
-const report = { nativeDeviceTested: false, designCanvas: [390, 844], checks: [], errors: [], captures: [], webComparisons: [] };
+const report = { nativeDeviceTested: false, referenceCanvas: [390, 844], responsiveMinHeight: 640, checks: [], errors: [], captures: [], webComparisons: [] };
 const servers = [];
 async function serve(dir) {
   const mime = { '.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.webp':'image/webp', '.png':'image/png', '.svg':'image/svg+xml', '.woff2':'font/woff2', '.mp3':'audio/mpeg', '.mp4':'video/mp4', '.webm':'video/webm' };
@@ -31,7 +31,7 @@ async function snapshot(page, label, density, bars) {
   const value = await page.evaluate(() => {
     const rect = s => { const r = document.querySelector(s).getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,bottom:r.bottom,right:r.right}; };
     const app = document.querySelector('#app'), frame = rect('#app');
-    const scale = frame.w / app.clientWidth;
+    const scale = frame.w / parseFloat(getComputedStyle(app).width);
     const visible = [...document.querySelectorAll('#app .screen')].find(s => !s.classList.contains('hidden'));
     const selectors = ['#picture-board','#target-preview','.unit-reveal','#target-character-name','#progress-label','#montage-status','.brand-mark','#mode-unit','#btn-title-settings','#btn-title-music','#mode-intro-title','#btn-mode-intro-start','#help-title','#btn-resume','#result-title','.result-primary','#btn-again'];
     const boxes = {};
@@ -44,10 +44,12 @@ async function snapshot(page, label, density, bars) {
     return {frame,scale,boxes,screen:visible?.id,boardCount:document.querySelectorAll('#picture-board button').length,overflow:visible ? visible.scrollHeight-visible.clientHeight : null,viewport:[innerWidth,innerHeight]};
   });
   if (density) {
-    const expectedScale = Math.min((value.viewport[0]-bars.left-bars.right)/390,(value.viewport[1]-bars.top-bars.bottom)/844);
+    const expectedScale = Math.min((value.viewport[0]-bars.left-bars.right)/390,(value.viewport[1]-bars.top-bars.bottom)/640);
     assert.ok(Math.abs(value.scale-expectedScale)<.001, label+': uniform scale');
     assert.ok(value.frame.y >= bars.top-.1 && value.frame.bottom <= value.viewport[1]-bars.bottom+.1, label+': vertical safe area');
     assert.ok(value.frame.x >= bars.left-.1 && value.frame.right <= value.viewport[0]-bars.right+.1, label+': horizontal safe area');
+    assert.ok(Math.abs(value.frame.w-(value.viewport[0]-bars.left-bars.right))<.5, label+': full usable width');
+    assert.ok(Math.abs(value.frame.h-(value.viewport[1]-bars.top-bars.bottom))<.5, label+': full usable height');
     for (const selector of ['#picture-board','#montage-status','#btn-again','#btn-resume','#btn-mode-intro-start']) {
       const b = value.boxes[selector]; if (!b) continue;
       assert.ok(b.bottom <= value.frame.bottom+.5, label+': '+selector+' bottom');

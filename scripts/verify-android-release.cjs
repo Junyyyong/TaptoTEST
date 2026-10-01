@@ -35,8 +35,11 @@ async function main() {
   const config = parseInt(manifest.match(/android:configChanges="(0x[0-9a-f]+)"/i)[1], 16);
   assert.ok((config & 0x40000000) !== 0, 'fontScale configuration callback registered');
   assert.ok(bundletool('dump', 'resources', '--resource=string/app_name', '--values').includes('"TAPtoTEST"'));
-  assert.ok(bundletool('dump', 'resources', '--resource=color/ic_launcher_background', '--values').includes('#ffffff'));
   const icons = JSON.parse(fs.readFileSync(path.join(root, 'store/taptotest-icon-manifest.json')));
+  const expectedIconBackground = icons.background || '#ffffff';
+  const builtIconColors = bundletool('dump', 'resources', '--resource=color/ic_launcher_background', '--values')
+    .match(/#[0-9a-f]{6,8}\b/gi) || [];
+  assert.ok(builtIconColors.map(color => '#' + color.slice(-6).toLowerCase()).includes(expectedIconBackground.toLowerCase()));
   const entries = execFileSync('unzip', ['-Z1', bundle], { encoding: 'utf8' }).trim().split('\n');
   const verified = [];
   for (const icon of icons.files.filter(file => file.path.startsWith('android/'))) {
@@ -90,7 +93,7 @@ async function main() {
     uncommittedChangesIncluded: true, iconsPixelVerified: verified,
     sourceIconSha256: icons.sourceSHA256,
     signatureAndWebVerification: signature.trim().split('\n'), unchangedSourcePaths: unchangedPaths,
-    checks: ['bundletool validate passed', 'manifest/version/app ID/fontScale flag passed', '15 icon payloads pixel-identical', 'adaptive resources present', 'white icon background, correct app label', 'old delivered AAB hash unchanged', 'DEX contains lifecycle callbacks and setTextZoom(100)'],
+    checks: ['bundletool validate passed', 'manifest/version/app ID/fontScale flag passed', '15 icon payloads pixel-identical', 'adaptive resources present', `${expectedIconBackground} icon background, correct app label`, 'old delivered AAB hash unchanged', 'DEX contains lifecycle callbacks and setTextZoom(100)'],
     limitations: ['No connected Android device/emulator: real fontScale, launcher and in-place update not tested', 'Not uploaded to Google Play; Git publication is verified separately from this bundle check'],
     capturedAt: new Date().toISOString(),
   };

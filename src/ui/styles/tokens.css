@@ -222,21 +222,23 @@ body {
   background: var(--ui-background);
 }
 
-/* The approved 390×844 composition scales uniformly into Android's usable
-   window. Safe areas are outside this canvas, applied exactly once by JS. */
+/* Android uses density-independent logical dimensions with a responsive
+   aspect ratio. The canvas fills the usable window; splash and reaction
+   backdrops paint into system-bar overlaps. Controls stay inside the canvas. */
 #app.is-native-frame {
   position: absolute;
   left: var(--frame-left, 0px);
   top: var(--frame-top, 0px);
-  width: 390px;
-  height: 844px;
+  width: var(--frame-width, 390px);
+  height: var(--frame-height, 844px);
+  overflow: visible;
   transform: scale(var(--frame-scale, 1));
   transform-origin: top left;
   --app-safe-top: 0px;
   --app-safe-right: 0px;
   --app-safe-bottom: 0px;
   --app-safe-left: 0px;
-  --app-content-h: 844px;
+  --app-content-h: var(--app-h, 844px);
 }
 
 #app::before {

@@ -1,0 +1,5637 @@
+{
+  "capturedAt": "2026-10-01T06:52:41.699Z",
+  "nativeDeviceTested": false,
+  "aabCreated": false,
+  "profiles": [
+    {
+      "id": "reference",
+      "physical": [
+        780,
+        1688
+      ],
+      "density": 2,
+      "insets": [
+        48,
+        0,
+        96,
+        0
+      ],
+      "native": true,
+      "capture": true
+    },
+    {
+      "id": "phone-density-2",
+      "physical": [
+        1080,
+        2340
+      ],
+      "density": 2,
+      "insets": [
+        72,
+        0,
+        144,
+        0
+      ],
+      "native": true
+    },
+    {
+      "id": "phone-density-4",
+      "physical": [
+        1080,
+        2340
+      ],
+      "density": 4,
+      "insets": [
+        72,
+        0,
+        144,
+        0
+      ],
+      "native": true
+    },
+    {
+      "id": "tall-phone",
+      "physical": [
+        1080,
+        2700
+      ],
+      "density": 3,
+      "insets": [
+        72,
+        0,
+        144,
+        0
+      ],
+      "native": true
+    },
+    {
+      "id": "short-phone",
+      "physical": [
+        1080,
+        1944
+      ],
+      "density": 3,
+      "insets": [
+        72,
+        0,
+        144,
+        0
+      ],
+      "native": true
+    },
+    {
+      "id": "tablet",
+      "physical": [
+        1728,
+        2304
+      ],
+      "density": 3,
+      "insets": [
+        72,
+        0,
+        144,
+        0
+      ],
+      "native": true
+    },
+    {
+      "id": "wide-cutout",
+      "physical": [
+        2304,
+        1728
+      ],
+      "density": 3,
+      "insets": [
+        60,
+        18,
+        90,
+        72
+      ],
+      "native": true
+    },
+    {
+      "id": "web",
+      "physical": [
+        780,
+        1688
+      ],
+      "density": 2,
+      "insets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native": false
+    },
+    {
+      "id": "web-safe-area",
+      "physical": [
+        780,
+        1688
+      ],
+      "density": 2,
+      "insets": [
+        48,
+        0,
+        96,
+        40
+      ],
+      "native": false
+    }
+  ],
+  "screens": [
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 18,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 58,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 140.28125,
+          "y": 268.84375,
+          "w": 109.421875,
+          "h": 31,
+          "right": 249.703125,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 106.53125,
+          "y": 475.84375,
+          "w": 176.9375,
+          "h": 17,
+          "right": 283.46875,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 336,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 376,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 403.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 773.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "puzzle-success",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 336,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 376,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 403.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 773.671875
+        },
+        "#cheer-word": {
+          "x": 126.765625,
+          "y": 116.625,
+          "w": 136.453125,
+          "h": 51.484375,
+          "right": 263.21875,
+          "bottom": 168.109375
+        },
+        "#cheer-clip": {
+          "x": 11.703125,
+          "y": 162.109375,
+          "w": 366.59375,
+          "h": 366.59375,
+          "right": 378.296875,
+          "bottom": 528.703125
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 42,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 86
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 18,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 58,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 122.65625,
+          "y": 268.84375,
+          "w": 144.671875,
+          "h": 31,
+          "right": 267.328125,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 109.125,
+          "y": 475.84375,
+          "w": 171.75,
+          "h": 17,
+          "right": 280.875,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 336,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 376,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 13.5,
+          "y": 403.671875,
+          "w": 363,
+          "h": 363,
+          "right": 376.5,
+          "bottom": 766.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 18,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 58,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 125.578125,
+          "y": 268.84375,
+          "w": 138.828125,
+          "h": 31,
+          "right": 264.40625,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 109.984375,
+          "y": 475.84375,
+          "w": 170.015625,
+          "h": 17,
+          "right": 280,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 336,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 376,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 98.828125,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 334.015625
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 369.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 739.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 8,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 48,
+          "bottom": 75
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 86,
+          "w": 390,
+          "h": 710,
+          "right": 390,
+          "bottom": 796
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "before",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 336,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 376,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 98.828125,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 334.015625
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 369.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 739.671875
+        },
+        "#cheer-word": {
+          "x": 70.046875,
+          "y": 162.953125,
+          "w": 249.890625,
+          "h": 51.484375,
+          "right": 319.9375,
+          "bottom": 214.4375
+        },
+        "#cheer-clip": {
+          "x": 54.59375,
+          "y": 244.4375,
+          "w": 280.796875,
+          "h": 280.796875,
+          "right": 335.390625,
+          "bottom": 525.234375
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 42,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 86
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 140.28125,
+          "y": 268.84375,
+          "w": 109.421875,
+          "h": 31,
+          "right": 249.703125,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 106.53125,
+          "y": 475.84375,
+          "w": 176.9375,
+          "h": 17,
+          "right": 283.46875,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 403.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 773.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "puzzle-success",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 403.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 773.671875
+        },
+        "#cheer-word": {
+          "x": 126.765625,
+          "y": 116.625,
+          "w": 136.453125,
+          "h": 51.484375,
+          "right": 263.21875,
+          "bottom": 168.109375
+        },
+        "#cheer-clip": {
+          "x": 11.703125,
+          "y": 162.109375,
+          "w": 366.59375,
+          "h": 366.59375,
+          "right": 378.296875,
+          "bottom": 528.703125
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 42,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 86
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 122.65625,
+          "y": 268.84375,
+          "w": 144.671875,
+          "h": 31,
+          "right": 267.328125,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 109.125,
+          "y": 475.84375,
+          "w": 171.75,
+          "h": 17,
+          "right": 280.875,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 134.25,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 369.4375
+        },
+        "#picture-board": {
+          "x": 13.5,
+          "y": 403.671875,
+          "w": 363,
+          "h": 363,
+          "right": 376.5,
+          "bottom": 766.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 125.578125,
+          "y": 268.84375,
+          "w": 138.828125,
+          "h": 31,
+          "right": 264.40625,
+          "bottom": 299.84375
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 317.84375,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 457.84375
+        },
+        "#mode-intro-note": {
+          "x": 109.984375,
+          "y": 475.84375,
+          "w": 170.015625,
+          "h": 17,
+          "right": 280,
+          "bottom": 492.84375
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 518.84375,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 566.84375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 98.828125,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 334.015625
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 369.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 739.671875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 86,
+          "w": 390,
+          "h": 710,
+          "right": 390,
+          "bottom": 796
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "reference",
+      "density": 2,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 390,
+        "h": 772,
+        "right": 390,
+        "bottom": 796
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 98.828125,
+          "w": 335.390625,
+          "h": 235.1875,
+          "right": 362.6875,
+          "bottom": 334.015625
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 369.671875,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 739.671875
+        },
+        "#cheer-word": {
+          "x": 70.046875,
+          "y": 162.953125,
+          "w": 249.890625,
+          "h": 51.484375,
+          "right": 319.9375,
+          "bottom": 214.4375
+        },
+        "#cheer-clip": {
+          "x": 54.59375,
+          "y": 244.4375,
+          "w": 280.796875,
+          "h": 280.796875,
+          "right": 335.390625,
+          "bottom": 525.234375
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 42,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 86
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#mode-intro-title": {
+          "x": 194.23558044433594,
+          "y": 371.74761962890625,
+          "w": 151.50721740722656,
+          "h": 42.923065185546875,
+          "right": 345.7427978515625,
+          "bottom": 414.6706848144531
+        },
+        ".pick-intro-mark": {
+          "x": 173.07693481445312,
+          "y": 439.59375,
+          "w": 193.84616088867188,
+          "h": 193.84619140625,
+          "right": 366.923095703125,
+          "bottom": 633.43994140625
+        },
+        "#mode-intro-note": {
+          "x": 147.5048065185547,
+          "y": 658.3629760742188,
+          "w": 244.9904022216797,
+          "h": 23.53851318359375,
+          "right": 392.4952087402344,
+          "bottom": 681.9014892578125
+        },
+        "#btn-mode-intro-start": {
+          "x": 90,
+          "y": 717.9014892578125,
+          "w": 360,
+          "h": 66.46148681640625,
+          "right": 450,
+          "bottom": 784.3629760742188
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#btn-pause": {
+          "x": 470.7692565917969,
+          "y": 51.230770111083984,
+          "w": 55.384613037109375,
+          "h": 55.38461685180664,
+          "right": 526.1538696289062,
+          "bottom": 106.61538696289062
+        },
+        "#target-preview": {
+          "x": 37.79567337036133,
+          "y": 188.45913696289062,
+          "w": 464.38702392578125,
+          "h": 322.875,
+          "right": 502.1826972961426,
+          "bottom": 511.3341369628906
+        },
+        "#picture-board": {
+          "x": 13.84615421295166,
+          "y": 558.34619140625,
+          "w": 512.3077392578125,
+          "h": 512.3077392578125,
+          "right": 526.1538934707642,
+          "bottom": 1070.6539306640625
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#mode-intro-title": {
+          "x": 169.8317413330078,
+          "y": 371.74761962890625,
+          "w": 200.3148956298828,
+          "h": 42.923065185546875,
+          "right": 370.1466369628906,
+          "bottom": 414.6706848144531
+        },
+        ".pick-intro-mark": {
+          "x": 173.07693481445312,
+          "y": 439.59375,
+          "w": 193.84616088867188,
+          "h": 193.84619140625,
+          "right": 366.923095703125,
+          "bottom": 633.43994140625
+        },
+        "#mode-intro-note": {
+          "x": 151.09616088867188,
+          "y": 658.3629760742188,
+          "w": 237.80770874023438,
+          "h": 23.53851318359375,
+          "right": 388.90386962890625,
+          "bottom": 681.9014892578125
+        },
+        "#btn-mode-intro-start": {
+          "x": 90,
+          "y": 717.9014892578125,
+          "w": 360,
+          "h": 66.46148681640625,
+          "right": 450,
+          "bottom": 784.3629760742188
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#btn-pause": {
+          "x": 470.7692565917969,
+          "y": 51.230770111083984,
+          "w": 55.384613037109375,
+          "h": 55.38461685180664,
+          "right": 526.1538696289062,
+          "bottom": 106.61538696289062
+        },
+        "#target-preview": {
+          "x": 37.79567337036133,
+          "y": 188.45913696289062,
+          "w": 464.38702392578125,
+          "h": 322.875,
+          "right": 502.1826972961426,
+          "bottom": 511.3341369628906
+        },
+        "#picture-board": {
+          "x": 20.076923370361328,
+          "y": 558.34619140625,
+          "w": 499.8461608886719,
+          "h": 499.84619140625,
+          "right": 519.9230842590332,
+          "bottom": 1058.1923828125
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#mode-intro-title": {
+          "x": 173.87741088867188,
+          "y": 371.74761962890625,
+          "w": 192.22357177734375,
+          "h": 42.923065185546875,
+          "right": 366.1009826660156,
+          "bottom": 414.6706848144531
+        },
+        ".pick-intro-mark": {
+          "x": 173.07693481445312,
+          "y": 439.59375,
+          "w": 193.84616088867188,
+          "h": 193.84619140625,
+          "right": 366.923095703125,
+          "bottom": 633.43994140625
+        },
+        "#mode-intro-note": {
+          "x": 152.2860565185547,
+          "y": 658.3629760742188,
+          "w": 235.40626525878906,
+          "h": 23.53851318359375,
+          "right": 387.69232177734375,
+          "bottom": 681.9014892578125
+        },
+        "#btn-mode-intro-start": {
+          "x": 90,
+          "y": 717.9014892578125,
+          "w": 360,
+          "h": 66.46148681640625,
+          "right": 450,
+          "bottom": 784.3629760742188
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#btn-pause": {
+          "x": 470.7692565917969,
+          "y": 51.230770111083984,
+          "w": 55.384613037109375,
+          "h": 55.38461685180664,
+          "right": 526.1538696289062,
+          "bottom": 106.61538696289062
+        },
+        "#target-preview": {
+          "x": 37.79567337036133,
+          "y": 139.41346740722656,
+          "w": 464.38702392578125,
+          "h": 322.875,
+          "right": 502.1826972961426,
+          "bottom": 462.28846740722656
+        },
+        "#picture-board": {
+          "x": 13.84615421295166,
+          "y": 511.2692565917969,
+          "w": 512.3077392578125,
+          "h": 512.3077392578125,
+          "right": 526.1538934707642,
+          "bottom": 1023.5769958496094
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 121.84615325927734,
+          "w": 540,
+          "h": 976.1538696289062,
+          "right": 540,
+          "bottom": 1098.0000228881836
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -36,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-2",
+      "density": 2,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 36,
+        "w": 540,
+        "h": 1062,
+        "right": 540,
+        "bottom": 1098
+      },
+      "scale": 1.3846153846153846,
+      "boxes": {
+        "#btn-back": {
+          "x": 13.84615421295166,
+          "y": 51.230770111083984,
+          "w": 55.384620666503906,
+          "h": 55.38461685180664,
+          "right": 69.23077487945557,
+          "bottom": 106.61538696289062
+        },
+        "#btn-pause": {
+          "x": 470.7692565917969,
+          "y": 51.230770111083984,
+          "w": 55.384613037109375,
+          "h": 55.38461685180664,
+          "right": 526.1538696289062,
+          "bottom": 106.61538696289062
+        },
+        "#target-preview": {
+          "x": 37.79567337036133,
+          "y": 139.41346740722656,
+          "w": 464.38702392578125,
+          "h": 322.875,
+          "right": 502.1826972961426,
+          "bottom": 462.28846740722656
+        },
+        "#picture-board": {
+          "x": 13.84615421295166,
+          "y": 511.2692565917969,
+          "w": 512.3077392578125,
+          "h": 512.3077392578125,
+          "right": 526.1538934707642,
+          "bottom": 1023.5769958496094
+        },
+        "#cheer-word": {
+          "x": 96.98798370361328,
+          "y": 227.14183044433594,
+          "w": 346.0024108886719,
+          "h": 71.28605651855469,
+          "right": 442.99039459228516,
+          "bottom": 298.4278869628906
+        },
+        "#cheer-clip": {
+          "x": 75.59134674072266,
+          "y": 339.9663391113281,
+          "w": 388.7956848144531,
+          "h": 388.7956848144531,
+          "right": 464.3870315551758,
+          "bottom": 728.7620239257812
+        },
+        "#btn-cheer-continue": {
+          "x": 387.454345703125,
+          "y": 60.92307662963867,
+          "w": 127.62261962890625,
+          "h": 60.92307662963867,
+          "right": 515.0769653320312,
+          "bottom": 121.84615325927734
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 1170
+      },
+      "window": [
+        540,
+        1170
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#mode-intro-title": {
+          "x": 97.11779022216797,
+          "y": 185.87380981445312,
+          "w": 75.75360870361328,
+          "h": 21.461532592773438,
+          "right": 172.87139892578125,
+          "bottom": 207.33534240722656
+        },
+        ".pick-intro-mark": {
+          "x": 86.53846740722656,
+          "y": 219.796875,
+          "w": 96.92308044433594,
+          "h": 96.923095703125,
+          "right": 183.4615478515625,
+          "bottom": 316.719970703125
+        },
+        "#mode-intro-note": {
+          "x": 73.75240325927734,
+          "y": 329.1814880371094,
+          "w": 122.49520111083984,
+          "h": 11.769256591796875,
+          "right": 196.2476043701172,
+          "bottom": 340.95074462890625
+        },
+        "#btn-mode-intro-start": {
+          "x": 45,
+          "y": 358.95074462890625,
+          "w": 180,
+          "h": 33.230743408203125,
+          "right": 225,
+          "bottom": 392.1814880371094
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#btn-pause": {
+          "x": 235.38462829589844,
+          "y": 25.615385055541992,
+          "w": 27.692306518554688,
+          "h": 27.69230842590332,
+          "right": 263.0769348144531,
+          "bottom": 53.30769348144531
+        },
+        "#target-preview": {
+          "x": 18.897836685180664,
+          "y": 94.22956848144531,
+          "w": 232.19351196289062,
+          "h": 161.4375,
+          "right": 251.0913486480713,
+          "bottom": 255.6670684814453
+        },
+        "#picture-board": {
+          "x": 6.92307710647583,
+          "y": 279.173095703125,
+          "w": 256.15386962890625,
+          "h": 256.15386962890625,
+          "right": 263.0769467353821,
+          "bottom": 535.3269653320312
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#mode-intro-title": {
+          "x": 84.9158706665039,
+          "y": 185.87380981445312,
+          "w": 100.1574478149414,
+          "h": 21.461532592773438,
+          "right": 185.0733184814453,
+          "bottom": 207.33534240722656
+        },
+        ".pick-intro-mark": {
+          "x": 86.53846740722656,
+          "y": 219.796875,
+          "w": 96.92308044433594,
+          "h": 96.923095703125,
+          "right": 183.4615478515625,
+          "bottom": 316.719970703125
+        },
+        "#mode-intro-note": {
+          "x": 75.54808044433594,
+          "y": 329.1814880371094,
+          "w": 118.90385437011719,
+          "h": 11.769256591796875,
+          "right": 194.45193481445312,
+          "bottom": 340.95074462890625
+        },
+        "#btn-mode-intro-start": {
+          "x": 45,
+          "y": 358.95074462890625,
+          "w": 180,
+          "h": 33.230743408203125,
+          "right": 225,
+          "bottom": 392.1814880371094
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#btn-pause": {
+          "x": 235.38462829589844,
+          "y": 25.615385055541992,
+          "w": 27.692306518554688,
+          "h": 27.69230842590332,
+          "right": 263.0769348144531,
+          "bottom": 53.30769348144531
+        },
+        "#target-preview": {
+          "x": 18.897836685180664,
+          "y": 94.22956848144531,
+          "w": 232.19351196289062,
+          "h": 161.4375,
+          "right": 251.0913486480713,
+          "bottom": 255.6670684814453
+        },
+        "#picture-board": {
+          "x": 10.038461685180664,
+          "y": 279.173095703125,
+          "w": 249.92308044433594,
+          "h": 249.923095703125,
+          "right": 259.9615421295166,
+          "bottom": 529.09619140625
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#mode-intro-title": {
+          "x": 86.93870544433594,
+          "y": 185.87380981445312,
+          "w": 96.11178588867188,
+          "h": 21.461532592773438,
+          "right": 183.0504913330078,
+          "bottom": 207.33534240722656
+        },
+        ".pick-intro-mark": {
+          "x": 86.53846740722656,
+          "y": 219.796875,
+          "w": 96.92308044433594,
+          "h": 96.923095703125,
+          "right": 183.4615478515625,
+          "bottom": 316.719970703125
+        },
+        "#mode-intro-note": {
+          "x": 76.14302825927734,
+          "y": 329.1814880371094,
+          "w": 117.70313262939453,
+          "h": 11.769256591796875,
+          "right": 193.84616088867188,
+          "bottom": 340.95074462890625
+        },
+        "#btn-mode-intro-start": {
+          "x": 45,
+          "y": 358.95074462890625,
+          "w": 180,
+          "h": 33.230743408203125,
+          "right": 225,
+          "bottom": 392.1814880371094
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#btn-pause": {
+          "x": 235.38462829589844,
+          "y": 25.615385055541992,
+          "w": 27.692306518554688,
+          "h": 27.69230842590332,
+          "right": 263.0769348144531,
+          "bottom": 53.30769348144531
+        },
+        "#target-preview": {
+          "x": 18.897836685180664,
+          "y": 69.70673370361328,
+          "w": 232.19351196289062,
+          "h": 161.4375,
+          "right": 251.0913486480713,
+          "bottom": 231.14423370361328
+        },
+        "#picture-board": {
+          "x": 6.92307710647583,
+          "y": 255.63462829589844,
+          "w": 256.15386962890625,
+          "h": 256.15386962890625,
+          "right": 263.0769467353821,
+          "bottom": 511.7884979248047
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 60.92307662963867,
+          "w": 270,
+          "h": 488.0769348144531,
+          "right": 270,
+          "bottom": 549.0000114440918
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -18,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "phone-density-4",
+      "density": 4,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "w": 270,
+        "h": 531,
+        "right": 270,
+        "bottom": 549
+      },
+      "scale": 0.6923076923076923,
+      "boxes": {
+        "#btn-back": {
+          "x": 6.92307710647583,
+          "y": 25.615385055541992,
+          "w": 27.692310333251953,
+          "h": 27.69230842590332,
+          "right": 34.61538743972778,
+          "bottom": 53.30769348144531
+        },
+        "#btn-pause": {
+          "x": 235.38462829589844,
+          "y": 25.615385055541992,
+          "w": 27.692306518554688,
+          "h": 27.69230842590332,
+          "right": 263.0769348144531,
+          "bottom": 53.30769348144531
+        },
+        "#target-preview": {
+          "x": 18.897836685180664,
+          "y": 69.70673370361328,
+          "w": 232.19351196289062,
+          "h": 161.4375,
+          "right": 251.0913486480713,
+          "bottom": 231.14423370361328
+        },
+        "#picture-board": {
+          "x": 6.92307710647583,
+          "y": 255.63462829589844,
+          "w": 256.15386962890625,
+          "h": 256.15386962890625,
+          "right": 263.0769467353821,
+          "bottom": 511.7884979248047
+        },
+        "#cheer-word": {
+          "x": 48.49399185180664,
+          "y": 113.57091522216797,
+          "w": 173.00120544433594,
+          "h": 35.643028259277344,
+          "right": 221.49519729614258,
+          "bottom": 149.2139434814453
+        },
+        "#cheer-clip": {
+          "x": 37.79567337036133,
+          "y": 169.98316955566406,
+          "w": 194.39784240722656,
+          "h": 194.39784240722656,
+          "right": 232.1935157775879,
+          "bottom": 364.3810119628906
+        },
+        "#btn-cheer-continue": {
+          "x": 193.7271728515625,
+          "y": 30.461538314819336,
+          "w": 63.811309814453125,
+          "h": 30.461538314819336,
+          "right": 257.5384826660156,
+          "bottom": 60.92307662963867
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 270,
+        "h": 585
+      },
+      "window": [
+        270,
+        585
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#mode-intro-title": {
+          "x": 129.49038696289062,
+          "y": 304.2403869628906,
+          "w": 101.00480651855469,
+          "h": 28.615386962890625,
+          "right": 230.4951934814453,
+          "bottom": 332.85577392578125
+        },
+        ".pick-intro-mark": {
+          "x": 115.38461303710938,
+          "y": 349.4711608886719,
+          "w": 129.23077392578125,
+          "h": 129.23077392578125,
+          "right": 244.61538696289062,
+          "bottom": 478.7019348144531
+        },
+        "#mode-intro-note": {
+          "x": 98.33654022216797,
+          "y": 495.31732177734375,
+          "w": 163.326904296875,
+          "h": 15.692291259765625,
+          "right": 261.66344451904297,
+          "bottom": 511.0096130371094
+        },
+        "#btn-mode-intro-start": {
+          "x": 60,
+          "y": 535.0096435546875,
+          "w": 240,
+          "h": 44.30767822265625,
+          "right": 300,
+          "bottom": 579.3173217773438
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#btn-pause": {
+          "x": 313.8461608886719,
+          "y": 34.153846740722656,
+          "w": 36.923065185546875,
+          "h": 36.923072814941406,
+          "right": 350.76922607421875,
+          "bottom": 71.07691955566406
+        },
+        "#target-preview": {
+          "x": 25.197114944458008,
+          "y": 129.23077392578125,
+          "w": 309.5913391113281,
+          "h": 263.25,
+          "right": 334.78845405578613,
+          "bottom": 392.48077392578125
+        },
+        "#picture-board": {
+          "x": 9.230769157409668,
+          "y": 431.00482177734375,
+          "w": 341.5384521484375,
+          "h": 341.5384521484375,
+          "right": 350.76922130584717,
+          "bottom": 772.5432739257812
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#mode-intro-title": {
+          "x": 113.22115325927734,
+          "y": 304.2403869628906,
+          "w": 133.54327392578125,
+          "h": 28.615386962890625,
+          "right": 246.7644271850586,
+          "bottom": 332.85577392578125
+        },
+        ".pick-intro-mark": {
+          "x": 115.38461303710938,
+          "y": 349.4711608886719,
+          "w": 129.23077392578125,
+          "h": 129.23077392578125,
+          "right": 244.61538696289062,
+          "bottom": 478.7019348144531
+        },
+        "#mode-intro-note": {
+          "x": 100.73076629638672,
+          "y": 495.31732177734375,
+          "w": 158.5384521484375,
+          "h": 15.692291259765625,
+          "right": 259.2692184448242,
+          "bottom": 511.0096130371094
+        },
+        "#btn-mode-intro-start": {
+          "x": 60,
+          "y": 535.0096435546875,
+          "w": 240,
+          "h": 44.30767822265625,
+          "right": 300,
+          "bottom": 579.3173217773438
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#btn-pause": {
+          "x": 313.8461608886719,
+          "y": 34.153846740722656,
+          "w": 36.923065185546875,
+          "h": 36.923072814941406,
+          "right": 350.76922607421875,
+          "bottom": 71.07691955566406
+        },
+        "#target-preview": {
+          "x": 25.197114944458008,
+          "y": 129.23077392578125,
+          "w": 309.5913391113281,
+          "h": 263.25,
+          "right": 334.78845405578613,
+          "bottom": 392.48077392578125
+        },
+        "#picture-board": {
+          "x": 9.230769157409668,
+          "y": 431.00482177734375,
+          "w": 341.5384521484375,
+          "h": 341.5384521484375,
+          "right": 350.76922130584717,
+          "bottom": 772.5432739257812
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#mode-intro-title": {
+          "x": 115.91826629638672,
+          "y": 304.2403869628906,
+          "w": 128.1490478515625,
+          "h": 28.615386962890625,
+          "right": 244.06731414794922,
+          "bottom": 332.85577392578125
+        },
+        ".pick-intro-mark": {
+          "x": 115.38461303710938,
+          "y": 349.4711608886719,
+          "w": 129.23077392578125,
+          "h": 129.23077392578125,
+          "right": 244.61538696289062,
+          "bottom": 478.7019348144531
+        },
+        "#mode-intro-note": {
+          "x": 101.52404022216797,
+          "y": 495.31732177734375,
+          "w": 156.9375,
+          "h": 15.692291259765625,
+          "right": 258.46154022216797,
+          "bottom": 511.0096130371094
+        },
+        "#btn-mode-intro-start": {
+          "x": 60,
+          "y": 535.0096435546875,
+          "w": 240,
+          "h": 44.30767822265625,
+          "right": 300,
+          "bottom": 579.3173217773438
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#btn-pause": {
+          "x": 313.8461608886719,
+          "y": 34.153846740722656,
+          "w": 36.923065185546875,
+          "h": 36.923072814941406,
+          "right": 350.76922607421875,
+          "bottom": 71.07691955566406
+        },
+        "#target-preview": {
+          "x": 25.197114944458008,
+          "y": 96.53365325927734,
+          "w": 309.5913391113281,
+          "h": 263.25,
+          "right": 334.78845405578613,
+          "bottom": 359.78365325927734
+        },
+        "#picture-board": {
+          "x": 9.230769157409668,
+          "y": 399.6202087402344,
+          "w": 341.5384521484375,
+          "h": 341.5384216308594,
+          "right": 350.76922130584717,
+          "bottom": 741.1586303710938
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 81.23077392578125,
+          "w": 360,
+          "h": 770.7692260742188,
+          "right": 360,
+          "bottom": 852
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tall-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 828,
+        "right": 360,
+        "bottom": 852
+      },
+      "scale": 0.9230769230769231,
+      "boxes": {
+        "#btn-back": {
+          "x": 9.230769157409668,
+          "y": 34.153846740722656,
+          "w": 36.92307662963867,
+          "h": 36.923072814941406,
+          "right": 46.15384578704834,
+          "bottom": 71.07691955566406
+        },
+        "#btn-pause": {
+          "x": 313.8461608886719,
+          "y": 34.153846740722656,
+          "w": 36.923065185546875,
+          "h": 36.923072814941406,
+          "right": 350.76922607421875,
+          "bottom": 71.07691955566406
+        },
+        "#target-preview": {
+          "x": 25.197114944458008,
+          "y": 96.53365325927734,
+          "w": 309.5913391113281,
+          "h": 263.25,
+          "right": 334.78845405578613,
+          "bottom": 359.78365325927734
+        },
+        "#picture-board": {
+          "x": 9.230769157409668,
+          "y": 399.6202087402344,
+          "w": 341.5384521484375,
+          "h": 341.5384216308594,
+          "right": 350.76922130584717,
+          "bottom": 741.1586303710938
+        },
+        "#cheer-word": {
+          "x": 64.65865325927734,
+          "y": 173.03366088867188,
+          "w": 230.66827392578125,
+          "h": 47.52403259277344,
+          "right": 295.3269271850586,
+          "bottom": 220.5576934814453
+        },
+        "#cheer-clip": {
+          "x": 50.394229888916016,
+          "y": 248.25,
+          "w": 259.1971130371094,
+          "h": 259.1971130371094,
+          "right": 309.5913429260254,
+          "bottom": 507.4471130371094
+        },
+        "#btn-cheer-continue": {
+          "x": 258.3028869628906,
+          "y": 40.615386962890625,
+          "w": 85.08172607421875,
+          "h": 40.615386962890625,
+          "right": 343.3846130371094,
+          "bottom": 81.23077392578125
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 900
+      },
+      "window": [
+        360,
+        900
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#mode-intro-title": {
+          "x": 130.7531280517578,
+          "y": 184.01718139648438,
+          "w": 98.47967529296875,
+          "h": 27.899993896484375,
+          "right": 229.23280334472656,
+          "bottom": 211.91717529296875
+        },
+        ".pick-intro-mark": {
+          "x": 117,
+          "y": 228.1171875,
+          "w": 126,
+          "h": 126,
+          "right": 243,
+          "bottom": 354.1171875
+        },
+        "#mode-intro-note": {
+          "x": 100.37812042236328,
+          "y": 370.3171691894531,
+          "w": 159.24374389648438,
+          "h": 15.300018310546875,
+          "right": 259.62186431884766,
+          "bottom": 385.6171875
+        },
+        "#btn-mode-intro-start": {
+          "x": 63,
+          "y": 409.0171813964844,
+          "w": 234,
+          "h": 43.199981689453125,
+          "right": 297,
+          "bottom": 452.2171630859375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#btn-pause": {
+          "x": 315,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 351,
+          "bottom": 65.39999198913574
+        },
+        "#target-preview": {
+          "x": 27,
+          "y": 113.54999542236328,
+          "w": 306,
+          "h": 164.15155029296875,
+          "right": 333,
+          "bottom": 277.70154571533203
+        },
+        "#picture-board": {
+          "x": 37.349998474121094,
+          "y": 306.9515686035156,
+          "w": 285.29998779296875,
+          "h": 285.2999572753906,
+          "right": 322.64998626708984,
+          "bottom": 592.2515258789062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#mode-intro-title": {
+          "x": 114.890625,
+          "y": 184.01718139648438,
+          "w": 130.20468139648438,
+          "h": 27.899993896484375,
+          "right": 245.09530639648438,
+          "bottom": 211.91717529296875
+        },
+        ".pick-intro-mark": {
+          "x": 117,
+          "y": 228.1171875,
+          "w": 126,
+          "h": 126,
+          "right": 243,
+          "bottom": 354.1171875
+        },
+        "#mode-intro-note": {
+          "x": 102.71249389648438,
+          "y": 370.3171691894531,
+          "w": 154.57501220703125,
+          "h": 15.300018310546875,
+          "right": 257.2875061035156,
+          "bottom": 385.6171875
+        },
+        "#btn-mode-intro-start": {
+          "x": 63,
+          "y": 409.0171813964844,
+          "w": 234,
+          "h": 43.199981689453125,
+          "right": 297,
+          "bottom": 452.2171630859375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#btn-pause": {
+          "x": 315,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 351,
+          "bottom": 65.39999198913574
+        },
+        "#target-preview": {
+          "x": 27,
+          "y": 113.54999542236328,
+          "w": 306,
+          "h": 164.15155029296875,
+          "right": 333,
+          "bottom": 277.70154571533203
+        },
+        "#picture-board": {
+          "x": 46.349998474121094,
+          "y": 306.9515686035156,
+          "w": 267.29998779296875,
+          "h": 267.2999572753906,
+          "right": 313.64998626708984,
+          "bottom": 574.2515258789062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#mode-intro-title": {
+          "x": 117.52030944824219,
+          "y": 184.01718139648438,
+          "w": 124.9453125,
+          "h": 27.899993896484375,
+          "right": 242.4656219482422,
+          "bottom": 211.91717529296875
+        },
+        ".pick-intro-mark": {
+          "x": 117,
+          "y": 228.1171875,
+          "w": 126,
+          "h": 126,
+          "right": 243,
+          "bottom": 354.1171875
+        },
+        "#mode-intro-note": {
+          "x": 103.48593139648438,
+          "y": 370.3171691894531,
+          "w": 153.01406860351562,
+          "h": 15.300018310546875,
+          "right": 256.5,
+          "bottom": 385.6171875
+        },
+        "#btn-mode-intro-start": {
+          "x": 63,
+          "y": 409.0171813964844,
+          "w": 234,
+          "h": 43.199981689453125,
+          "right": 297,
+          "bottom": 452.2171630859375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#btn-pause": {
+          "x": 315,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 351,
+          "bottom": 65.39999198913574
+        },
+        "#target-preview": {
+          "x": 27,
+          "y": 81.5999984741211,
+          "w": 306,
+          "h": 164.15155029296875,
+          "right": 333,
+          "bottom": 245.75154876708984
+        },
+        "#picture-board": {
+          "x": 22.049999237060547,
+          "y": 276.3515625,
+          "w": 315.8999938964844,
+          "h": 315.89996337890625,
+          "right": 337.9499931335449,
+          "bottom": 592.2515258789062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 70.80000305175781,
+          "w": 360,
+          "h": 529.2000122070312,
+          "right": 360,
+          "bottom": 600.0000152587891
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.00003,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "short-phone",
+      "density": 3,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 360,
+        "h": 576,
+        "right": 360,
+        "bottom": 600
+      },
+      "scale": 0.9,
+      "boxes": {
+        "#btn-back": {
+          "x": 9,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 45,
+          "bottom": 65.39999198913574
+        },
+        "#btn-pause": {
+          "x": 315,
+          "y": 29.399999618530273,
+          "w": 36,
+          "h": 35.99999237060547,
+          "right": 351,
+          "bottom": 65.39999198913574
+        },
+        "#target-preview": {
+          "x": 27,
+          "y": 81.5999984741211,
+          "w": 306,
+          "h": 164.15155029296875,
+          "right": 333,
+          "bottom": 245.75154876708984
+        },
+        "#picture-board": {
+          "x": 22.049999237060547,
+          "y": 276.3515625,
+          "w": 315.8999938964844,
+          "h": 315.89996337890625,
+          "right": 337.9499931335449,
+          "bottom": 592.2515258789062
+        },
+        "#cheer-word": {
+          "x": 64.9828109741211,
+          "y": 127.66874694824219,
+          "w": 230.02029418945312,
+          "h": 47.517181396484375,
+          "right": 295.0031051635742,
+          "bottom": 175.18592834472656
+        },
+        "#cheer-clip": {
+          "x": 50.39999771118164,
+          "y": 202.18592834472656,
+          "w": 259.20001220703125,
+          "h": 259.20001220703125,
+          "right": 309.6000099182129,
+          "bottom": 461.3859405517578
+        },
+        "#btn-cheer-continue": {
+          "x": 260.8453063964844,
+          "y": 40.19999694824219,
+          "w": 82.95468139648438,
+          "h": 39.600006103515625,
+          "right": 343.79998779296875,
+          "bottom": 79.80000305175781
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -0.00002999999999886427,
+        "w": 360,
+        "h": 647.9856000000001
+      },
+      "window": [
+        360,
+        648
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#mode-intro-title": {
+          "x": 228.4939422607422,
+          "y": 217.35409545898438,
+          "w": 118.99629211425781,
+          "h": 33.712493896484375,
+          "right": 347.490234375,
+          "bottom": 251.06658935546875
+        },
+        ".pick-intro-mark": {
+          "x": 211.85858154296875,
+          "y": 270.6416015625,
+          "w": 152.25,
+          "h": 152.25,
+          "right": 364.10858154296875,
+          "bottom": 422.8916015625
+        },
+        "#mode-intro-note": {
+          "x": 191.77381896972656,
+          "y": 442.4665832519531,
+          "w": 192.41954040527344,
+          "h": 18.487518310546875,
+          "right": 384.193359375,
+          "bottom": 460.9541015625
+        },
+        "#btn-mode-intro-start": {
+          "x": 146.6085968017578,
+          "y": 489.2290954589844,
+          "w": 282.75,
+          "h": 52.199981689453125,
+          "right": 429.3585968017578,
+          "bottom": 541.4290771484375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#btn-pause": {
+          "x": 521.6091918945312,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 565.1091918945312,
+          "bottom": 74.02499198913574
+        },
+        "#target-preview": {
+          "x": 103.10858917236328,
+          "y": 132.20623779296875,
+          "w": 369.75,
+          "h": 198.34982299804688,
+          "right": 472.8585891723633,
+          "bottom": 330.5560607910156
+        },
+        "#picture-board": {
+          "x": 115.61483764648438,
+          "y": 365.8998107910156,
+          "w": 344.73748779296875,
+          "h": 344.7374572753906,
+          "right": 460.3523254394531,
+          "bottom": 710.6372680664062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#mode-intro-title": {
+          "x": 209.32675170898438,
+          "y": 217.35409545898438,
+          "w": 157.33065795898438,
+          "h": 33.712493896484375,
+          "right": 366.65740966796875,
+          "bottom": 251.06658935546875
+        },
+        ".pick-intro-mark": {
+          "x": 211.85858154296875,
+          "y": 270.6416015625,
+          "w": 152.25,
+          "h": 152.25,
+          "right": 364.10858154296875,
+          "bottom": 422.8916015625
+        },
+        "#mode-intro-note": {
+          "x": 194.5945281982422,
+          "y": 442.4665832519531,
+          "w": 186.7781219482422,
+          "h": 18.487518310546875,
+          "right": 381.3726501464844,
+          "bottom": 460.9541015625
+        },
+        "#btn-mode-intro-start": {
+          "x": 146.6085968017578,
+          "y": 489.2290954589844,
+          "w": 282.75,
+          "h": 52.199981689453125,
+          "right": 429.3585968017578,
+          "bottom": 541.4290771484375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#btn-pause": {
+          "x": 521.6091918945312,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 565.1091918945312,
+          "bottom": 74.02499198913574
+        },
+        "#target-preview": {
+          "x": 103.10858917236328,
+          "y": 132.20623779296875,
+          "w": 369.75,
+          "h": 198.34982299804688,
+          "right": 472.8585891723633,
+          "bottom": 330.5560607910156
+        },
+        "#picture-board": {
+          "x": 126.48983764648438,
+          "y": 365.8998107910156,
+          "w": 322.98748779296875,
+          "h": 322.9874572753906,
+          "right": 449.4773254394531,
+          "bottom": 688.8872680664062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#mode-intro-title": {
+          "x": 212.50428771972656,
+          "y": 217.35409545898438,
+          "w": 150.97560119628906,
+          "h": 33.712493896484375,
+          "right": 363.4798889160156,
+          "bottom": 251.06658935546875
+        },
+        ".pick-intro-mark": {
+          "x": 211.85858154296875,
+          "y": 270.6416015625,
+          "w": 152.25,
+          "h": 152.25,
+          "right": 364.10858154296875,
+          "bottom": 422.8916015625
+        },
+        "#mode-intro-note": {
+          "x": 195.5460968017578,
+          "y": 442.4665832519531,
+          "w": 184.89198303222656,
+          "h": 18.487518310546875,
+          "right": 380.4380798339844,
+          "bottom": 460.9541015625
+        },
+        "#btn-mode-intro-start": {
+          "x": 146.6085968017578,
+          "y": 489.2290954589844,
+          "w": 282.75,
+          "h": 52.199981689453125,
+          "right": 429.3585968017578,
+          "bottom": 541.4290771484375
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#btn-pause": {
+          "x": 521.6091918945312,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 565.1091918945312,
+          "bottom": 74.02499198913574
+        },
+        "#target-preview": {
+          "x": 103.10858917236328,
+          "y": 93.5999984741211,
+          "w": 369.75,
+          "h": 198.34979248046875,
+          "right": 472.8585891723633,
+          "bottom": 291.94979095458984
+        },
+        "#picture-board": {
+          "x": 97.1273422241211,
+          "y": 328.9248046875,
+          "w": 381.7124938964844,
+          "h": 381.71246337890625,
+          "right": 478.83983612060547,
+          "bottom": 710.6372680664062
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 80.55000305175781,
+          "w": 575.9841918945312,
+          "h": 639.4500122070312,
+          "right": 575.9841918945312,
+          "bottom": 720.0000152587891
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -24.000021015971974,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "tablet",
+      "density": 3,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 24,
+        "w": 575.9841918945312,
+        "h": 696,
+        "right": 575.9841918945312,
+        "bottom": 720
+      },
+      "scale": 1.0874992530686471,
+      "boxes": {
+        "#btn-back": {
+          "x": 10.875,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 54.375,
+          "bottom": 74.02499198913574
+        },
+        "#btn-pause": {
+          "x": 521.6091918945312,
+          "y": 30.524999618530273,
+          "w": 43.5,
+          "h": 43.49999237060547,
+          "right": 565.1091918945312,
+          "bottom": 74.02499198913574
+        },
+        "#target-preview": {
+          "x": 103.10858917236328,
+          "y": 93.5999984741211,
+          "w": 369.75,
+          "h": 198.34979248046875,
+          "right": 472.8585891723633,
+          "bottom": 291.94979095458984
+        },
+        "#picture-board": {
+          "x": 97.1273422241211,
+          "y": 328.9248046875,
+          "w": 381.7124938964844,
+          "h": 381.71246337890625,
+          "right": 478.83983612060547,
+          "bottom": 710.6372680664062
+        },
+        "#cheer-word": {
+          "x": 108.919921875,
+          "y": 149.2664031982422,
+          "w": 358.1443176269531,
+          "h": 76.02304077148438,
+          "right": 467.0642395019531,
+          "bottom": 225.28944396972656
+        },
+        "#cheer-clip": {
+          "x": 97.67108917236328,
+          "y": 257.9144287109375,
+          "w": 380.625,
+          "h": 380.625,
+          "right": 478.2960891723633,
+          "bottom": 638.5394287109375
+        },
+        "#btn-cheer-continue": {
+          "x": 456.1722412109375,
+          "y": 43.57499694824219,
+          "w": 100.2369384765625,
+          "h": 47.849998474121094,
+          "right": 556.4091796875,
+          "bottom": 91.42499542236328
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": -0.000021015971974236436,
+        "w": 575.9841918945312,
+        "h": 767.9789225260417
+      },
+      "window": [
+        576,
+        768
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#mode-intro-title": {
+          "x": 348.0242004394531,
+          "y": 166.12680053710938,
+          "w": 89.93112182617188,
+          "h": 25.478118896484375,
+          "right": 437.955322265625,
+          "bottom": 191.60491943359375
+        },
+        ".pick-intro-mark": {
+          "x": 335.4649353027344,
+          "y": 206.398681640625,
+          "w": 115.0625,
+          "h": 115.0625,
+          "right": 450.5274353027344,
+          "bottom": 321.461181640625
+        },
+        "#mode-intro-note": {
+          "x": 320.2859191894531,
+          "y": 336.2549133300781,
+          "w": 145.42050170898438,
+          "h": 13.971893310546875,
+          "right": 465.7064208984375,
+          "bottom": 350.226806640625
+        },
+        "#btn-mode-intro-start": {
+          "x": 286.1524353027344,
+          "y": 371.5955505371094,
+          "w": 213.6875,
+          "h": 39.449981689453125,
+          "right": 499.8399353027344,
+          "bottom": 411.0455322265625
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#btn-pause": {
+          "x": 590.2461547851562,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 623.1211547851562,
+          "bottom": 57.80624961853027
+        },
+        "#target-preview": {
+          "x": 253.27743530273438,
+          "y": 101.77655792236328,
+          "w": 279.4375305175781,
+          "h": 149.90228271484375,
+          "right": 532.7149658203125,
+          "bottom": 251.67884063720703
+        },
+        "#picture-board": {
+          "x": 262.72900390625,
+          "y": 278.3898010253906,
+          "w": 260.53436279296875,
+          "h": 260.5343322753906,
+          "right": 523.2633666992188,
+          "bottom": 538.9241333007812
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#mode-intro-title": {
+          "x": 333.5386657714844,
+          "y": 166.12680053710938,
+          "w": 118.90219116210938,
+          "h": 25.478118896484375,
+          "right": 452.44085693359375,
+          "bottom": 191.60491943359375
+        },
+        ".pick-intro-mark": {
+          "x": 335.4649353027344,
+          "y": 206.398681640625,
+          "w": 115.0625,
+          "h": 115.0625,
+          "right": 450.5274353027344,
+          "bottom": 321.461181640625
+        },
+        "#mode-intro-note": {
+          "x": 322.41766357421875,
+          "y": 336.2549133300781,
+          "w": 141.15704345703125,
+          "h": 13.971893310546875,
+          "right": 463.57470703125,
+          "bottom": 350.226806640625
+        },
+        "#btn-mode-intro-start": {
+          "x": 286.1524353027344,
+          "y": 371.5955505371094,
+          "w": 213.6875,
+          "h": 39.449981689453125,
+          "right": 499.8399353027344,
+          "bottom": 411.0455322265625
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#btn-pause": {
+          "x": 590.2461547851562,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 623.1211547851562,
+          "bottom": 57.80624961853027
+        },
+        "#target-preview": {
+          "x": 253.27743530273438,
+          "y": 101.77655792236328,
+          "w": 279.4375305175781,
+          "h": 149.90228271484375,
+          "right": 532.7149658203125,
+          "bottom": 251.67884063720703
+        },
+        "#picture-board": {
+          "x": 270.94775390625,
+          "y": 278.3898010253906,
+          "w": 244.09686279296875,
+          "h": 244.09689331054688,
+          "right": 515.0446166992188,
+          "bottom": 522.4866943359375
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#mode-intro-title": {
+          "x": 335.9400939941406,
+          "y": 166.12680053710938,
+          "w": 114.09933471679688,
+          "h": 25.478118896484375,
+          "right": 450.0394287109375,
+          "bottom": 191.60491943359375
+        },
+        ".pick-intro-mark": {
+          "x": 335.4649353027344,
+          "y": 206.398681640625,
+          "w": 115.0625,
+          "h": 115.0625,
+          "right": 450.5274353027344,
+          "bottom": 321.461181640625
+        },
+        "#mode-intro-note": {
+          "x": 323.12396240234375,
+          "y": 336.2549133300781,
+          "w": 139.73159790039062,
+          "h": 13.971893310546875,
+          "right": 462.8555603027344,
+          "bottom": 350.226806640625
+        },
+        "#btn-mode-intro-start": {
+          "x": 286.1524353027344,
+          "y": 371.5955505371094,
+          "w": 213.6875,
+          "h": 39.449981689453125,
+          "right": 499.8399353027344,
+          "bottom": 411.0455322265625
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#btn-pause": {
+          "x": 590.2461547851562,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 623.1211547851562,
+          "bottom": 57.80624961853027
+        },
+        "#target-preview": {
+          "x": 253.27743530273438,
+          "y": 72.5999984741211,
+          "w": 279.4375305175781,
+          "h": 149.90228271484375,
+          "right": 532.7149658203125,
+          "bottom": 222.50228118896484
+        },
+        "#picture-board": {
+          "x": 248.7571258544922,
+          "y": 250.446044921875,
+          "w": 288.47808837890625,
+          "h": 288.47808837890625,
+          "right": 537.2352142333984,
+          "bottom": 538.9241333007812
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        ".settings-body": {
+          "x": 162.87118530273438,
+          "y": 62.73749923706055,
+          "w": 460.2499694824219,
+          "h": 483.26251220703125,
+          "right": 623.1211547851562,
+          "bottom": 546.0000114440918
+        }
+      },
+      "backdrop": {
+        "x": -23.99996905157772,
+        "y": -19.999987907556914,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "wide-cutout",
+      "density": 3,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 737.9923706054688,
+        "h": 526,
+        "right": 761.9923706054688,
+        "bottom": 546
+      },
+      "scale": 0.821874528759746,
+      "boxes": {
+        "#btn-back": {
+          "x": 162.87118530273438,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 195.74618530273438,
+          "bottom": 57.80624961853027
+        },
+        "#btn-pause": {
+          "x": 590.2461547851562,
+          "y": 24.931249618530273,
+          "w": 32.875,
+          "h": 32.875,
+          "right": 623.1211547851562,
+          "bottom": 57.80624961853027
+        },
+        "#target-preview": {
+          "x": 253.27743530273438,
+          "y": 72.5999984741211,
+          "w": 279.4375305175781,
+          "h": 149.90228271484375,
+          "right": 532.7149658203125,
+          "bottom": 222.50228118896484
+        },
+        "#picture-board": {
+          "x": 248.7571258544922,
+          "y": 250.446044921875,
+          "w": 288.47808837890625,
+          "h": 288.47808837890625,
+          "right": 537.2352142333984,
+          "bottom": 538.9241333007812
+        },
+        "#cheer-word": {
+          "x": 236.95550537109375,
+          "y": 114.66972351074219,
+          "w": 312.0684814453125,
+          "h": 67.05986022949219,
+          "right": 549.0239868164062,
+          "bottom": 181.72958374023438
+        },
+        "#cheer-clip": {
+          "x": 249.16806030273438,
+          "y": 206.38583374023438,
+          "w": 287.6562194824219,
+          "h": 287.65625,
+          "right": 536.8242797851562,
+          "bottom": 494.0420837402344
+        },
+        "#btn-cheer-continue": {
+          "x": 671.44482421875,
+          "y": 34.79375076293945,
+          "w": 75.7537841796875,
+          "h": 36.16250228881836,
+          "right": 747.1986083984375,
+          "bottom": 70.95625305175781
+        }
+      },
+      "backdrop": {
+        "x": 0.000030948422278243015,
+        "y": 0.000012092443085975901,
+        "w": 767.9776409127394,
+        "h": 575.9926822416352
+      },
+      "window": [
+        768,
+        576
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#mode-intro-title": {
+          "x": 140.28125,
+          "y": 278.6875,
+          "w": 109.421875,
+          "h": 31,
+          "right": 249.703125,
+          "bottom": 309.6875
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 327.6875,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 467.6875
+        },
+        "#mode-intro-note": {
+          "x": 106.53125,
+          "y": 485.6875,
+          "w": 176.9375,
+          "h": 17,
+          "right": 283.46875,
+          "bottom": 502.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 528.6875,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 576.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 51
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 112.421875,
+          "w": 335.390625,
+          "h": 264,
+          "right": 362.6875,
+          "bottom": 376.421875
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 415,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 785
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#mode-intro-title": {
+          "x": 122.65625,
+          "y": 278.6875,
+          "w": 144.671875,
+          "h": 31,
+          "right": 267.328125,
+          "bottom": 309.6875
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 327.6875,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 467.6875
+        },
+        "#mode-intro-note": {
+          "x": 109.125,
+          "y": 485.6875,
+          "w": 171.75,
+          "h": 17,
+          "right": 280.875,
+          "bottom": 502.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 528.6875,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 576.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 51
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 112.421875,
+          "w": 335.390625,
+          "h": 264,
+          "right": 362.6875,
+          "bottom": 376.421875
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 415,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 785
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#mode-intro-title": {
+          "x": 125.578125,
+          "y": 278.6875,
+          "w": 138.828125,
+          "h": 31,
+          "right": 264.40625,
+          "bottom": 309.6875
+        },
+        ".pick-intro-mark": {
+          "x": 125,
+          "y": 327.6875,
+          "w": 140,
+          "h": 140,
+          "right": 265,
+          "bottom": 467.6875
+        },
+        "#mode-intro-note": {
+          "x": 109.984375,
+          "y": 485.6875,
+          "w": 170.015625,
+          "h": 17,
+          "right": 280,
+          "bottom": 502.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 65,
+          "y": 528.6875,
+          "w": 260,
+          "h": 48,
+          "right": 325,
+          "bottom": 576.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 51
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 77,
+          "w": 335.390625,
+          "h": 264,
+          "right": 362.6875,
+          "bottom": 341
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 381,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 751
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        ".settings-body": {
+          "x": 0,
+          "y": 62,
+          "w": 390,
+          "h": 782,
+          "right": 390,
+          "bottom": 844
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web",
+      "density": 2,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 10,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 50,
+          "bottom": 51
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 51
+        },
+        "#target-preview": {
+          "x": 27.296875,
+          "y": 77,
+          "w": 335.390625,
+          "h": 264,
+          "right": 362.6875,
+          "bottom": 341
+        },
+        "#picture-board": {
+          "x": 10,
+          "y": 381,
+          "w": 370,
+          "h": 370,
+          "right": 380,
+          "bottom": 751
+        },
+        "#cheer-word": {
+          "x": 70.046875,
+          "y": 151.90625,
+          "w": 249.890625,
+          "h": 51.484375,
+          "right": 319.9375,
+          "bottom": 203.390625
+        },
+        "#cheer-clip": {
+          "x": 54.59375,
+          "y": 233.390625,
+          "w": 280.796875,
+          "h": 280.796875,
+          "right": 335.390625,
+          "bottom": 514.1875
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 18,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 62
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 141.28125,
+          "y": 266.6875,
+          "w": 109.421875,
+          "h": 31,
+          "right": 250.703125,
+          "bottom": 297.6875
+        },
+        ".pick-intro-mark": {
+          "x": 126,
+          "y": 315.6875,
+          "w": 140,
+          "h": 140,
+          "right": 266,
+          "bottom": 455.6875
+        },
+        "#mode-intro-note": {
+          "x": 107.53125,
+          "y": 473.6875,
+          "w": 176.9375,
+          "h": 17,
+          "right": 284.46875,
+          "bottom": 490.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 66,
+          "y": 516.6875,
+          "w": 260,
+          "h": 48,
+          "right": 326,
+          "bottom": 564.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "unit-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 32.296875,
+          "y": 136.421875,
+          "w": 335.390625,
+          "h": 264,
+          "right": 367.6875,
+          "bottom": 400.421875
+        },
+        "#picture-board": {
+          "x": 21.5,
+          "y": 439,
+          "w": 357,
+          "h": 357,
+          "right": 378.5,
+          "bottom": 796
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 123.65625,
+          "y": 266.6875,
+          "w": 144.671875,
+          "h": 31,
+          "right": 268.328125,
+          "bottom": 297.6875
+        },
+        ".pick-intro-mark": {
+          "x": 126,
+          "y": 315.6875,
+          "w": 140,
+          "h": 140,
+          "right": 266,
+          "bottom": 455.6875
+        },
+        "#mode-intro-note": {
+          "x": 110.125,
+          "y": 473.6875,
+          "w": 171.75,
+          "h": 17,
+          "right": 281.875,
+          "bottom": 490.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 66,
+          "y": 516.6875,
+          "w": 260,
+          "h": 48,
+          "right": 326,
+          "bottom": 564.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "montage-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 32.296875,
+          "y": 136.421875,
+          "w": 335.390625,
+          "h": 264,
+          "right": 367.6875,
+          "bottom": 400.421875
+        },
+        "#picture-board": {
+          "x": 33,
+          "y": 439,
+          "w": 334,
+          "h": 334,
+          "right": 367,
+          "bottom": 773
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-start",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-mode-intro-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#mode-intro-title": {
+          "x": 126.578125,
+          "y": 266.6875,
+          "w": 138.828125,
+          "h": 31,
+          "right": 265.40625,
+          "bottom": 297.6875
+        },
+        ".pick-intro-mark": {
+          "x": 126,
+          "y": 315.6875,
+          "w": 140,
+          "h": 140,
+          "right": 266,
+          "bottom": 455.6875
+        },
+        "#mode-intro-note": {
+          "x": 110.984375,
+          "y": 473.6875,
+          "w": 170.015625,
+          "h": 17,
+          "right": 281,
+          "bottom": 490.6875
+        },
+        "#btn-mode-intro-start": {
+          "x": 66,
+          "y": 516.6875,
+          "w": 260,
+          "h": 48,
+          "right": 326,
+          "bottom": 564.6875
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "memory-play",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 32.296875,
+          "y": 101,
+          "w": 335.390625,
+          "h": 264,
+          "right": 367.6875,
+          "bottom": 365
+        },
+        "#picture-board": {
+          "x": 20,
+          "y": 405,
+          "w": 360,
+          "h": 360,
+          "right": 380,
+          "bottom": 765
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "settings",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-settings-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        ".settings-body": {
+          "x": 20,
+          "y": 86,
+          "w": 370,
+          "h": 710,
+          "right": 390,
+          "bottom": 796
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    },
+    {
+      "profile": "web-safe-area",
+      "density": 2,
+      "phase": "after",
+      "label": "position-try-again",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "right": 390,
+        "bottom": 844
+      },
+      "scale": 1,
+      "boxes": {
+        "#btn-back": {
+          "x": 20,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 60,
+          "bottom": 75
+        },
+        "#btn-pause": {
+          "x": 340,
+          "y": 35,
+          "w": 40,
+          "h": 40,
+          "right": 380,
+          "bottom": 75
+        },
+        "#target-preview": {
+          "x": 32.296875,
+          "y": 101,
+          "w": 335.390625,
+          "h": 264,
+          "right": 367.6875,
+          "bottom": 365
+        },
+        "#picture-board": {
+          "x": 20,
+          "y": 405,
+          "w": 360,
+          "h": 360,
+          "right": 380,
+          "bottom": 765
+        },
+        "#cheer-word": {
+          "x": 80.046875,
+          "y": 151.90625,
+          "w": 249.890625,
+          "h": 51.484375,
+          "right": 329.9375,
+          "bottom": 203.390625
+        },
+        "#cheer-clip": {
+          "x": 64.59375,
+          "y": 233.390625,
+          "w": 280.796875,
+          "h": 280.796875,
+          "right": 345.390625,
+          "bottom": 514.1875
+        },
+        "#btn-cheer-continue": {
+          "x": 279.828125,
+          "y": 24,
+          "w": 92.171875,
+          "h": 44,
+          "right": 372,
+          "bottom": 68
+        }
+      },
+      "backdrop": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "window": [
+        390,
+        844
+      ],
+      "overflow": 0
+    }
+  ],
+  "captures": [
+    {
+      "file": "before/unit-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/unit-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/puzzle-success.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/montage-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/montage-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/memory-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/memory-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/settings.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "before/position-try-again.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/unit-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/unit-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/puzzle-success.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/montage-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/montage-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/memory-start.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/memory-play.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/settings.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    },
+    {
+      "file": "after/position-try-again.png",
+      "resolution": [
+        780,
+        1688
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "profile": "reference",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "phone-density-2",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "phone-density-4",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "tall-phone",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "short-phone",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "tablet",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "wide-cutout",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "web",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    },
+    {
+      "profile": "web-safe-area",
+      "hudAligned": true,
+      "backdropFullWindow": true,
+      "contentSafe": true
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.58"
+}

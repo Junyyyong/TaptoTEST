@@ -1,0 +1,338 @@
+{
+  "capturedAt": "2026-10-01T06:28:15.278Z",
+  "resolution": [
+    780,
+    1688
+  ],
+  "nativeDeviceTested": false,
+  "captureMethod": "Chrome Android-platform simulation with real UI/taps; virtual clock for timeout only",
+  "safeInsetsCss": {
+    "top": 24,
+    "bottom": 48
+  },
+  "screenshots": [
+    {
+      "file": "01-cover.png",
+      "description": "커버",
+      "visibleImages": [
+        {
+          "source": "http://127.0.0.1:50909/assets/brand/taptopick-cover-0911-01-v2.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "file": "02-main.png",
+      "description": "메인 게임 선택",
+      "visibleImages": [
+        {
+          "source": "http://127.0.0.1:50909/assets/brand/TAPtoPICK-logo-0911-01-v2.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "file": "03-puzzle-start.png",
+      "description": "PUZZLE 시작",
+      "visibleImages": []
+    },
+    {
+      "file": "04-puzzle-play.png",
+      "description": "PUZZLE 해피 당근 9조각",
+      "visibleImages": [
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/HapeeCarrot-B0RYOECk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta2-DEB0ASVZ.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta3-BuY2U40K.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/4-CMcvsS-H.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/1-BD0wzaAL.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Hooo6-CyB1tdpq.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/1-Dmbco1hd.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/8-DM38L5KR.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-D8peWmWv.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/3-BWQP8ril.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/1-CaPrMe1s.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/9-Xa78GZkk.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Jap3-DLPyUtox.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta10-uoza71XH.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/1-Df7PhaRT.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta4-DxG6KdZo.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/7-BaMWsFjV.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/4-Brrl24bW.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Jap9-DlbmgTKm.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/4-Bb4lekns.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/9-DF0Ua5vR.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/9-BzmadXsX.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Bb12-BFSfS3zO.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/5-DGw6KoY6.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/3-tWeGywAi.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-c_IYdhOm.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-CK6qasKH.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/7-B71-Hk9W.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/7-BR3N85e7.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/6-BP1WTmDA.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/7-CtfCpbUx.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Hap1-DCCptuFw.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Jap8-DUm1VR93.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/8-C2TTBmKx.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Jap7-B9d-OhfM.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/6-yb7wHzK3.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-CKoaMXB1.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Bb2-gNqcOUwj.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/6-C-mpFscO.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/5-Brt0D5do.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/5-DB0VB9jd.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta1-40DW3zJI.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/7-DSB2jgQC.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/6-BO-XocvV.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/Ta11-C_b0oauH.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-sLrk-pFg.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/4-lZ9DqZOw.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/1-Bjos8Clo.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/2-80-0KFun.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/8-BiO9bT57.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "file": "05-portrait-start.png",
+      "description": "PORTRAIT 시작",
+      "visibleImages": []
+    },
+    {
+      "file": "06-portrait-play.png",
+      "description": "PORTRAIT 피노팬 2×2",
+      "visibleImages": [
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-79fiu6x7.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/variation-2-CsU0okCb.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/variation-1-vYKGFBYv.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/variation-3-BuHHslyO.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-79fiu6x7.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "file": "07-position-try-again.png",
+      "description": "POSITION 2×2 시간초과 TRY AGAIN 영상",
+      "visibleImages": [
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-i7hblZzT.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-i7hblZzT.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-cGzQaHEp.webp",
+          "loaded": true
+        },
+        {
+          "source": "http://127.0.0.1:50909/assets/answer-cGzQaHEp.webp",
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.58",
+  "timeoutVideoTime": 0.314265
+}

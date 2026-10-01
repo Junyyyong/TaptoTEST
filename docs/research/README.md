@@ -1,5 +1,13 @@
 # TAP to PICK 연구·개발 기록
 
+- [2026-10-01 — Android 1.0.5/code7 반응형·아이콘·리액션·HUD 서명 AAB 검증](2026-10-01-release-1.0.5/release-verification.json) · [최종 화면 7장 다운로드](../../store/screenshots/2026-10-01-release-1.0.5/index.html)
+
+- [2026-10-01 — 리액션 배경 끝까지 채우기와 뒤로가기·일시정지 위치 통일](2026-10-01-reaction-hud/README.md) · [780×1688 전후 비교](2026-10-01-reaction-hud/index.html)
+
+- [2026-10-01 — 새 앱 아이콘과 최신 디자인 화면 7장](2026-10-01-icon-screenshots/README.md) · [PNG·ZIP 다운로드](../../store/screenshots/2026-10-01/index.html)
+
+- [2026-10-01 — 기기 비율 반응형·원본 커버 채우기·화면 확대 독립 유지](2026-10-01-responsive-layout/README.md) · [휴대폰/태블릿 전후 비교](2026-10-01-responsive-layout/index.html)
+
 - [2026-10-01 — Android 1.0.4/code6 최종 디자인 서명 AAB와 출시노트](2026-10-01-ui-release/README.md)
 
 - [2026-10-01 — 흰 기본 UI 유지와 기존 강조색 복원 및 누락 확인](2026-10-01-ui-accents/README.md) · [전후 비교](2026-10-01-ui-accents/index.html)

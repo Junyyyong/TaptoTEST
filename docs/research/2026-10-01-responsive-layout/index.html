@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TAPtoTEST — 기기 비율별 반응형 화면 비교</title>
+  <style>
+    *{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:#f5f6f8;color:#363c46;font-family:system-ui,sans-serif;line-height:1.6}
+    main{max-width:1440px;margin:auto;padding:28px 24px}h1{font-size:25px;margin:0 0 8px}p{margin:8px 0;color:#626b78}
+    nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}label{display:grid;gap:4px;font-weight:600}select{font:inherit;padding:9px 12px;border:1px solid #cdd2da;border-radius:8px;background:white;min-width:230px}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{margin:0;padding:16px;background:white;border:1px solid #cdd2da;border-radius:12px;min-width:0}
+    h2{font-size:18px;margin:0 0 4px}figcaption{font-size:14px;color:#626b78;margin-bottom:12px}.shot{display:block;max-width:100%;height:72vh;margin:auto;object-fit:contain}
+    .original{display:inline-block;margin-top:12px;color:#287fe0}.empty{padding:36px 8px;color:#626b78}.details{margin-top:20px;font-size:14px}.details a{color:#287fe0}
+    @media(max-width:700px){main{padding:18px 12px}.compare{gap:10px}.panel{padding:9px}h1{font-size:21px}.shot{height:56vh}select{min-width:0;width:100%}nav label{flex:1 1 220px}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>TAPtoTEST — 기기 비율별 반응형 화면 비교</h1>
+  <p>커버는 원본 한 장을 가로폭에 맞추고 세로 중앙에 배치합니다. 위아래의 원본 그라데이션이 흰 배경에 이어집니다. 메인·게임은 기기의 실제 화면 비율에 맞춰 배치합니다.</p>
+  <p>아래는 Android 환경을 모의한 Chrome 캡처입니다. 실제 갤럭시·태블릿의 설치 앱 화면이나 시스템 바 외관을 캡처한 것은 아닙니다. AAB 생성·push는 아직 하지 않았습니다.</p>
+  <nav>
+    <label>화면 비율
+      <select id="profile">
+        <option value="reference">기준 모바일 · 780×1688 PNG</option>
+        <option value="tall-phone">긴 휴대폰 · 1080×2700 PNG</option>
+        <option value="tablet-4x3">4:3 태블릿 · 1728×2304 PNG</option>
+      </select>
+    </label>
+    <label>화면
+      <select id="screen">
+        <option value="studio">스튜디오 로고</option>
+        <option value="cover" selected>커버</option>
+        <option value="menu">메인</option>
+        <option value="start">START</option>
+        <option value="puzzle">PUZZLE · 49칸</option>
+        <option value="pause">일시정지</option>
+        <option value="result">PUZZLE 결과</option>
+        <option value="portrait-4">PORTRAIT · 2×2</option>
+        <option value="portrait-9">PORTRAIT · 3×3 (수정 후)</option>
+        <option value="portrait-16">PORTRAIT · 4×4 (수정 후)</option>
+        <option value="portrait-25">PORTRAIT · 5×5 (수정 후)</option>
+        <option value="portrait-doors">PORTRAIT · 문 교환 (수정 후)</option>
+        <option value="position-4">POSITION · 2×2</option>
+        <option value="position-16">POSITION · 4×4 (수정 후)</option>
+        <option value="position-36">POSITION · 6×6 (수정 후)</option>
+        <option value="position-result">POSITION 결과 (수정 후)</option>
+        <option value="settings">Settings</option>
+      </select>
+    </label>
+  </nav>
+  <section class="compare">
+    <figure class="panel" id="before">
+      <h2>수정 전 · 1.0.4/code6</h2>
+      <figcaption>390×844 고정 화면을 전체 축소해 맞춤</figcaption>
+      <a class="image-link"><img class="shot" alt="수정 전 게임 화면"></a>
+      <div class="empty" hidden>이 단계의 수정 전 캡처는 없습니다. 수정 후 검증 화면을 확인하세요.</div>
+      <a class="original" target="_blank" rel="noopener">원본 PNG 보기</a>
+    </figure>
+    <figure class="panel" id="after">
+      <h2>수정 후 · 반응형 소스</h2>
+      <figcaption>화면 확대 설정은 정규화, 기기 비율은 반영</figcaption>
+      <a class="image-link"><img class="shot" alt="수정 후 게임 화면"></a>
+      <a class="original" target="_blank" rel="noopener">원본 PNG 보기</a>
+    </figure>
+  </section>
+  <div class="details">
+    <p id="note"></p>
+    <p><a href="README.md">변경 이유·검증 범위</a> · <a href="cover-width/verification.json">가로폭 커버 검증 JSON</a> · <a href="final/verification.json">기기 비율·화면 확대 검증 JSON</a> · <a href="regression/verification.json">실행 중 변경·웹 회귀 검증 JSON</a></p>
+    <p>PNG는 원본 해상도로 저장했습니다. 이 페이지에서는 화면에 맞춰 작게 보여주며 이미지를 누르면 원본을 엽니다. 기록 폴더는 게임에서 읽지 않습니다.</p>
+  </div>
+</main>
+<script>
+  const profile=document.querySelector('#profile'),screen=document.querySelector('#screen');
+  const onlyAfter=new Set(['portrait-9','portrait-16','portrait-25','portrait-doors','position-16','position-36','position-result']);
+  function render(){
+    for(const phase of ['before','after']){
+      const panel=document.querySelector('#'+phase),missing=phase==='before'&&onlyAfter.has(screen.value);
+      const link=panel.querySelector('.image-link'),original=panel.querySelector('.original'),empty=panel.querySelector('.empty');
+      panel.querySelector('h2').textContent=screen.value==='cover'
+        ?(phase==='before'?'커버 수정 전 · 화면 채우기':'커버 수정 후 · 가로폭 맞춤')
+        :(phase==='before'?'수정 전 · 1.0.4/code6':'수정 후 · 반응형 소스');
+      panel.querySelector('figcaption').textContent=screen.value==='cover'
+        ?(phase==='before'?'높이까지 채워 긴 휴대폰에서 좌우가 잘림':'좌우는 전부 표시, 높이는 원본 비율 유지')
+        :(phase==='before'?'390×844 고정 화면을 전체 축소해 맞춤':'화면 확대 설정은 정규화, 기기 비율은 반영');
+      link.hidden=missing;original.hidden=missing;if(empty)empty.hidden=!missing;
+      if(!missing){const folder=screen.value==='cover'?'cover-width':'final';const url=`${folder}/${phase}/${profile.value}-${screen.value}.png`;link.href=url;original.href=url;link.querySelector('img').src=url;}
+    }
+    document.querySelector('#note').textContent=screen.value==='cover'
+      ?'커버는 가로폭에 정확히 맞춰 좌우가 잘리지 않습니다. 긴 화면에서는 위아래가 흰 배경으로 이어지고, 이미지보다 짧은 화면에서는 위아래만 잘릴 수 있습니다. 별도 그라데이션·합성·반복 배경은 추가하지 않았습니다.'
+      :screen.value==='studio'
+      ?'노란 배경은 화면 전체를 채우고, 스튜디오 로고는 글씨를 포함해 온전히 표시합니다.'
+      :'흰 배경은 전체 창을 채웁니다. 실제 버튼·그림·카드는 시스템 바를 제외한 안전 영역에 들어갑니다. 가로가 넓으면 콘텐츠를 중앙에 모읍니다.';
+  }
+  profile.addEventListener('change',render);screen.addEventListener('change',render);render();
+</script>
+</body>
+</html>

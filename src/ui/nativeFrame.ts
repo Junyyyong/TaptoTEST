@@ -1,6 +1,6 @@
-/** Android-only design canvas. Display-size changes must scale the whole
- * composition, not choose a different layout for individual elements. */
-export const NATIVE_FRAME = { width: 390, height: 844 } as const;
+/** Normalize Android display density, but let the canvas follow the window's
+ * aspect ratio. 390×844 is a reference, not a fixed portrait rectangle. */
+export const NATIVE_FRAME = { width: 390, height: 844, minHeight: 640 } as const;
 
 export interface FrameInsets { top: number; right: number; bottom: number; left: number }
 
@@ -9,11 +9,21 @@ export function fitNativeFrame(width: number, height: number, insets: FrameInset
   const left = safe(insets.left), top = safe(insets.top);
   const availableWidth = Math.max(0, safe(width) - left - safe(insets.right));
   const availableHeight = Math.max(0, safe(height) - top - safe(insets.bottom));
-  const scale = Math.min(availableWidth / NATIVE_FRAME.width, availableHeight / NATIVE_FRAME.height);
+  // A short/wide window gains logical width instead of clipping the column or
+  // making 7×7 tiles too small. Density cancels out of both logical dimensions.
+  const scale = Math.min(availableWidth / NATIVE_FRAME.width, availableHeight / NATIVE_FRAME.minHeight);
   return {
     scale,
-    x: left + (availableWidth - NATIVE_FRAME.width * scale) / 2,
-    y: top + (availableHeight - NATIVE_FRAME.height * scale) / 2,
+    x: left,
+    y: top,
+    width: scale > 0 ? availableWidth / scale : 0,
+    height: scale > 0 ? availableHeight / scale : 0,
+    insets: {
+      top: scale > 0 ? top / scale : 0,
+      right: scale > 0 ? safe(insets.right) / scale : 0,
+      bottom: scale > 0 ? safe(insets.bottom) / scale : 0,
+      left: scale > 0 ? left / scale : 0,
+    },
   };
 }
 
@@ -22,9 +32,6 @@ export function trackNativeFrame(enabled: boolean): void {
   if (!enabled || !CSS.supports("container-type", "size")) return;
   const app = document.getElementById("app")!;
   app.classList.add("is-native-frame");
-  app.style.setProperty("--app-h", `${NATIVE_FRAME.height}px`);
-  app.style.setProperty("--layout-vw", `${NATIVE_FRAME.width / 100}px`);
-  app.style.setProperty("--layout-vh", `${NATIVE_FRAME.height / 100}px`);
   let frame = 0;
   const measure = (): void => {
     frame = 0;
@@ -43,6 +50,16 @@ export function trackNativeFrame(enabled: boolean): void {
     app.style.setProperty("--frame-scale", String(fit.scale));
     app.style.setProperty("--frame-left", `${fit.x}px`);
     app.style.setProperty("--frame-top", `${fit.y}px`);
+    app.style.setProperty("--frame-width", `${fit.width}px`);
+    app.style.setProperty("--frame-height", `${fit.height}px`);
+    app.style.setProperty("--app-h", `${fit.height}px`);
+    app.style.setProperty("--layout-vw", `${fit.width / 100}px`);
+    app.style.setProperty("--layout-vh", `${fit.height / 100}px`);
+    for (const side of ["top", "right", "bottom", "left"] as const) {
+      app.style.setProperty(`--frame-safe-${side}`, `${fit.insets[side]}px`);
+    }
+    app.style.setProperty("--frame-full-width", `${fit.width + fit.insets.left + fit.insets.right}px`);
+    app.style.setProperty("--frame-full-height", `${fit.height + fit.insets.top + fit.insets.bottom}px`);
   };
   const schedule = (): void => { if (!frame) frame = requestAnimationFrame(measure); };
   // Capacitor can inject native insets after the first page render, including

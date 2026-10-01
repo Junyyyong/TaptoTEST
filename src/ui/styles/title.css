@@ -2,13 +2,10 @@
 /* title ─────────────────────────────────────────────────────── */
 
 /*
- * The cover, matched to the width of the screen and centred.
- *
- * Not `contain`, which shrinks the picture to fit the shorter dimension and
- * leaves it small on a tall phone. The artwork carries generous white margins
- * above and below precisely so the width can always be filled: whatever the
- * screen's height, the picture spans it edge to edge, sits centred, and any
- * overflow is white margin being cropped rather than art.
+ * Fit the original cover to the full window width without cropping its sides.
+ * Keep its aspect ratio and centre vertically. The artwork's existing white
+ * fade blends into the white screen on tall phones; short windows crop only
+ * the top/bottom. Do not manufacture or repeat a background.
  */
 .studio-splash-screen,
 .splash-screen {
@@ -24,8 +21,10 @@
 }
 
 .studio-splash-cover {
-  width: 42%;
+  width: min(42%, 164px);
   height: auto;
+  max-height: 70%;
+  object-fit: contain;
   flex: 0 0 auto;
 }
 
@@ -33,12 +32,6 @@
   background: #fff;
 }
 
-/*
- * Pinned and translated rather than centred by the flex column: an auto
- * margin gives up and snaps to the top the moment the item is taller than the
- * box, which is exactly the case that matters — a short phone would crop the
- * whole overflow off the bottom instead of half from each end.
- */
 .splash-cover {
   position: absolute;
   top: 50%;
@@ -46,6 +39,18 @@
   width: 100%;
   height: auto;
   transform: translateY(-50%);
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Splash paint can extend behind status/navigation bars. Controls cannot. */
+#app.is-native-frame .studio-splash-screen,
+#app.is-native-frame .splash-screen {
+  position: absolute;
+  top: calc(-1 * var(--frame-safe-top, 0px));
+  left: calc(-1 * var(--frame-safe-left, 0px));
+  width: var(--frame-full-width, 100%);
+  height: var(--frame-full-height, 100%);
 }
 
 .title-screen {

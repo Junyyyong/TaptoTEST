@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAPtoTEST 리액션과 상단 버튼 전후 비교</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;padding:32px 20px;background:#f5f6f8;color:#363c46;font:16px/1.6 system-ui,sans-serif}
+  main{max-width:1000px;margin:auto}h1{font-size:26px}h2{margin:32px 0 12px;font-size:21px}p{max-width:760px}
+  a{color:#246bb8}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:640px}
+  figure{margin:0;min-width:0}figcaption{font-weight:700;margin-bottom:8px}img{display:block;width:100%;height:auto;border:1px solid #cdd2da;background:white}
+  .note{color:#626b78;font-size:14px}@media(max-width:440px){body{padding:18px 12px}.pair{gap:10px}h1{font-size:22px}}
+</style>
+<main>
+  <h1>TAPtoTEST 리액션과 상단 버튼 전후 비교</h1>
+  <p>리액션의 어두운 배경을 창 끝까지 확장하고, START·게임·Settings의 뒤로가기와 일시정지를 공통 위치에 맞췄습니다. 영상과 본문 크기·간격은 유지했습니다.</p>
+  <p class="note">모든 PNG는 780×1688입니다. Android 안전영역을 모의한 Chrome 캡처이며 실제 기기 검증은 별도입니다. AAB·push는 하지 않았습니다.</p>
+  <p><a href="README.md">연구기록</a> · <a href="screens/verification.json">검증 결과</a></p>
+  <section>
+    <h2>TRY AGAIN 배경</h2>
+    <div class="pair"><figure><figcaption>수정 전</figcaption><a href="screens/before/position-try-again.png" download><img src="screens/before/position-try-again.png" alt="수정 전 리액션 위아래 흰 여백"></a></figure><figure><figcaption>수정 후</figcaption><a href="screens/after/position-try-again.png" download><img src="screens/after/position-try-again.png" alt="수정 후 화면 끝까지 어두운 배경"></a></figure></div>
+  </section>
+  <section>
+    <h2>PUZZLE 성공 배경</h2>
+    <div class="pair"><figure><figcaption>수정 전</figcaption><a href="screens/before/puzzle-success.png" download><img loading="lazy" src="screens/before/puzzle-success.png" alt="수정 전 성공 리액션"></a></figure><figure><figcaption>수정 후</figcaption><a href="screens/after/puzzle-success.png" download><img loading="lazy" src="screens/after/puzzle-success.png" alt="수정 후 성공 리액션"></a></figure></div>
+  </section>
+  <div id="headers"></div>
+</main>
+<script>
+  const screens=[['unit-start','PUZZLE 시작'],['unit-play','PUZZLE 플레이'],['montage-start','PORTRAIT 시작'],['montage-play','PORTRAIT 플레이'],['memory-start','POSITION 시작'],['memory-play','POSITION 플레이'],['settings','Settings']];
+  const target=document.querySelector('#headers');
+  for(const[file,title]of screens){
+    const section=document.createElement('section'),heading=document.createElement('h2'),pair=document.createElement('div');
+    heading.textContent=title;pair.className='pair';section.append(heading,pair);
+    for(const[phase,label]of [['before','수정 전'],['after','수정 후']]){
+      const figure=document.createElement('figure'),caption=document.createElement('figcaption'),link=document.createElement('a'),image=document.createElement('img');
+      caption.textContent=label;link.href=`screens/${phase}/${file}.png`;link.download='';image.src=link.href;image.alt=`${label} ${title}`;image.loading='lazy';link.append(image);figure.append(caption,link);pair.append(figure);
+    }
+    target.append(section);
+  }
+</script>
+</html>

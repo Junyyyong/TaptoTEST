@@ -5,7 +5,12 @@
 .pause-btn span { display: block; width: 14px; height: 17px; border-inline: 4px solid currentColor; }
 .pause-card { display: grid; gap: 12px; text-align: center; }
 .pause-card p { margin: 0 0 8px; color: var(--ink-soft); font-size: 14px; line-height: 1.55; }
-.pick-intro-screen { padding-left: max(18px,var(--app-safe-left)); padding-right: max(18px,var(--app-safe-right)); }
+.pick-intro-screen {
+  --hud-parent-left: max(18px,var(--app-safe-left));
+  --hud-parent-right: max(18px,var(--app-safe-right));
+  padding-left: var(--hud-parent-left);
+  padding-right: var(--hud-parent-right);
+}
 .pick-intro-screen .hud { flex: 0 0 auto; }
 .pick-intro-body { display: flex; flex: 1; min-height: 0; flex-direction: column; gap: 18px; align-items: center; justify-content: safe center; overflow-y: auto; padding: 0 32px max(calc(6 * var(--layout-vh, 1vh)),28px); text-align: center; }
 .pick-intro-body > * { flex-shrink: 0; }
@@ -241,8 +246,11 @@
 .switch-knob { position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: white; box-shadow: 0 1px 3px rgba(29,35,43,.25); transition: transform 160ms ease; }
 .switch[aria-checked="true"] .switch-knob { transform: translateX(22px); }
 .settings-note { margin: 4px 2px 0; color: var(--ink-soft); font-size: 12px; }
-.settings-screen { position: relative; }
-.settings-screen .hud { flex: 0 0 auto; padding-inline: 8px; }
+.settings-screen {
+  --hud-parent-left: var(--app-safe-left);
+  --hud-parent-right: var(--app-safe-right);
+  position: relative;
+}
 .settings-title { margin: 0; text-align: center; font-size: 20px; font-weight: 800; letter-spacing: .08em; color: var(--hot-deep); }
 .settings-body { flex: 1; min-height: 0; padding: 0 16px 20px; overflow-y: auto; }
 .settings-screen .switch-row { gap: 16px; padding: 16px 18px; background: linear-gradient(180deg, var(--panel-lit), var(--panel-deep)); box-shadow: inset 0 1px 0 var(--cool-dim); }
@@ -258,14 +266,39 @@
 
 /* TAP to PICK ─────────────────────────────────────────────────── */
 .pick-screen {
+  --hud-parent-left: max(10px, var(--app-safe-left));
+  --hud-parent-right: max(10px, var(--app-safe-right));
   gap: 7px;
-  padding-right: max(10px, var(--app-safe-right));
+  padding-right: var(--hud-parent-right);
   padding-bottom: max(8px, var(--app-safe-bottom));
-  padding-left: max(10px, var(--app-safe-left));
+  padding-left: var(--hud-parent-left);
   overflow-y: auto;
 }
 
-.pick-screen .hud { margin-inline: -2px; }
+/* One control rail for START, all games and Settings. The body of each
+   screen keeps its own padding; only the rail cancels that difference.
+   Keep asymmetric web safe areas as well as the normalized native frame. */
+.pick-intro-screen > .hud,
+.pick-screen > .hud,
+.settings-screen > .hud {
+  --hud-left: max(10px, var(--app-safe-left));
+  --hud-right: max(10px, var(--app-safe-right));
+  position: relative;
+  left: calc((var(--hud-left) - var(--hud-right) - var(--hud-parent-left) + var(--hud-parent-right)) / 2);
+  flex: 0 0 auto;
+  width: min(calc(100 * var(--layout-vw, 1vw) - var(--hud-left) - var(--hud-right)), 560px);
+  align-self: center;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.pick-intro-screen > .hud > :first-child,
+.pick-screen > .hud > :first-child,
+.settings-screen > .hud > :first-child { justify-self: start; }
+
+.pick-intro-screen > .hud > :last-child,
+.pick-screen > .hud > :last-child,
+.settings-screen > .hud > :last-child { justify-self: end; }
 .life-meter { display: flex; justify-content: center; gap: clamp(3px, calc(1 * var(--layout-vw, 1vw)), 7px); }
 .life-meter.hidden, .is-memory-mode .life-meter { display: none; }
 .run-heading .life-heart { display: block; width: clamp(23px, calc(6 * var(--layout-vw, 1vw)), 30px); height: 30px; color: #e33f68; }

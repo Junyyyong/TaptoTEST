@@ -10,6 +10,7 @@ import { PICK_STORAGE_KEYS, pickStore } from "./ui/pickStorage";
 import { validatePickSave } from "./ui/pickSaveValidation";
 import { StorageNotice } from "./ui/storageNotice";
 import "./ui/styles/storage.css";
+import "./ui/styles/nativeResponsive.css";
 import "./ui/styles/neutralUi.css";
 
 document.title = APP_CONFIG.name;

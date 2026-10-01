@@ -1,0 +1,26 @@
+{
+  "zip": "store/TAPtoTEST-images-20261001.zip",
+  "sha256": "4e8b5c53d0ffe3366fe32f9d766ef508a000a5cd063391c65f9fa216b00bd65a",
+  "images": [
+    "taptotest-icon-512.png",
+    "screenshots/2026-10-01/01-cover.png",
+    "screenshots/2026-10-01/02-main.png",
+    "screenshots/2026-10-01/03-puzzle-start.png",
+    "screenshots/2026-10-01/04-puzzle-play.png",
+    "screenshots/2026-10-01/05-portrait-start.png",
+    "screenshots/2026-10-01/06-portrait-play.png",
+    "screenshots/2026-10-01/07-position-try-again.png"
+  ],
+  "entries": [
+    "taptotest-icon-512.png",
+    "01-cover.png",
+    "02-main.png",
+    "03-puzzle-start.png",
+    "04-puzzle-play.png",
+    "05-portrait-start.png",
+    "06-portrait-play.png",
+    "07-position-try-again.png"
+  ],
+  "eachPngByteIdentical": true,
+  "bytes": 2661443
+}

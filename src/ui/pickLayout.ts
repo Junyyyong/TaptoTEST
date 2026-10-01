@@ -6,7 +6,11 @@ export function availableBoardSide(bottom: number, top: number, footer: number):
 
 /** DOMRects include the canvas transform; CSS lengths/scrollTop do not. */
 function canvasScale(screen: HTMLElement): number {
-  return screen.offsetHeight ? screen.getBoundingClientRect().height / screen.offsetHeight : 1;
+  // Responsive logical dimensions can be fractional. offsetHeight rounds to
+  // integers and would change the board cap across otherwise identical OS
+  // densities; computed height keeps the CSS/physical conversion precise.
+  const height = parseFloat(getComputedStyle(screen).height);
+  return height > 0 ? screen.getBoundingClientRect().height / height : 1;
 }
 
 /** Keep the original menu composition when it fits. On a short screen use

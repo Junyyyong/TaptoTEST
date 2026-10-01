@@ -29,10 +29,17 @@
 #btn-legal-close:focus-visible { outline: 2px solid var(--hot-deep); outline-offset: 2px; }
 
 .legal-dialog {
-  inset: var(--app-safe-top) var(--app-safe-right) var(--app-safe-bottom) var(--app-safe-left);
-  width: min(640px, calc(100% - var(--app-safe-left) - var(--app-safe-right) - 24px));
-  height: min(760px, calc(var(--app-content-h) - 32px));
-  max-height: calc(var(--app-content-h) - 32px);
+  /* The dialog is outside the scaled app. Use WebView overlap in viewport
+     units, not the app canvas's normalized safe-area values. */
+  --document-safe-top: var(--android-game-inset-top, var(--app-safe-top));
+  --document-safe-right: var(--android-game-inset-right, var(--app-safe-right));
+  --document-safe-bottom: var(--android-game-inset-bottom, var(--app-safe-bottom));
+  --document-safe-left: var(--android-game-inset-left, var(--app-safe-left));
+  --document-content-h: calc(var(--app-h) - var(--document-safe-top) - var(--document-safe-bottom));
+  inset: var(--document-safe-top) var(--document-safe-right) var(--document-safe-bottom) var(--document-safe-left);
+  width: min(640px, calc(100% - var(--document-safe-left) - var(--document-safe-right) - 24px));
+  height: min(760px, calc(var(--document-content-h) - 32px));
+  max-height: calc(var(--document-content-h) - 32px);
   padding: 0;
   border: 1px solid var(--paper-edge);
   border-radius: 18px;

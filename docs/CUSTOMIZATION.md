@@ -4,6 +4,16 @@ TAP to PICK은 TAPtoTALK의 화면 감각과 폰트를 유지하면서 이미지
 
 ## 자주 수정할 곳
 
+- 2026-10-01 Android 1.0.5/code7: 아래 반응형·커버·아이콘·리액션·HUD 후속 수정을 함께 담은 서명 AAB를 생성했다. 같은 앱 ID·기존 업로드 키·게임 규칙·기록을 유지한다. 전달 파일은 `android/releases/TAPtoTEST-1.0.5-code7-20261001.aab`, 최종 780×1688 PNG 7장은 `store/screenshots/2026-10-01-release-1.0.5/`다. 이전 AAB와 캡처는 보존하며 Google Play 업로드와 실기기 업데이트 검증은 별도다. 아래 ‘미생성’ 문구는 각 작업 당시 상태다. [번들 검증](research/2026-10-01-release-1.0.5/release-verification.json)
+
+- 2026-10-01 리액션·HUD 후속 수정: `overlay.css`의 `.cheer::before`가 기존 어두운 배경과 260ms 페이드를 담당한다. Android에서는 정규화된 `--frame-safe-*`만큼 배경만 확장해 WebView 창의 끝까지 덮고, `.cheer`의 안전영역 그리드·영상 크기·문구·Continue 위치는 유지한다. `talk.css`는 START·세 게임·Settings의 HUD를 공통 좌우 10px 안전 여백·최대 560px 레일로 맞추며 오른쪽 일시정지도 끝에 정렬한다. 각 화면 본문의 기존 패딩·서체·블록·규칙·기록·패키지는 유지한다. `nativeResponsive.css`의 별도 HUD 너비는 제거해 화면마다 다시 달라지지 않도록 한다. AAB·sync·commit·push는 하지 않았다. [전후 화면·검증](research/2026-10-01-reaction-hud/README.md)
+
+- 2026-10-01 아이콘 후속 수정: 아래 09-30 아이콘 생성 설명을 현재 소스에서 대체한다. 새 원본은 `assets/launcher/Tepee-icon-06.png`이며 제공 파일의 바이트를 그대로 보관한다. `scripts/generate-android-icons.cjs`는 크롭 없이 노란 `#fccf00` 배경으로 일반·스토어 아이콘의 전체 면을 채운다. adaptive 전경은 108dp 캔버스에 72dp 그림·18dp 여백을 두며 런처 마스크는 Android가 적용한다. 과거 원본·AAB는 보존한다. 최신 흰 UI의 참고 화면 7장은 `store/screenshots/2026-10-01/`에 780×1688 PNG로 저장한다. 앱 ID·서명·기록·게임 규칙은 유지하며 AAB·sync·commit·push는 하지 않았다. [원본·화면·검증](research/2026-10-01-icon-screenshots/README.md)
+
+- 2026-10-01 커버 후속 수정: 아래 반응형 작업의 `object-fit:cover`만 대체한다. `.splash-cover`는 `width:100%; height:auto; top:50%; transform:translateY(-50%); object-fit:contain`으로 창 가로폭에 맞추고 세로 중앙에 둔다. 원본 위아래의 흰 그라데이션을 그대로 사용하며 CSS 그라데이션이나 합성/반복 배경은 만들지 않는다. 긴 화면에서는 위아래 흰 공간에 이어지고 좌우는 자르지 않는다. 이미지보다 짧은 창은 기존 `overflow:hidden`으로 위아래만 잘린다. 스튜디오·메인·게임 반응형 및 density 정규화, 인트로 시간, 원본 파일은 유지한다. AAB·commit·push는 하지 않았다. [최신 커버 비교·검증](research/2026-10-01-responsive-layout/README.md)
+
+- 2026-10-01 반응형 후속 수정: 아래 1.0.3/1.0.4의 고정 390×844 설명을 소스에서 대체한다. `nativeFrame.ts`는 가용 너비/390과 가용 높이/640 중 작은 배율로 density를 정규화하되 논리 너비·높이를 창 비율에 맞게 동적으로 정한다. 390×844는 참조일 뿐 고정 비율이 아니다. `nativeResponsive.css`는 Android에서 제시 그림·간격·콘텐츠 최대 너비를 조절하고, `pickLayout.ts`는 소수점 논리 높이를 유지해 실제 남은 공간으로 보드를 제한한다. 스튜디오/커버만 `--frame-full-*`와 정규화한 inset으로 시스템 바 겹침 영역까지 배경을 칠한다. 커버는 원본 한 장의 `object-fit:cover`·중앙 크롭이며 합성/반복 배경을 만들지 않는다. 개인정보 dialog는 app 밖이므로 `legal.css`에서 원래 viewport 단위의 native overlap을 사용한다. 웹의 메인·게임 배치, 게임 규칙·서체·색/효과·기록·패키지는 유지한다. **AAB 재생성·commit·push는 하지 않았다.** [전후 화면·검증](research/2026-10-01-responsive-layout/README.md)
+
 - 2026-10-01 Android 1.0.4/code6: 아래 디자인·강조색 복원 및 1.0.3의 고정 비율 화면을 함께 담은 서명 AAB를 생성했다. 현재 버전은 `android/app/build.gradle`에서 관리하며 앱 ID·업로드 키·저장 형식·게임 규칙은 유지한다. 과거 AAB는 덮어쓰지 않고 `/android/releases/`에 새 파일을 보관한다. AAB와 개인 서명 파일은 Git에서 제외한다. [출시명·출시노트·검증 기록](research/2026-10-01-ui-release/README.md)
 
 - 2026-10-01 강조색 복원: 흰 기본 배경과 회색 일반 박스는 유지하되 스튜디오 배경 `#fccf00`, 메인 게임명 `--cool`, START 화면 제목 `--hot-deep`, 파란 시작 아이콘·초록 `.wood-btn`, 메인 Settings 및 일시정지/결과 링크 `--hot-deep`, `.result-primary`의 파란색·NEW BEST의 주황색·기록 경신 BEST의 기존 금색 반투명 배경, POSITION 쌍 수와 PORTRAIT 단계 표시 `--hot`, 게이지의 노랑→주황 그라데이션, SETTINGS 제목과 기존 on/off 스위치는 회색 오버라이드에서 제외한다. 저장 오류 Retry도 기존 `--go` 초록 바탕과 흰 글자를 유지한다. 크기·서체·배치 변경 없이 원래 CSS를 사용한다. 아래 최초 평면 스타일 설명보다 이 강조 예외가 우선한다. [검증·780×1688 비교](research/2026-10-01-ui-accents/README.md)

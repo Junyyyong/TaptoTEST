@@ -1,0 +1,65 @@
+{
+  "versionName": "1.0.5",
+  "versionCode": 7,
+  "applicationId": "io.github.junyyyong.taptotest",
+  "targetSdk": 36,
+  "minSdk": 24,
+  "path": "/Users/scdi/Documents/ChatGPT/TaptoPick/android/releases/TAPtoTEST-1.0.5-code7-20261001.aab",
+  "archivedPath": "/Users/scdi/Documents/ChatGPT/TaptoPick/.android-tools/releases/2026-10-01/TAPtoTEST-v1.0.5-code7.aab",
+  "deliveryCopyIdentical": true,
+  "bytes": 102692142,
+  "sha256": "ec96ad8fee3c71bd11756012c854b18aa2721e59baabcf086ead0127008974b0",
+  "previousAabPreserved": true,
+  "baselineCommit": "ff1594a89af57c5faf6497552e086cb1fd400bc6",
+  "uncommittedChangesIncluded": true,
+  "iconsPixelVerified": [
+    "base/res/mipmap-mdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-mdpi-v4/ic_launcher.png",
+    "base/res/mipmap-mdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher_round.png"
+  ],
+  "sourceIconSha256": "432e0ce3a8b30a2e70f028a895194630c0c7793c466326e66ce7b34ac35d31a4",
+  "signatureAndWebVerification": [
+    "Verified signed payload entries: 866",
+    "Verified current web files: 437",
+    "Signing certificate SHA-256: 93381e4bf0cc519b6540750e006b87b3e5e9db721390abda3a6e6ae83fb777dc",
+    "AAB SHA-256: ec96ad8fee3c71bd11756012c854b18aa2721e59baabcf086ead0127008974b0",
+    "AAB bytes: 102692142",
+    "No private signing files packaged. Policy/license files match current source."
+  ],
+  "unchangedSourcePaths": [
+    "src/core/pick",
+    "src/content/puzzles.ts",
+    "src/ui/pickStorage.ts",
+    "src/ui/persistentStore.ts",
+    "src/ui/pickRecords.ts",
+    "src/ui/pickSaveValidation.ts",
+    "src/config/app.ts",
+    "public/assets/fonts"
+  ],
+  "checks": [
+    "bundletool validate passed",
+    "manifest/version/app ID/fontScale flag passed",
+    "15 icon payloads pixel-identical",
+    "adaptive resources present",
+    "#fccf00 icon background, correct app label",
+    "old delivered AAB hash unchanged",
+    "DEX contains lifecycle callbacks and setTextZoom(100)"
+  ],
+  "limitations": [
+    "No connected Android device/emulator: real fontScale, launcher and in-place update not tested",
+    "Not uploaded to Google Play; Git publication is verified separately from this bundle check"
+  ],
+  "capturedAt": "2026-10-01T07:04:33.737Z"
+}

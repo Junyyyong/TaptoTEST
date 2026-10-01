@@ -1,0 +1,50 @@
+/* Android-only layout. The aspect ratio follows the usable window, while
+   nativeFrame normalizes display-size changes before these rules run.
+   Paint, typefaces, game state and image files remain unchanged. */
+#app.is-native-frame .pick-screen {
+  --pick-preview-side: clamp(182px, calc(264px + (var(--app-h) - 844px) * .4), 300px);
+  gap: clamp(4px, calc(7px + (var(--app-h) - 844px) * .03), 12px);
+}
+
+/* A wide tablet has white space beside the content, not cropped content.
+   Keep controls close to the board instead of at distant screen corners. */
+#app.is-native-frame .pick-screen .pick-target,
+#app.is-native-frame .settings-body {
+  width: min(100%, 560px);
+  align-self: center;
+}
+
+#app.is-native-frame .pick-intro-body {
+  width: min(100%, 560px);
+  align-self: center;
+}
+
+#app.is-native-frame .pick-target {
+  min-height: calc(var(--pick-preview-side) + 16px);
+}
+
+#app.is-native-frame .has-character-name .pick-target {
+  min-height: calc(var(--pick-preview-side) + 50px);
+}
+
+#app.is-native-frame .target-preview {
+  width: min(calc(86 * var(--layout-vw)), 340px);
+  height: var(--pick-preview-side);
+}
+
+#app.is-native-frame .unit-reveal {
+  width: var(--pick-preview-side);
+  height: var(--pick-preview-side);
+}
+
+#app.is-native-frame .unit-reveal--12 {
+  width: calc(var(--pick-preview-side) * .75);
+}
+
+/* Use actual measured room instead of a fixed subtraction from the height. */
+#app.is-native-frame .picture-board,
+#app.is-native-frame .pick-progress,
+#app.is-native-frame .montage-status {
+  width: min(100%, 560px, var(--board-fit, calc(100 * var(--layout-vw))));
+  align-self: center;
+}

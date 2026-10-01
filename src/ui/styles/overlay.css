@@ -113,10 +113,24 @@
    */
   padding: max(var(--cheer-top),var(--app-safe-top)) var(--app-safe-right) max(24px,var(--app-safe-bottom)) var(--app-safe-left);
   pointer-events: auto;
-  /* Most of the way to black. The board is still there underneath — it is
-     what was just finished — but it has receded far enough that everything
-     bright on screen belongs to the word and the clip. */
+}
+
+/* Paint independently of the safe content grid, so native insets can be
+   covered without moving the word, clip, Continue button or touch targets. */
+.cheer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background: rgba(0, 0, 0, 0.68);
+}
+
+#app.is-native-frame .cheer::before {
+  inset: calc(-1 * var(--frame-safe-top, 0px))
+         calc(-1 * var(--frame-safe-right, 0px))
+         calc(-1 * var(--frame-safe-bottom, 0px))
+         calc(-1 * var(--frame-safe-left, 0px));
 }
 
 /* Each score band has its own staging. The media paths are replaceable in
@@ -229,7 +243,7 @@
   50% { opacity: 1; }
 }
 
-.cheer-run {
+.cheer-run::before {
   animation: cheer-dim 260ms ease both;
 }
 
