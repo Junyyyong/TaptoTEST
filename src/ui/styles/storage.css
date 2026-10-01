@@ -1,4 +1,4 @@
-.storage-notice { position: fixed; z-index: 10000; inset: auto 12px max(12px, env(safe-area-inset-bottom)); padding: 16px; border: 1px solid var(--paper-edge); border-radius: 16px; background: var(--paper); color: var(--ink); box-shadow: 0 4px 24px #0003; text-align: center; }
+.storage-notice { position: fixed; z-index: 10000; inset: auto max(12px,var(--app-safe-right)) max(12px,var(--app-safe-bottom)) max(12px,var(--app-safe-left)); padding: 16px; border: 1px solid var(--paper-edge); border-radius: 16px; background: var(--paper); color: var(--ink); box-shadow: 0 4px 24px #0003; text-align: center; }
 .storage-notice.storage-blocking { inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 0; border-radius: 0; }
 .storage-notice p { white-space: pre-line; font-size: 16px; line-height: 1.5; margin: 0 0 12px; }
 .storage-notice button { background: var(--go); color: white; padding: 10px 24px; border-radius: 10px; font: inherit; font-weight: 600; }

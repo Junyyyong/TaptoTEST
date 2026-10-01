@@ -79,7 +79,7 @@
 .cheer {
   --cheer-gap: 16px;
   --cheer-top: clamp(56px, calc(var(--app-h, 100dvh) * 0.16), 150px);
-  --clip-width: min(86vw, 420px);
+  --clip-width: min(calc(86 * var(--layout-vw, 1vw)), 420px);
   --clip-offset: 0px;
   position: absolute;
   inset: 0;
@@ -111,7 +111,7 @@
    * The clip's row is the flexible one, so this comes out of its slack and
    * nothing else moves.
    */
-  padding: var(--cheer-top) 0 24px;
+  padding: max(var(--cheer-top),var(--app-safe-top)) var(--app-safe-right) max(24px,var(--app-safe-bottom)) var(--app-safe-left);
   pointer-events: auto;
   /* Most of the way to black. The board is still there underneath — it is
      what was just finished — but it has receded far enough that everything
@@ -121,10 +121,10 @@
 
 /* Each score band has its own staging. The media paths are replaceable in
    config/app.ts, so future clips can be tuned without changing game flow. */
-.cheer-layout-compact { --cheer-gap: 22px; --cheer-top: clamp(72px, 18vh, 164px); --clip-width: min(72vw, 350px); --clip-offset: 8px; }
-.cheer-layout-standard { --cheer-gap: 16px; --cheer-top: clamp(62px, 16vh, 150px); --clip-width: min(82vw, 400px); --clip-offset: 2px; }
-.cheer-layout-large { --cheer-gap: 10px; --cheer-top: clamp(52px, 14vh, 132px); --clip-width: min(88vw, 440px); --clip-offset: -4px; }
-.cheer-layout-hero { --cheer-gap: 4px; --cheer-top: clamp(42px, 12vh, 112px); --clip-width: min(94vw, 480px); --clip-offset: -10px; }
+.cheer-layout-compact { --cheer-gap: 22px; --cheer-top: clamp(72px, calc(18 * var(--layout-vh, 1vh)), 164px); --clip-width: min(calc(72 * var(--layout-vw, 1vw)), 350px); --clip-offset: 8px; }
+.cheer-layout-standard { --cheer-gap: 16px; --cheer-top: clamp(62px, calc(16 * var(--layout-vh, 1vh)), 150px); --clip-width: min(calc(82 * var(--layout-vw, 1vw)), 400px); --clip-offset: 2px; }
+.cheer-layout-large { --cheer-gap: 10px; --cheer-top: clamp(52px, calc(14 * var(--layout-vh, 1vh)), 132px); --clip-width: min(calc(88 * var(--layout-vw, 1vw)), 440px); --clip-offset: -4px; }
+.cheer-layout-hero { --cheer-gap: 4px; --cheer-top: clamp(42px, calc(12 * var(--layout-vh, 1vh)), 112px); --clip-width: min(calc(94 * var(--layout-vw, 1vw)), 480px); --clip-offset: -10px; }
 
 .cheer.hidden {
   display: none;
@@ -164,7 +164,7 @@
 
 .cheer-headline {
   margin: 0 0 6px;
-  font-size: clamp(26px, 9vw, 52px);
+  font-size: clamp(26px, calc(9 * var(--layout-vw, 1vw)), 52px);
   font-weight: 900;
   font-style: italic;
   line-height: 1.12;
@@ -184,7 +184,7 @@
 
 .cheer-score {
   margin: 0;
-  font-size: clamp(56px, 22vw, 132px);
+  font-size: clamp(56px, calc(22 * var(--layout-vw, 1vw)), 132px);
   font-weight: 900;
   line-height: 0.96;
   color: var(--warm);
@@ -278,7 +278,7 @@
   /* Sized for the longest word it ever shows — "GOOD TRY!" — so none of them
      run off the edges. An italic 900 face is about 0.6em a letter, and nine of
      those have to fit inside the screen. */
-  font-size: clamp(30px, 11vw, 68px);
+  font-size: clamp(30px, calc(11 * var(--layout-vw, 1vw)), 68px);
   white-space: nowrap;
   font-weight: 900;
   font-style: italic;

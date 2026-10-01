@@ -1,0 +1,6750 @@
+{
+  "baseline": "Delivered 1.0.1/code2, HEAD 783968f plus prior icon/textZoom changes",
+  "viewport": "390×844 DPR2; 780×1688 PNG",
+  "nativeDeviceTested": false,
+  "safeAreaSimulation": "CDP env() and Capacitor variables: top24/bottom48; illustrative, not a measured phone",
+  "fonts": {
+    "before": {
+      "#mode-unit .mode-name": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "21px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-unit .mode-desc": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-title-settings": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#settings-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text b": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "16px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text small": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".settings-legal-link": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "500",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "26px",
+        "weight": "900",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-note": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-mode-intro-start": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#target-character-name": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "21.45px",
+        "weight": "800",
+        "line": "25.74px",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      "#progress-label": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "11px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#help-title": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "19px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      ".pause-card p": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21.7px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-resume": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#cheer-word": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "42.9px",
+        "weight": "900",
+        "line": "51.48px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-primary": {
+        "family": "\"TAP Sans KR\", sans-serif",
+        "size": "46.8px",
+        "weight": "800",
+        "line": "56.16px",
+        "actual": [
+          {
+            "family": "Noto Sans KR Thin",
+            "custom": true
+          }
+        ]
+      },
+      ".result-unit": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "12px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-best strong": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-next-goal": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "21px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-again": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#run-clock": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "21px",
+        "weight": "700",
+        "line": "21px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-target-badge strong": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "43px",
+        "weight": "900",
+        "line": "43px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-stage-label": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "900",
+        "line": "13px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-question-icon text": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "26px",
+        "weight": "900",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      }
+    },
+    "after": {
+      "#mode-unit .mode-name": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "21px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-unit .mode-desc": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-title-settings": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#settings-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text b": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "16px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text small": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".settings-legal-link": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "500",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "26px",
+        "weight": "900",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-note": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-mode-intro-start": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#target-character-name": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "21.45px",
+        "weight": "800",
+        "line": "25.74px",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      "#progress-label": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "11px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#help-title": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "19px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      ".pause-card p": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21.7px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-resume": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#cheer-word": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "42.9px",
+        "weight": "900",
+        "line": "51.48px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-primary": {
+        "family": "\"TAP Sans KR\", sans-serif",
+        "size": "46.8px",
+        "weight": "800",
+        "line": "56.16px",
+        "actual": [
+          {
+            "family": "Noto Sans KR Thin",
+            "custom": true
+          }
+        ]
+      },
+      ".result-unit": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "12px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-best strong": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-next-goal": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "21px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-again": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#run-clock": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "21px",
+        "weight": "700",
+        "line": "21px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-target-badge strong": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "43px",
+        "weight": "900",
+        "line": "43px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-stage-label": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "900",
+        "line": "13px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".memory-question-icon text": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "26px",
+        "weight": "900",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      }
+    }
+  },
+  "captures": [
+    {
+      "file": "before-studio.png",
+      "sha256": "c24317a8c74629381ad8ce31972c994c494eff03ccba92bf45c32c538d49db95"
+    },
+    {
+      "file": "before-cover.png",
+      "sha256": "50ff180f5a02838f74e42a1d5cabf11f4c1a6d3014ec2d395155bd4b3bbe805e"
+    },
+    {
+      "file": "before-menu.png",
+      "sha256": "9605ad9bf28d37ebbfcbeb71ca997e3f205e61f2d68bb7d40108e2a2aeb159bb"
+    },
+    {
+      "file": "before-menu-insets-sim.png",
+      "sha256": "9605ad9bf28d37ebbfcbeb71ca997e3f205e61f2d68bb7d40108e2a2aeb159bb"
+    },
+    {
+      "file": "before-settings.png",
+      "sha256": "b002fd0a46f1cf7fedf7ef89dc135622a4bf3a929c93b19b0cd00d5a4e08c8b4"
+    },
+    {
+      "file": "before-settings-insets-sim.png",
+      "sha256": "9428e4b3134aa316eb417de29f17b073dbd796d90494ab3aa080fb78fbd6cd5c"
+    },
+    {
+      "file": "before-privacy-insets-sim.png",
+      "sha256": "f900ba49a89bcf22a3057de4e30a92b67d897d8171abadb94146935f4355cdca"
+    },
+    {
+      "file": "before-licenses-insets-sim.png",
+      "sha256": "540c4c79486e47fdd0e1bdec06b907b8898906eef4aa588b0cdf4b5941670690"
+    },
+    {
+      "file": "before-unit-start.png",
+      "sha256": "00f6f0ed43c6b4531de25b359e5a262cb847cc74e5143c88373ee3486b363a5b"
+    },
+    {
+      "file": "before-puzzle-Tapee.png",
+      "sha256": "f1f9d222f0d6efafbc760aec9c01015d5782718dd775f23d69aa2df99ea707a1"
+    },
+    {
+      "file": "before-puzzle-Tapee-insets-sim.png",
+      "sha256": "4fb0041986d18363ff323da0cf19fae298137c1749e8571de5a1b765cf61a58e"
+    },
+    {
+      "file": "before-puzzle-Ha.png",
+      "sha256": "676d77a215be3ee6a52a65759851d351afb430d0e24bae7110346cbcdd00eec7"
+    },
+    {
+      "file": "before-puzzle-Ha-insets-sim.png",
+      "sha256": "8e16aa4f4d22fa724ab300031dba76a7bf7e7c0b875c1fc6333e2db0cb4fb8ba"
+    },
+    {
+      "file": "before-pause.png",
+      "sha256": "6535c01f3bcd20337eeb6c4fa63a06071eb139c43e8f0fe294ab33553d6b1047"
+    },
+    {
+      "file": "before-puzzle-video-insets-sim.png",
+      "sha256": "a15025981b5fce954a4b62a40ef10463da244f097afd0f8cf1dead74b0d02ab1"
+    },
+    {
+      "file": "before-puzzle-result-insets-sim.png",
+      "sha256": "de33ef55e30120e5be59393bdcc2fbe8382ab8b6d1779889e99aeda45c53c271"
+    },
+    {
+      "file": "before-portrait-start.png",
+      "sha256": "e3ae336106587ef258cb25b7f3e917663a61a77a1c461a9a1622c89769613380"
+    },
+    {
+      "file": "before-portrait-4.png",
+      "sha256": "86672345e1fbed0da7160e1137fe362ccd51acf0cdaf2ec477c33e59e61b23ca"
+    },
+    {
+      "file": "before-portrait-4-insets-sim.png",
+      "sha256": "26cbd6a315d8bfa669737966b68600920cd4dae657544100224b7fb16a8359e8"
+    },
+    {
+      "file": "before-portrait-9.png",
+      "sha256": "c4907111e49235ee3aaa6ec7d171d96a80a83687c193ed0c1f939acf0132bde8"
+    },
+    {
+      "file": "before-portrait-9-insets-sim.png",
+      "sha256": "b3c3278ea83fcb5507707ccdc3294b82f7037db6d94b9c60758dc1bf670ca872"
+    },
+    {
+      "file": "before-portrait-16.png",
+      "sha256": "9a4a09240b05a513bbc189e08ab195d020b1f773e358c1ea0caa0805fe956753"
+    },
+    {
+      "file": "before-portrait-16-insets-sim.png",
+      "sha256": "21ddbd5c2776c6f811ad27a0bfda9c21c9e783a8186b9f5ead706589009cc1a3"
+    },
+    {
+      "file": "before-portrait-25.png",
+      "sha256": "1d85af64583afaadb9099b0499946efa570796ff94303d694fc2bc158a6ada32"
+    },
+    {
+      "file": "before-portrait-25-insets-sim.png",
+      "sha256": "99082c2e386c7edcb93cb49b1c9306fafea8021c4d57c7156b74530c4960615e"
+    },
+    {
+      "file": "before-portrait-video-insets-sim.png",
+      "sha256": "ab26df15cd8ebe60b55a6224af3becbd5c406ecd8c2810a7c42335c07fd1d206"
+    },
+    {
+      "file": "before-portrait-result-insets-sim.png",
+      "sha256": "541f3ef977608f6da82d4587f18a85e87e2bd82e9e440d7333641b6c77f67d8c"
+    },
+    {
+      "file": "before-position-start.png",
+      "sha256": "9f935fa767971722d791ad368731b6f95e2e0adb4ab76cfe0db18c6099ad3ae1"
+    },
+    {
+      "file": "before-position-2.png",
+      "sha256": "fcf1c1dd6c85931c4bf2f814483f19dcfd87cdbf14fae9f3efd40be8ec5f7208"
+    },
+    {
+      "file": "before-position-2-hidden-insets-sim.png",
+      "sha256": "ee456937d1007eaad138e2850f0d8976c58d388edcb6f62252c9002f770e54c4"
+    },
+    {
+      "file": "before-position-4.png",
+      "sha256": "f133eca9ca3f78f35db053b06a483ffc7ef4484861aed45ef1e3489d4d552483"
+    },
+    {
+      "file": "before-position-4-hidden-insets-sim.png",
+      "sha256": "926c8a33463584fd1a39943b65e62f971eda6a7c005e6cd9c8d3e70986b5ddb1"
+    },
+    {
+      "file": "before-position-6.png",
+      "sha256": "56a886cb185532186ef4197888b796f16c81f3d46df939a8cae98648b93aaff6"
+    },
+    {
+      "file": "before-position-6-hidden-insets-sim.png",
+      "sha256": "5f89b3b6a11a48689ab4d7090b454827854551b9f725a2d812b0de7e9936c195"
+    },
+    {
+      "file": "before-position-video-insets-sim.png",
+      "sha256": "b19fe2779a72d1e5205318e3904751ec24c7d82e6717c67a2df1ba7d541a8ddc"
+    },
+    {
+      "file": "before-position-result-insets-sim.png",
+      "sha256": "a58f2817ff4869e8cd78bea75f81986b0609d292b2d0a1023ccfb7d0b1bde12d"
+    },
+    {
+      "file": "before-failure-video-insets-sim.png",
+      "sha256": "f9acc57f92b8b96cbca8a374be309977e22ae209eb82315b62e22165488f564d"
+    },
+    {
+      "file": "before-failure-result-insets-sim.png",
+      "sha256": "2fbe6126de34cc485dc00295b5eeabb362bc99279c882a92478909d1294e4177"
+    },
+    {
+      "file": "after-studio.png",
+      "sha256": "c24317a8c74629381ad8ce31972c994c494eff03ccba92bf45c32c538d49db95"
+    },
+    {
+      "file": "after-cover.png",
+      "sha256": "50ff180f5a02838f74e42a1d5cabf11f4c1a6d3014ec2d395155bd4b3bbe805e"
+    },
+    {
+      "file": "after-menu.png",
+      "sha256": "9605ad9bf28d37ebbfcbeb71ca997e3f205e61f2d68bb7d40108e2a2aeb159bb"
+    },
+    {
+      "file": "after-menu-insets-sim.png",
+      "sha256": "cbc82943db56cacba8f965daa243406a3368d22546bef78f38542bfa9ea2b5e2"
+    },
+    {
+      "file": "after-settings.png",
+      "sha256": "7d171556c21bd7030ac233dbe64f6f276b02bd002bbafb6a3f5b2f2ffe181541"
+    },
+    {
+      "file": "after-settings-insets-sim.png",
+      "sha256": "99a14e5f7690857e7716083808c0fb64288292b96aa0b894a31f57c04d0326a0"
+    },
+    {
+      "file": "after-privacy-insets-sim.png",
+      "sha256": "8e89c7c5d313037f10314f6b7a9d31e5e76725dc66bdfb640c5b0500e1a133af"
+    },
+    {
+      "file": "after-licenses-insets-sim.png",
+      "sha256": "5b18bc55d769268505bb8f8ffa267965f692ec56c00246138a860edf2be26228"
+    },
+    {
+      "file": "after-unit-start.png",
+      "sha256": "00f6f0ed43c6b4531de25b359e5a262cb847cc74e5143c88373ee3486b363a5b"
+    },
+    {
+      "file": "after-puzzle-Tapee.png",
+      "sha256": "f1f9d222f0d6efafbc760aec9c01015d5782718dd775f23d69aa2df99ea707a1"
+    },
+    {
+      "file": "after-puzzle-Tapee-insets-sim.png",
+      "sha256": "923b7cba9f23f224aec25607b1d25b9ccacbde1d9f1b0bcb4275db74c4e92c9c"
+    },
+    {
+      "file": "after-puzzle-Ha.png",
+      "sha256": "676d77a215be3ee6a52a65759851d351afb430d0e24bae7110346cbcdd00eec7"
+    },
+    {
+      "file": "after-puzzle-Ha-insets-sim.png",
+      "sha256": "d09dd49ba2c0eab9b5010bb3ce78dbd9ea42cffc29e2f1fadb2cf477acd0f40b"
+    },
+    {
+      "file": "after-pause.png",
+      "sha256": "49238cb968e3368a4822c20d2cdee44e2a79dc35829d802ea29d45aca7447286"
+    },
+    {
+      "file": "after-puzzle-video-insets-sim.png",
+      "sha256": "b77793f529f9eed12b4de0d6e762cd647da6be729cbcd02cc20d0e9063bf40be"
+    },
+    {
+      "file": "after-puzzle-result-insets-sim.png",
+      "sha256": "df7768a92c5ddc92457c2a6866e8a377a80d89fb26505e6a2fa38b5c9dfd6203"
+    },
+    {
+      "file": "after-portrait-start.png",
+      "sha256": "50297f3e1f36140e07e0d88cc5513212d50e81a3f8074dca704e774ef5a05e2c"
+    },
+    {
+      "file": "after-portrait-4.png",
+      "sha256": "86672345e1fbed0da7160e1137fe362ccd51acf0cdaf2ec477c33e59e61b23ca"
+    },
+    {
+      "file": "after-portrait-4-insets-sim.png",
+      "sha256": "209e55ce6b67275edf4cd1b68a65183953c38217ae4afe8a6252aded4130719f"
+    },
+    {
+      "file": "after-portrait-9.png",
+      "sha256": "c4907111e49235ee3aaa6ec7d171d96a80a83687c193ed0c1f939acf0132bde8"
+    },
+    {
+      "file": "after-portrait-9-insets-sim.png",
+      "sha256": "fc44e8914d6c233082f9347568f72caabdcb543d5469f5d3177963091c804157"
+    },
+    {
+      "file": "after-portrait-16.png",
+      "sha256": "9a4a09240b05a513bbc189e08ab195d020b1f773e358c1ea0caa0805fe956753"
+    },
+    {
+      "file": "after-portrait-16-insets-sim.png",
+      "sha256": "14c056dddc52b68d65e6ee311cc827abb9b7720c76e4581fa15b81d711d79652"
+    },
+    {
+      "file": "after-portrait-25.png",
+      "sha256": "1d85af64583afaadb9099b0499946efa570796ff94303d694fc2bc158a6ada32"
+    },
+    {
+      "file": "after-portrait-25-insets-sim.png",
+      "sha256": "258e9e27ee1f2aa478087fba6e9c9ef4a4f190a953c2b92fb8fcb415a49b986d"
+    },
+    {
+      "file": "after-portrait-video-insets-sim.png",
+      "sha256": "8f1d943bc573a6cde68f6bcc31c9a17d61a392eac365e6b71bfb6b08bac80b95"
+    },
+    {
+      "file": "after-portrait-result-insets-sim.png",
+      "sha256": "93a35734702b32cf2c176e89ecb45e016c137147a70770267130bc2de43bc34b"
+    },
+    {
+      "file": "after-position-start.png",
+      "sha256": "7813e175bc2a83967aa0c355b2f34cf291b9311410f45623598df06618d3ce68"
+    },
+    {
+      "file": "after-position-2.png",
+      "sha256": "fcf1c1dd6c85931c4bf2f814483f19dcfd87cdbf14fae9f3efd40be8ec5f7208"
+    },
+    {
+      "file": "after-position-2-hidden-insets-sim.png",
+      "sha256": "ee456937d1007eaad138e2850f0d8976c58d388edcb6f62252c9002f770e54c4"
+    },
+    {
+      "file": "after-position-4.png",
+      "sha256": "f133eca9ca3f78f35db053b06a483ffc7ef4484861aed45ef1e3489d4d552483"
+    },
+    {
+      "file": "after-position-4-hidden-insets-sim.png",
+      "sha256": "926c8a33463584fd1a39943b65e62f971eda6a7c005e6cd9c8d3e70986b5ddb1"
+    },
+    {
+      "file": "after-position-6.png",
+      "sha256": "56a886cb185532186ef4197888b796f16c81f3d46df939a8cae98648b93aaff6"
+    },
+    {
+      "file": "after-position-6-hidden-insets-sim.png",
+      "sha256": "5f89b3b6a11a48689ab4d7090b454827854551b9f725a2d812b0de7e9936c195"
+    },
+    {
+      "file": "after-position-video-insets-sim.png",
+      "sha256": "e50224dddffc66fdbea24c1bbd832d361eee1a51ac1225ec7eb1d406e113fe21"
+    },
+    {
+      "file": "after-position-result-insets-sim.png",
+      "sha256": "d830cf562c2075cf9b8f263babbf9686c83c7d012a1824a3a1fb9b044cd40a38"
+    },
+    {
+      "file": "after-failure-video-insets-sim.png",
+      "sha256": "3cc97e61b954f631cb81fa9785b427a9bb16eed29a394ffd60188dc28c53d487"
+    },
+    {
+      "file": "after-failure-result-insets-sim.png",
+      "sha256": "3b6fba765ba961224f4b4fffc2cc38b11d67ecd73ba13280f5d6096517b0b111"
+    }
+  ],
+  "layout": [
+    {
+      "phase": "before",
+      "label": "puzzle-Tapee",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 112.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58371/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Tapee-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58371/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Ha",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 112.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58371/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Ha-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58371/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-9",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-9-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-16",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-16-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-25",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-25-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-2",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-2-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-6",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "position-6-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 112.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 16.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 44.5,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 119.25,
+        "y": 114.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 29.5,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 119.25,
+        "y": 124.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 80.5,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 88.5,
+        "y": 136.1875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 88.5,
+        "y": 136.1875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 88.5,
+        "y": 136.1875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 52,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 126.75,
+        "y": 114.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 37,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 126.75,
+        "y": 124.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 88,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 16.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 63,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 137.75,
+        "y": 114.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 48,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 137.75,
+        "y": 124.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 99,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 107,
+        "y": 136.796875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 27.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 107,
+        "y": 136.796875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 107,
+        "y": 136.796875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Tapee-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 63,
+        "y": 326,
+        "w": 194,
+        "h": 194,
+        "bottom": 520
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 91.75,
+        "y": 114.5,
+        "w": 136.5,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58407/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 112.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 16.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 44.5,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 96.5,
+        "y": 114.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 29.5,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 96.5,
+        "y": 124.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 80.5,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 55.5,
+        "y": 136.1875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 55.5,
+        "y": 136.1875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": {
+        "x": 55.5,
+        "y": 136.1875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 52,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 104,
+        "y": 114.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 37,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 104,
+        "y": 124.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 88,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 16.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 63,
+        "y": 326,
+        "w": 286,
+        "h": 286,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 115,
+        "y": 114.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 48,
+        "y": 336,
+        "w": 316,
+        "h": 316,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": {
+        "x": 115,
+        "y": 124.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 99,
+        "y": 439,
+        "w": 214,
+        "h": 214,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 74,
+        "y": 136.796875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 27.5,
+        "y": 439,
+        "w": 357,
+        "h": 357,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 74,
+        "y": 136.796875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": {
+        "x": 74,
+        "y": 136.796875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "puzzle-Ha-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 63,
+        "y": 326,
+        "w": 194,
+        "h": 194,
+        "bottom": 520
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": {
+        "x": 69,
+        "y": 114.5,
+        "w": 182,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58407/assets/Ha-D_7O5Gme.webp",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 54.5,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 54.5,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 39.5,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 39.5,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 92,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 92,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 20.5,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 20.5,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 801,
+        "w": 355,
+        "h": 16,
+        "bottom": 817
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 62,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 62,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 47,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 47,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 99.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 99.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 58,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 58,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 110.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 110.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 39,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 39,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 838,
+        "w": 392,
+        "h": 16,
+        "bottom": 854
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-4-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 174,
+        "h": 174,
+        "bottom": 500
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 504,
+        "w": 174,
+        "h": 16,
+        "bottom": 520
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 54.5,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 54.5,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 39.5,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 39.5,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 92,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 92,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 20.5,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 20.5,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 801,
+        "w": 355,
+        "h": 16,
+        "bottom": 817
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 62,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 62,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 47,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 47,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 99.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 99.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 58,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 58,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 110.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 110.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 39,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 39,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 838,
+        "w": 392,
+        "h": 16,
+        "bottom": 854
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-9-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 174,
+        "h": 174,
+        "bottom": 500
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 504,
+        "w": 174,
+        "h": 16,
+        "bottom": 520
+      },
+      "count": 9,
+      "name": "재피 Zapee",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 54.5,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 54.5,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 39.5,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 39.5,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 92,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 92,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 20.5,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 20.5,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 801,
+        "w": 355,
+        "h": 16,
+        "bottom": 817
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 62,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 62,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 47,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 47,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 99.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 99.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 58,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 58,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 110.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 110.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 39,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 39,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 838,
+        "w": 392,
+        "h": 16,
+        "bottom": 854
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-16-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 174,
+        "h": 174,
+        "bottom": 500
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 504,
+        "w": 174,
+        "h": 16,
+        "bottom": 520
+      },
+      "count": 16,
+      "name": "재피 Zapee",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 54.5,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 54.5,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 39.5,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 39.5,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 92,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 92,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 20.5,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 20.5,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 355,
+        "h": 355,
+        "bottom": 794
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 136.1875,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 400.1875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 801,
+        "w": 355,
+        "h": 16,
+        "bottom": 817
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 62,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 70,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 62,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 47,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 70,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 47,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 99.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 99.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 28,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 28,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 266,
+        "h": 266,
+        "bottom": 592
+      },
+      "preview": {
+        "x": 81,
+        "y": 114.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 596,
+        "w": 266,
+        "h": 16,
+        "bottom": 612
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 58,
+        "y": 336,
+        "w": 296,
+        "h": 296,
+        "bottom": 632
+      },
+      "preview": {
+        "x": 81,
+        "y": 124.5,
+        "w": 250,
+        "h": 182,
+        "bottom": 306.5
+      },
+      "target": null,
+      "stage": {
+        "x": 58,
+        "y": 636,
+        "w": 296,
+        "h": 16,
+        "bottom": 652
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 110.5,
+        "y": 439,
+        "w": 191,
+        "h": 191,
+        "bottom": 630
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 110.5,
+        "y": 637,
+        "w": 191,
+        "h": 16,
+        "bottom": 653
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 39,
+        "y": 439,
+        "w": 334,
+        "h": 334,
+        "bottom": 773
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 39,
+        "y": 780,
+        "w": 334,
+        "h": 16,
+        "bottom": 796
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 392,
+        "h": 392,
+        "bottom": 831
+      },
+      "preview": {
+        "x": 36,
+        "y": 136.796875,
+        "w": 340,
+        "h": 264,
+        "bottom": 400.796875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 838,
+        "w": 392,
+        "h": 16,
+        "bottom": 854
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "portrait-25-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 73,
+        "y": 326,
+        "w": 174,
+        "h": 174,
+        "bottom": 500
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 114.5,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 296.5
+      },
+      "target": null,
+      "stage": {
+        "x": 73,
+        "y": 504,
+        "w": 174,
+        "h": 16,
+        "bottom": 520
+      },
+      "count": 25,
+      "name": "태피 Tapee",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "position-2",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-2-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 29.5,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 14.5,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 63.5,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 37,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 70,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 22,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 70,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 71,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 81,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 33,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 81,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 82,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 10.5,
+        "y": 405,
+        "w": 391,
+        "h": 391,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-2-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 392,
+        "h": 392,
+        "bottom": 797
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-2-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 224,
+        "h": 224,
+        "bottom": 520
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 84,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 4,
+      "name": "",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "position-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 29.5,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 14.5,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 63.5,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 37,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 70,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 22,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 70,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 71,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 81,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 33,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 81,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 82,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 10.5,
+        "y": 405,
+        "w": 391,
+        "h": 391,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-4-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 392,
+        "h": 392,
+        "bottom": 797
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-4-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 224,
+        "h": 224,
+        "bottom": 520
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 84,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 16,
+      "name": "",
+      "scroll": 568
+    },
+    {
+      "phase": "after",
+      "label": "position-6",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 381,
+        "w": 370,
+        "h": 370,
+        "bottom": 751
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 77,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 341
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-6-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        660
+      ],
+      "board": {
+        "x": 29.5,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        700
+      ],
+      "board": {
+        "x": 14.5,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 62.5,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        701
+      ],
+      "board": {
+        "x": 63.5,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        375,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 355,
+        "h": 355,
+        "bottom": 760
+      },
+      "preview": {
+        "x": 26.25,
+        "y": 101,
+        "w": 322.5,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        660
+      ],
+      "board": {
+        "x": 37,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 70,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        700
+      ],
+      "board": {
+        "x": 22,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 70,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        701
+      ],
+      "board": {
+        "x": 71,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        390,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 370,
+        "h": 370,
+        "bottom": 775
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 101,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        660
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 316,
+        "h": 316,
+        "bottom": 612
+      },
+      "preview": {
+        "x": 81,
+        "y": 84,
+        "w": 250,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 660
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        700
+      ],
+      "board": {
+        "x": 33,
+        "y": 306,
+        "w": 346,
+        "h": 346,
+        "bottom": 652
+      },
+      "preview": {
+        "x": 81,
+        "y": 94,
+        "w": 250,
+        "h": 182,
+        "bottom": 276
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 700
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        701
+      ],
+      "board": {
+        "x": 82,
+        "y": 405,
+        "w": 248,
+        "h": 248,
+        "bottom": 653
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 701
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        844
+      ],
+      "board": {
+        "x": 10.5,
+        "y": 405,
+        "w": 391,
+        "h": 391,
+        "bottom": 796
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 844
+    },
+    {
+      "phase": "after",
+      "label": "position-6-matrix",
+      "safe": true,
+      "viewport": [
+        412,
+        932
+      ],
+      "board": {
+        "x": 10,
+        "y": 405,
+        "w": 392,
+        "h": 392,
+        "bottom": 797
+      },
+      "preview": {
+        "x": 36,
+        "y": 101,
+        "w": 340,
+        "h": 264,
+        "bottom": 365
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 932
+    },
+    {
+      "phase": "after",
+      "label": "position-6-small",
+      "safe": true,
+      "viewport": [
+        320,
+        568
+      ],
+      "board": {
+        "x": 48,
+        "y": 296,
+        "w": 224,
+        "h": 224,
+        "bottom": 520
+      },
+      "preview": {
+        "x": 38.40625,
+        "y": 84,
+        "w": 243.1875,
+        "h": 182,
+        "bottom": 266
+      },
+      "target": null,
+      "stage": null,
+      "count": 36,
+      "name": "",
+      "scroll": 568
+    }
+  ],
+  "errors": [],
+  "comparisons": [
+    "All sampled UI font sizes, weights, line heights and actual platform fonts unchanged"
+  ],
+  "browser": "154.0.8037.58",
+  "passed": true
+}

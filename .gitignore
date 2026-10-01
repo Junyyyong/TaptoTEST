@@ -1,5 +1,6 @@
 node_modules/
 .android-tools/
+/android/releases/
 dist/
 dist-single/
 *.local

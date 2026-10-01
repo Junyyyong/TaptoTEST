@@ -16,6 +16,7 @@ import { MEMORY_FACE_CHARACTERS } from "../content/puzzles";
 import { renderPickResult } from "./pickResultView";
 import { PICK_MODES, type PickMode as Mode } from "../content/pickModes";
 import { PICK_INTRO_ICONS } from "./pickIntroIcons";
+import { trackPickLayout, trackTitleLayout } from "./pickLayout";
 import "./styles/pickExperience.css";
 
 
@@ -97,6 +98,8 @@ export class TalkApp {
   private readonly memoryButtons = new Map<number, HTMLButtonElement>();
 
   constructor() {
+    trackPickLayout(this.game, this.board);
+    trackTitleLayout(el("screen-title"));
     this.music = new SceneMusic({
       menu: APP_CONFIG.assets.menuMusic,
       game: APP_CONFIG.assets.backgroundMusic,

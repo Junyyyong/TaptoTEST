@@ -65,16 +65,24 @@
    */
   justify-content: space-evenly;
   gap: 10px;
-  padding: max(3vh, 16px) 22px max(2.5vh, 14px);
-  background:
-    radial-gradient(58% 28% at 50% 24%, rgba(255, 181, 0, 0.14), transparent 75%),
-    linear-gradient(180deg, transparent, var(--recess));
+  padding: calc(max(calc(3 * var(--layout-vh, 1vh)), 16px) + var(--app-safe-top)) max(22px, var(--app-safe-right)) calc(max(calc(2.5 * var(--layout-vh, 1vh)), 14px) + var(--app-safe-bottom)) max(22px, var(--app-safe-left));
+  overflow-y: auto;
+  scroll-padding-top: var(--app-safe-top);
+  scroll-padding-bottom: var(--app-safe-bottom);
+  background: var(--ui-background);
 }
+
+/* Only used when the measured artwork or music prompt would overlap/clip.
+   Preserve original sizes; the whole menu remains reachable by scrolling. */
+.title-screen.is-space-limited { justify-content: flex-start; }
+.title-screen.is-space-limited .brand-block { height: auto; }
+.title-screen.is-space-limited .mode-list { flex-shrink: 0; }
+.title-screen.is-space-limited .title-links { margin-bottom: var(--music-footer-space, 0px); }
 
 .brand-block {
   text-align: center;
   /* Match TEN's logo-area height without resizing PICK's artwork. */
-  height: calc(min(68vw, 250px) * 725.7594137 / 618.4357745);
+  height: calc(min(calc(68 * var(--layout-vw, 1vw)), 250px) * 725.7594137 / 618.4357745);
   flex: 0 0 auto;
   display: grid;
   place-items: center;
@@ -88,11 +96,11 @@
   gap: .08em;
   margin: 0;
   font-family: "TAP Sans KR", sans-serif;
-  font-size: clamp(52px, 15vw, 76px);
+  font-size: clamp(52px, calc(15 * var(--layout-vw, 1vw)), 76px);
   font-weight: 900;
   line-height: .9;
   letter-spacing: -.09em;
-  filter: drop-shadow(0 8px 18px var(--slab-hard));
+  filter: none;
 }
 
 .brand-wordmark span,
@@ -135,17 +143,16 @@
 
 .brand-mark {
   display: block;
-  width: min(89.76vw, 330px);
+  width: min(calc(89.76 * var(--layout-vw, 1vw)), 330px);
   height: auto;
-  /* A little of the night thrown back up at it, so it sits on the background
-     rather than on top of it. */
-  filter: drop-shadow(0 10px 24px var(--slab-hard));
+  /* The artwork's own outline/shadow is untouched; remove only CSS shadow. */
+  filter: none;
 }
 
 .brand-version {
   margin: 10px 0 0;
   padding-left: .58em;
-  color: #131313;
+  color: var(--ui-ink);
   font-family: "TAP Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -158,7 +165,7 @@
   margin: 14px 0 0;
   font-size: 15px;
   letter-spacing: 1px;
-  color: var(--ink-soft);
+  color: var(--ui-muted);
 }
 
 .mode-list {
@@ -175,24 +182,19 @@
   padding: 16px 20px;
   font-family: inherit;
   text-align: left;
-  color: var(--ink);
+  color: var(--ui-ink);
   cursor: pointer;
-  /* A block, like everything else: a face over a slab, not a black pill. */
-  background: linear-gradient(180deg, var(--panel-lit), var(--panel-deep));
-  border: 1px solid var(--paper-edge);
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
   border-radius: 16px;
-  box-shadow:
-    inset 0 1px 0 var(--cool-dim),
-    0 3px 0 var(--slab-hard);
+  box-shadow: none;
   transition: transform 120ms ease, background 160ms ease;
 }
 
 .mode-btn:active {
-  background: linear-gradient(180deg, var(--panel-lit), var(--panel-deep));
+  background: var(--ui-pressed);
   transform: translateY(2px);
-  box-shadow:
-    inset 0 1px 0 var(--cool-dim),
-    0 1px 0 var(--slab-hard);
+  box-shadow: none;
 }
 
 .mode-name {
@@ -204,7 +206,7 @@
 .mode-desc {
   font-size: 13px;
   font-weight: 700;
-  color: var(--ink-soft);
+  color: var(--ui-muted);
 }
 
 .text-btn {
@@ -212,7 +214,7 @@
   font-family: inherit;
   font-size: 15px;
   font-weight: 700;
-  color: var(--hot-deep);
+  color: var(--ui-ink);
   text-decoration: underline;
   cursor: pointer;
   background: none;
@@ -241,10 +243,26 @@
  * Short screens. The wordmark gives way first — the three modes and the links
  * are the screen's job, and it is the only thing here with room to spare.
  */
+@supports not (container-type: size) {
 @media (max-height: 700px) {
-  .brand-block { height: calc(min(58vw, 215px) * 725.7594137 / 618.4357745); }
+  .brand-block { height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745); }
   .brand-mark {
-    width: min(76.56vw, 284px);
+    width: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
+  }
+
+  .mode-btn {
+    padding: 10px 18px;
+  }
+
+  .mode-list { gap: 7px; }
+  .mode-name { font-size: 19px; }
+  .mode-desc { font-size: 12px; }
+}
+}
+@container app (max-height: 700px) {
+  .brand-block { height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745); }
+  .brand-mark {
+    width: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
   }
 
   .mode-btn {
@@ -256,9 +274,19 @@
   .mode-desc { font-size: 12px; }
 }
 
+@supports not (container-type: size) {
+
 @media (max-height: 580px) {
-  .brand-block { height: calc(min(44vw, 165px) * 725.7594137 / 618.4357745); }
+  .brand-block { height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745); }
   .brand-mark {
-    width: min(58.08vw, 218px);
+    width: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
+  }
+}
+}
+
+@container app (max-height: 580px) {
+  .brand-block { height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745); }
+  .brand-mark {
+    width: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
   }
 }

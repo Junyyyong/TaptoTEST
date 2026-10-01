@@ -1,0 +1,91 @@
+/* Paint-only UI surfaces, loaded after the screen and experience styles.
+ * No geometry/typography overrides, no gameplay palette overrides and no
+ * broad button reset: cards and the original accent controls keep their
+ * colors/effects. START, Resume, Play again, Settings, stage progress, Retry,
+ * records and switches are accents. */
+.icon-btn {
+  color: var(--ui-ink);
+  background: var(--ui-surface);
+  outline: 1px solid var(--ui-border);
+  outline-offset: -1px;
+  box-shadow: none;
+}
+
+.panel-title,
+.target-character-name { color: var(--ui-ink); }
+
+.icon-btn:active,
+.text-btn[aria-pressed="true"] { background: var(--ui-pressed); box-shadow: none; }
+
+.text-btn:active { background: var(--ui-hover); }
+.text-btn,
+.title-music-prompt { color: var(--ui-ink); }
+.title-music-prompt { color: var(--ui-muted); }
+#btn-title-settings,
+.pause-card .text-btn,
+.result-panel .text-btn { color: var(--hot-deep); background: none; }
+.title-music-prompt:focus-visible,
+.settings-legal-link:focus-visible,
+#btn-legal-close:focus-visible { outline-color: var(--ui-ink); }
+
+.pick-intro-body p,
+.panel-body,
+.panel-body .rule-num,
+.pause-card p,
+.settings-note,
+.settings-links,
+.settings-legal-link,
+.switch-text small,
+.settings-screen .switch-text small,
+.pick-progress > span,
+.memory-target-badge span,
+.result-unit,
+.result-best span,
+.result-panel #result-detail,
+.pause-copy p { color: var(--ui-muted); }
+
+.result-layer,
+.help-layer,
+.legal-dialog::backdrop { background: var(--ui-scrim); }
+
+.result-panel,
+.help-panel,
+.pick-moment,
+.cheer-continue,
+.storage-notice {
+  color: var(--ui-ink);
+  background: var(--ui-surface);
+  border-color: var(--ui-border);
+  box-shadow: none;
+}
+/* Inset outlines add no layout space to the existing borderless surfaces. */
+.result-panel,
+.pick-moment { outline: 1px solid var(--ui-border); outline-offset: -1px; }
+.help-head { border-color: var(--ui-border); }
+.help-head h2 { color: var(--ui-ink); }
+
+.result-best { border-color: var(--ui-border); }
+
+.switch-row,
+.settings-screen .switch-row {
+  color: var(--ui-ink);
+  background: var(--ui-surface);
+  border-color: var(--ui-border);
+  box-shadow: none;
+}
+.progress-track { background: var(--ui-hover); }
+
+.legal-dialog,
+#legal-frame { color: var(--ui-ink); background: var(--ui-background); border-color: var(--ui-border); box-shadow: none; }
+.legal-dialog-header { border-color: var(--ui-border); }
+#btn-legal-close { color: var(--ui-ink); }
+
+.storage-notice button { border-color: var(--ui-border); box-shadow: none; }
+.storage-notice.storage-blocking { background: var(--ui-background); }
+
+@media (hover: hover) {
+  .mode-btn:hover,
+  .icon-btn:hover { background: var(--ui-hover); }
+  .mode-btn:active,
+  .icon-btn:active { background: var(--ui-pressed); }
+}

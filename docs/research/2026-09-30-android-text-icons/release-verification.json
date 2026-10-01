@@ -1,0 +1,47 @@
+{
+  "versionName": "1.0.1",
+  "versionCode": 2,
+  "applicationId": "io.github.junyyyong.taptotest",
+  "targetSdk": 36,
+  "minSdk": 24,
+  "path": "/Users/scdi/Documents/ChatGPT/TaptoPick/android/releases/TAPtoTEST-1.0.1-code2-20260930.aab",
+  "archivedPath": "/Users/scdi/Documents/ChatGPT/TaptoPick/.android-tools/releases/2026-09-30/TAPtoTEST-v1.0.1-code2.aab",
+  "deliveryCopyIdentical": true,
+  "bytes": 102680025,
+  "sha256": "fa8db9a9d3dad8aad4a0c97e2a8abf9f054dd65df2c520432052eee477be5d06",
+  "previousAabPreserved": true,
+  "baselineCommit": "783968f77f156b8a2c26f4501ab9832bd5eed30f",
+  "uncommittedChangesIncluded": true,
+  "iconsPixelVerified": [
+    "base/res/mipmap-mdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-mdpi-v4/ic_launcher.png",
+    "base/res/mipmap-mdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher.png",
+    "base/res/mipmap-hdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xhdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher.png",
+    "base/res/mipmap-xxxhdpi-v4/ic_launcher_round.png"
+  ],
+  "sourceIconSha256": "9c2e1e4a31cc216fce1c49ae44fe068518f98fea2b190910e25d53147374ecf3",
+  "checks": [
+    "bundletool validate passed",
+    "manifest/version/app ID/fontScale flag passed",
+    "15 icon payloads pixel-identical",
+    "adaptive resources present",
+    "white icon background, correct app label",
+    "old delivered AAB hash unchanged",
+    "DEX contains lifecycle callbacks and setTextZoom(100)"
+  ],
+  "limitations": [
+    "No connected Android device/emulator: real fontScale, launcher and in-place update not tested",
+    "Not uploaded to Google Play; not pushed to Git"
+  ],
+  "capturedAt": "2026-09-30T08:11:38.629Z"
+}

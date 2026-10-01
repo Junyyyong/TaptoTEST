@@ -4,10 +4,13 @@ import { GAME_IMAGE_URLS } from "./content/puzzles";
 import { preloadImages } from "./ui/imagePreloader";
 import { TalkApp } from "./ui/talkApp";
 import { trackViewport } from "./ui/viewport";
+import { trackNativeFrame } from "./ui/nativeFrame";
+import { Capacitor } from "@capacitor/core";
 import { PICK_STORAGE_KEYS, pickStore } from "./ui/pickStorage";
 import { validatePickSave } from "./ui/pickSaveValidation";
 import { StorageNotice } from "./ui/storageNotice";
 import "./ui/styles/storage.css";
+import "./ui/styles/neutralUi.css";
 
 document.title = APP_CONFIG.name;
 const studioSplash = document.querySelector<HTMLImageElement>(".studio-splash-cover");
@@ -17,6 +20,7 @@ if (productCover) productCover.src = APP_CONFIG.assets.productCover;
 const productLogo = document.querySelector<HTMLImageElement>("#brand-mark");
 if (productLogo) productLogo.src = APP_CONFIG.assets.productLogo;
 trackViewport();
+trackNativeFrame(Capacitor.getPlatform() === "android");
 const storageNotice = new StorageNotice();
 pickStore.onSaveFailure = failed => failed
   ? storageNotice.show(false, () => pickStore.flush()) : storageNotice.hide();

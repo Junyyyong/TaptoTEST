@@ -1,5 +1,17 @@
 # TAP to PICK 연구·개발 기록
 
+- [2026-10-01 — Android 1.0.4/code6 최종 디자인 서명 AAB와 출시노트](2026-10-01-ui-release/README.md)
+
+- [2026-10-01 — 흰 기본 UI 유지와 기존 강조색 복원 및 누락 확인](2026-10-01-ui-accents/README.md) · [전후 비교](2026-10-01-ui-accents/index.html)
+
+- [2026-10-01 — TEN 기준 일반 UI 평면 스타일·780×1688 전후 비교](2026-10-01-neutral-ui/README.md) · [비교 갤러리](2026-10-01-neutral-ui/index.html)
+
+- [2026-10-01 — Android 화면 확대 설정과 게임 비율·1.0.3/code5 서명 AAB](2026-10-01-proportional-frame/README.md)
+
+- [2026-10-01 — 기존 서체 유지·native inset 우선·1.0.2/code4 서명 AAB](2026-10-01-safe-layout/native-priority/README.md)
+
+- [2026-09-30 — Android 글자 배율·제공 아이콘·1.0.1 서명 AAB](2026-09-30-android-text-icons/README.md)
+
 - [2026-09-30 — 공개 정책·접근성 명칭을 TAPtoTEST로 통일](2026-09-30-brand-copy/README.md)
 
 - [2026-09-30 — Android ID·기록 저장소 보강·Settings 정책/라이선스](2026-09-30-play-policy/README.md)
@@ -9,6 +21,8 @@
 - [2026-09-29 — 만화 4종 무여백 크롭·9조각 퍼즐 추가](2026-09-29-comic-puzzles/README.md)
 
 - [2026-09-29 — PUZZLE 오답 난이도 배분·같은 캐릭터 다른 그림 최대 2조각](2026-09-29-puzzle-difficulty/README.md)
+
+- [2026-09-28 — START 화면 최고기록 검토 후 취소·기기 내 저장 방침](2026-09-28-intro-records/README.md)
 
 - [2026-09-20 — POSITION 결과별 영상·최고기록 OH MY GOD](2026-09-20-position-movies/README.md)
 

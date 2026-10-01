@@ -1,0 +1,793 @@
+{
+  "baseline": "Delivered 1.0.1/code2, HEAD 783968f plus prior icon/textZoom changes",
+  "viewport": "390×844 DPR2; 780×1688 PNG",
+  "nativeDeviceTested": false,
+  "safeAreaSimulation": "CDP env() and Capacitor variables: top24/bottom48; illustrative, not a measured phone",
+  "fonts": {
+    "before": {
+      "#mode-unit .mode-name": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "21px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-unit .mode-desc": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-title-settings": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#settings-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text b": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "16px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".switch-text small": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".settings-legal-link": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "500",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "26px",
+        "weight": "900",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#mode-intro-note": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-mode-intro-start": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#target-character-name": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "21.45px",
+        "weight": "800",
+        "line": "25.74px",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      "#progress-label": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "11px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#help-title": {
+        "family": "\"TAP Serif KR\", serif",
+        "size": "19px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Noto Serif KR ExtraLight",
+            "custom": true
+          }
+        ]
+      },
+      ".pause-card p": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21.7px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-resume": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#cheer-word": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "42.9px",
+        "weight": "900",
+        "line": "51.48px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-title": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-primary": {
+        "family": "\"TAP Sans KR\", sans-serif",
+        "size": "46.8px",
+        "weight": "800",
+        "line": "56.16px",
+        "actual": [
+          {
+            "family": "Noto Sans KR Thin",
+            "custom": true
+          }
+        ]
+      },
+      ".result-unit": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "12px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      ".result-best strong": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "13px",
+        "weight": "700",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#result-next-goal": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "700",
+        "line": "21px",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      },
+      "#btn-again": {
+        "family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif",
+        "size": "17px",
+        "weight": "800",
+        "line": "normal",
+        "actual": [
+          {
+            "family": "Apple SD Gothic Neo",
+            "custom": false
+          }
+        ]
+      }
+    }
+  },
+  "captures": [
+    {
+      "file": "before-studio.png",
+      "sha256": "c24317a8c74629381ad8ce31972c994c494eff03ccba92bf45c32c538d49db95"
+    },
+    {
+      "file": "before-cover.png",
+      "sha256": "50ff180f5a02838f74e42a1d5cabf11f4c1a6d3014ec2d395155bd4b3bbe805e"
+    },
+    {
+      "file": "before-menu.png",
+      "sha256": "d4339813c22ba56657091f0dda090a9a43a3a1c6be035ffa5d10c3fafaa642e6"
+    },
+    {
+      "file": "before-menu-insets-sim.png",
+      "sha256": "9605ad9bf28d37ebbfcbeb71ca997e3f205e61f2d68bb7d40108e2a2aeb159bb"
+    },
+    {
+      "file": "before-settings.png",
+      "sha256": "b002fd0a46f1cf7fedf7ef89dc135622a4bf3a929c93b19b0cd00d5a4e08c8b4"
+    },
+    {
+      "file": "before-settings-insets-sim.png",
+      "sha256": "306168f928083e84c00580d9c87df07912800a84f4c48e3a0982c630bed3c70e"
+    },
+    {
+      "file": "before-privacy-insets-sim.png",
+      "sha256": "f900ba49a89bcf22a3057de4e30a92b67d897d8171abadb94146935f4355cdca"
+    },
+    {
+      "file": "before-licenses-insets-sim.png",
+      "sha256": "bbcdad9e5a7d5fc573e6b6119c91d70d3312083ced0a458f63767e72e7393606"
+    },
+    {
+      "file": "before-unit-start.png",
+      "sha256": "278528a493bfd67481b3c6623ab398ee62f1c99cc97f392d1448c89e34e33335"
+    },
+    {
+      "file": "before-puzzle-Tapee.png",
+      "sha256": "f1f9d222f0d6efafbc760aec9c01015d5782718dd775f23d69aa2df99ea707a1"
+    },
+    {
+      "file": "before-puzzle-Tapee-insets-sim.png",
+      "sha256": "4fb0041986d18363ff323da0cf19fae298137c1749e8571de5a1b765cf61a58e"
+    },
+    {
+      "file": "before-puzzle-Ha.png",
+      "sha256": "676d77a215be3ee6a52a65759851d351afb430d0e24bae7110346cbcdd00eec7"
+    },
+    {
+      "file": "before-puzzle-Ha-insets-sim.png",
+      "sha256": "8e16aa4f4d22fa724ab300031dba76a7bf7e7c0b875c1fc6333e2db0cb4fb8ba"
+    },
+    {
+      "file": "before-pause.png",
+      "sha256": "46e2e1d0a1f271e19e0cf7006b78fe46ebae148cb8a4f8291786c2e3dcb9bd4d"
+    },
+    {
+      "file": "before-puzzle-video-insets-sim.png",
+      "sha256": "a15025981b5fce954a4b62a40ef10463da244f097afd0f8cf1dead74b0d02ab1"
+    },
+    {
+      "file": "before-puzzle-result-insets-sim.png",
+      "sha256": "84c7b5b6f4f3cb4463b32d2943efced3de8fdda4f97f97d589bf41b1158eeefe"
+    },
+    {
+      "file": "before-portrait-start.png",
+      "sha256": "e3ae336106587ef258cb25b7f3e917663a61a77a1c461a9a1622c89769613380"
+    },
+    {
+      "file": "before-portrait-4.png",
+      "sha256": "86672345e1fbed0da7160e1137fe362ccd51acf0cdaf2ec477c33e59e61b23ca"
+    },
+    {
+      "file": "before-portrait-4-insets-sim.png",
+      "sha256": "26cbd6a315d8bfa669737966b68600920cd4dae657544100224b7fb16a8359e8"
+    },
+    {
+      "file": "before-portrait-4.png",
+      "sha256": "6aef033c684961b0e2203159c492fee919e32c95bcef930e29cff5565c8d562c"
+    },
+    {
+      "file": "before-portrait-4-insets-sim.png",
+      "sha256": "85b0116d972b25a2ec3ee925d3c5d508781a52ad9b11faa64dba9e8716b52111"
+    },
+    {
+      "file": "before-portrait-9.png",
+      "sha256": "12e952856313dad422d275aa9792a749e171143999674e6732a7d937ba8ff851"
+    },
+    {
+      "file": "before-portrait-9-insets-sim.png",
+      "sha256": "94ddc44d594bf72f624df902fdaf824a46e643678e3b8fae8f1565829ce4c6c5"
+    },
+    {
+      "file": "before-portrait-16.png",
+      "sha256": "595c304545c8b0895095e7c6b9a73d22fc55190d5bb243cf16d99fde2be5394d"
+    },
+    {
+      "file": "before-portrait-16-insets-sim.png",
+      "sha256": "ca36276f70a38095633f89584ec3a8177af3df8f5995cd46ee73de43f8e00957"
+    }
+  ],
+  "layout": [
+    {
+      "phase": "before",
+      "label": "puzzle-Tapee",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 112.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58264/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Tapee-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 95.984375,
+        "y": 136.421875,
+        "w": 198,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "태피 Tapee",
+      "image": "http://127.0.0.1:58264/assets/Tapee-BeV_ULzl.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Ha",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 112.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58264/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "puzzle-Ha-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": {
+        "x": 62.984375,
+        "y": 136.421875,
+        "w": 264,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "stage": null,
+      "count": 49,
+      "name": "해피 Hapee",
+      "image": "http://127.0.0.1:58264/assets/Ha-D_7O5Gme.webp",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 4,
+      "name": "태피 Tapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 4,
+      "name": "해피 Hapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-4-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 4,
+      "name": "해피 Hapee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-9",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 9,
+      "name": "뽀글스 Bbogles",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-9-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 9,
+      "name": "뽀글스 Bbogles",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-16",
+      "safe": false,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 415,
+        "w": 370,
+        "h": 370,
+        "bottom": 785
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 112.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 376.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 792,
+        "w": 370,
+        "h": 16,
+        "bottom": 808
+      },
+      "count": 16,
+      "name": "티피 Tepee",
+      "scroll": 844
+    },
+    {
+      "phase": "before",
+      "label": "portrait-16-insets",
+      "safe": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "board": {
+        "x": 10,
+        "y": 439,
+        "w": 370,
+        "h": 370,
+        "bottom": 809
+      },
+      "preview": {
+        "x": 27.296875,
+        "y": 136.421875,
+        "w": 335.390625,
+        "h": 264,
+        "bottom": 400.421875
+      },
+      "target": null,
+      "stage": {
+        "x": 10,
+        "y": 816,
+        "w": 370,
+        "h": 16,
+        "bottom": 832
+      },
+      "count": 16,
+      "name": "티피 Tepee",
+      "scroll": 844
+    }
+  ],
+  "errors": [],
+  "comparisons": [],
+  "browser": "154.0.8037.58"
+}

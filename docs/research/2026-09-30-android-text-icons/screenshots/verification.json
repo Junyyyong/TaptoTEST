@@ -1,0 +1,33 @@
+{
+  "baseline": "783968f77f156b8a2c26f4501ab9832bd5eed30f",
+  "size": "780×1688",
+  "viewport": "390×844 CSS px at DPR 2",
+  "nativeDeviceTested": false,
+  "errors": [],
+  "checks": [
+    "Menu geometry/font unchanged at normal text scale",
+    "All three START/game boards render: 49/4/4 tiles",
+    "Boards fit mobile viewport",
+    "CSS text-size-adjust is 100%",
+    "All captures are 780×1688 PNG"
+  ],
+  "layouts": {
+    "before": {
+      "x": 25,
+      "y": 514.796875,
+      "width": 340,
+      "height": 79,
+      "fontSize": "13.3333px",
+      "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif"
+    },
+    "after": {
+      "x": 25,
+      "y": 514.796875,
+      "width": 340,
+      "height": 79,
+      "fontSize": "13.3333px",
+      "fontFamily": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", system-ui, sans-serif"
+    }
+  },
+  "browser": "154.0.8037.58"
+}

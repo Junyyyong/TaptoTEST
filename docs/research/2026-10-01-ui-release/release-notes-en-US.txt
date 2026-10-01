@@ -1,0 +1,6 @@
+<en-US>
+- Refreshed the interface with a clean white background and clearer controls.
+- Improved Android layout and scaling across display-size settings.
+- Preserved colorful characters, cards, and key action buttons.
+- Updated the app icon.
+</en-US>
