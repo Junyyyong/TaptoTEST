@@ -800,29 +800,19 @@ export class TalkApp {
     this.settingsBody.innerHTML = `<div class="switch-list">${[
       ["music", "Music", "Menu and game background music", this.preferences.musicOn],
       ["sound", "Sound", "Button sounds and finish sounds", this.preferences.soundOn],
-      ["haptics", "Vibration", "Short feedback when you tap", this.preferences.hapticsOn],
     ].map(([key, label, description, on]) => `<div class="switch-row"><span class="switch-text"><b>${label}</b><small>${description}</small></span><button class="switch" data-setting="${key}" role="switch" aria-label="${label}" aria-checked="${on}"><i class="switch-knob"></i></button></div>`).join("")}</div>`;
     this.settingsBody.querySelectorAll<HTMLButtonElement>("[data-setting]").forEach((button) => {
       button.addEventListener("click", () => {
         if (button.dataset.setting === "sound") this.preferences.soundOn = !this.preferences.soundOn;
-        if (button.dataset.setting === "haptics") this.preferences.hapticsOn = !this.preferences.hapticsOn;
         if (button.dataset.setting === "music") this.preferences.musicOn = !this.preferences.musicOn;
         saveTalkPreferences(this.preferences);
         this.applyPreferences();
-        const enabled = button.dataset.setting === "sound" ? this.preferences.soundOn
-          : button.dataset.setting === "haptics" ? this.preferences.hapticsOn : this.preferences.musicOn;
+        const enabled = button.dataset.setting === "sound" ? this.preferences.soundOn : this.preferences.musicOn;
         button.setAttribute("aria-checked", String(enabled));
-        this.updateSettingsNote();
       });
     });
     this.updateMusicScene();
     el("btn-settings-back").focus();
-    this.updateSettingsNote();
-  }
-
-  private updateSettingsNote(): void {
-    el("settings-note").textContent = this.preferences.hapticsOn && typeof navigator.vibrate !== "function"
-      ? "This phone (or browser) cannot vibrate." : "";
   }
 
   private closeSettings(): void {
@@ -832,7 +822,6 @@ export class TalkApp {
 
   private applyPreferences(): void {
     feedback.setSound(this.preferences.soundOn);
-    feedback.setHaptics(this.preferences.hapticsOn);
     this.cheer.setSound(this.preferences.soundOn);
     this.music.setEnabled(this.preferences.musicOn);
     this.updateMusicPrompt();

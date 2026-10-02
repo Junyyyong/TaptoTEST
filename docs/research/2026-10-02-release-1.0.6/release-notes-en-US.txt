@@ -1,0 +1,5 @@
+<en-US>
+- Adjusted the main menu logo size for a more balanced appearance.
+- Simplified Settings to Music and Sound controls.
+- Removed vibration feedback from the game.
+</en-US>

@@ -1,5 +1,7 @@
 # TAP to TEST
 
+2026-10-02 최신 출시 파일은 **Android 1.0.6 (versionCode 8)**입니다. 메인 로고의 실제 표시 폭을 TAPtoTALK과 맞추고, Settings의 진동 항목과 모든 진동 동작을 제거했습니다. Music·Sound, 게임 규칙·기록·앱 ID·기존 업로드 키는 유지하며 데이터 수집 기능은 추가하지 않았습니다. 전체 360개 테스트, 최종 설정·게임 터치 검사, 서명·번들·최신 웹 파일 검증을 통과했습니다. 아래 ‘AAB 미생성’ 표기는 각 작업 당시 상태입니다. Google Play 업로드와 실제 기기 업데이트 확인은 별도입니다. [AAB 정보·출시명·영어/한국어 출시노트](docs/research/2026-10-02-release-1.0.6/README.md)
+
 2026-10-01 최신 출시 파일은 **Android 1.0.5 (versionCode 7)**입니다. 기기 비율에 따른 반응형 배치, 가로폭 기준 커버, 노란 새 앱 아이콘, 리액션 전체 배경과 상단 버튼 정렬을 포함합니다. 기존 앱 ID·서명 키·게임 규칙·저장 기록은 유지합니다. 아래 ‘AAB 미생성’ 표기는 각 작업 당시 상태이며 이번 파일에는 반영했습니다. [AAB 검증](docs/research/2026-10-01-release-1.0.5/release-verification.json) · [최종 화면 7장 다운로드](store/screenshots/2026-10-01-release-1.0.5/index.html)
 
 2026-10-01 앱 아이콘을 제공된 노란 캐릭터 이미지로 교체했습니다. 스토어용 512 PNG와 최신 디자인 화면 7장(780×1688)을 준비했습니다. 설치 앱에는 다음 AAB 업데이트 때 반영되며, 이번에는 AAB 생성·commit·push를 하지 않았습니다. [이미지 다운로드](store/screenshots/2026-10-01/index.html) · [연구기록](docs/research/2026-10-01-icon-screenshots/README.md)

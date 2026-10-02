@@ -4,6 +4,10 @@ TAP to PICK은 TAPtoTALK의 화면 감각과 폰트를 유지하면서 이미지
 
 ## 자주 수정할 곳
 
+- 2026-10-02 Android 1.0.6/code8: 아래 메인 로고 표시 폭 조정과 진동 제거를 기존 업로드 키로 서명한 AAB에 반영했다. 게임 규칙·이미지·서체·기록·앱 ID와 기존 반응형/안전영역 정책은 유지하며 분석 SDK나 데이터 전송은 추가하지 않는다. 출시 버전 검사를 최신 번호에 맞춰 전체 360개 테스트를 통과했다. 이전 AAB는 보존하고 발표자료·개인 서명 파일·AAB는 Git 대상에서 제외한다. 아래 ‘AAB 미생성’은 개별 작업 당시의 상태다. [파일 정보·출시노트·검증](research/2026-10-02-release-1.0.6/README.md)
+
+- 2026-10-02 진동 제거: Settings는 Music → Sound 두 항목만 표시한다. `talkApp.ts`의 진동 스위치·지원 불가 안내·적용 호출과 `feedback.ts`의 모든 실제 진동 호출·상태를 제거했다. `setHaptics`는 현재 진입점에서 사용하지 않는 복사 참조 모듈의 타입 호환을 위한 빈 메서드일 뿐이며 진동을 켤 수 없다. `talkPreferences.ts`는 기존 저장값의 `hapticsOn`을 무시하고 다음 설정 저장에는 음악·효과음·튜토리얼만 기록한다. 기존 키·게임 기록·Music/Sound 값과 백업은 유지하고 `pickSaveValidation.ts`는 과거 boolean 필드를 계속 허용한다. 동봉 개인정보 문서의 설정 설명도 맞췄다. Android 화면 방향·SDK·inset·패키지는 바꾸지 않고 AAB·push는 하지 않았다. [모바일 Settings 전후·검증](research/2026-10-02-no-vibration/README.md)
+
 - 2026-10-01 Android 1.0.5/code7: 아래 반응형·커버·아이콘·리액션·HUD 후속 수정을 함께 담은 서명 AAB를 생성했다. 같은 앱 ID·기존 업로드 키·게임 규칙·기록을 유지한다. 전달 파일은 `android/releases/TAPtoTEST-1.0.5-code7-20261001.aab`, 최종 780×1688 PNG 7장은 `store/screenshots/2026-10-01-release-1.0.5/`다. 이전 AAB와 캡처는 보존하며 Google Play 업로드와 실기기 업데이트 검증은 별도다. 아래 ‘미생성’ 문구는 각 작업 당시 상태다. [번들 검증](research/2026-10-01-release-1.0.5/release-verification.json)
 
 - 2026-10-01 리액션·HUD 후속 수정: `overlay.css`의 `.cheer::before`가 기존 어두운 배경과 260ms 페이드를 담당한다. Android에서는 정규화된 `--frame-safe-*`만큼 배경만 확장해 WebView 창의 끝까지 덮고, `.cheer`의 안전영역 그리드·영상 크기·문구·Continue 위치는 유지한다. `talk.css`는 START·세 게임·Settings의 HUD를 공통 좌우 10px 안전 여백·최대 560px 레일로 맞추며 오른쪽 일시정지도 끝에 정렬한다. 각 화면 본문의 기존 패딩·서체·블록·규칙·기록·패키지는 유지한다. `nativeResponsive.css`의 별도 HUD 너비는 제거해 화면마다 다시 달라지지 않도록 한다. AAB·sync·commit·push는 하지 않았다. [전후 화면·검증](research/2026-10-01-reaction-hud/README.md)
@@ -43,7 +47,7 @@ TAP to PICK은 TAPtoTALK의 화면 감각과 폰트를 유지하면서 이미지
 
 - 완료 영상의 별도 음원 동기화는 `ui/mediaSync.ts`에서 영상 playing 신호를 기준으로 관리한다. waiting/pause/seeking 때 소리를 멈추고 재개·timeupdate에서 120ms 넘는 오차를 보정한다. Cheer 종료 시 stop으로 늦게 도착한 오디오 이벤트를 차단한다. 메뉴·게임 배경음악과는 별개다.
 
-- 메인 게임명은 PUZZLE / MONTAGE / MEMORY로 표시한다. 메인 버튼 위치는 TEN의 로고 영역 높이에 맞추되 PICK 로고 자체 너비는 보존한다. title.css의 brand-block 높이와 반응형 조건이 그 기준이다. 음악 안내는 TALK처럼 스피커 아이콘과 함께 Settings 아래에 절대 배치해 버튼 위치를 밀지 않는다. 높이 580px 이하에서는 안내 영역을 36px로 줄여 화면 안에 유지한다.
+- 메인 게임명은 PUZZLE / PORTRAIT / POSITION으로 표시한다. 메인 버튼 위치와 로고 중심은 기존 TEN 기준 로고 영역·원래 이미지의 배치 공간으로 보존한다. 메인 로고의 **실제 보이는 가로폭**은 현재 TALK의 너비 상한과 높이 제한(726/618 기준 영역에서 KOREAN용 24px 제외)을 함께 적용해 맞춘다. `title.css`의 `--talk-logo-layout-width`·`--main-logo-width-limit`가 일반/700px 이하/580px 이하 화면을 구분한다. 현재 TEST(990×957 WebP)·TALK(3603×3146 PNG)의 알파 경계를 측정했으며 양쪽 모두 가로 투명 여백이 없어 추가 보정은 필요 없다. 로고를 교체하면 이미지 비율과 알파 경계를 다시 확인한다. [실제 화면 비교 기록](research/2026-10-02-main-logo/README.md)을 참고한다. 음악 안내는 TALK처럼 스피커 아이콘과 함께 Settings 아래에 절대 배치해 버튼 위치를 밀지 않는다. 높이 580px 이하에서는 안내 영역을 36px로 줄여 화면 안에 유지한다.
 
 - Settings는 `index.html`의 `screen-settings` 독립 화면이다. TEN처럼 뒤로가기·중앙 제목·스크롤 가능한 설정 목록으로 구성하며 `talkApp.ts`의 showSettings/closeSettings에서 전환한다. 메뉴 음악을 유지하고 Escape/뒤로가기는 메뉴 Settings 버튼으로 포커스를 돌려준다. 게임 일시정지는 기존 help 팝업을 유지한다.
 

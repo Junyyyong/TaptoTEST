@@ -1,0 +1,18 @@
+{
+  "phase": "baseline",
+  "physicalDeviceTested": false,
+  "resolution": [
+    780,
+    1688
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "settingsLabels": [
+        "Music",
+        "Sound",
+        "Vibration"
+      ]
+    }
+  ]
+}

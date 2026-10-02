@@ -1,5 +1,5 @@
 /**
- * Sound and vibration.
+ * Sound feedback only; vibration is retired.
  *
  * Every sound is synthesised on the spot rather than loaded from a file. A
  * puzzle game makes a handful of short, tonal noises — a click, a chime, a
@@ -7,9 +7,8 @@
  * below weighs nothing, needs no decode, and never arrives late on a phone
  * with a bad connection.
  *
- * Both channels are off until the player touches the screen, because a
- * browser will not let a page make noise before that, and both are opt-out
- * through settings.
+ * Sound is unlocked by the player's first touch and can be disabled through
+ * settings. No event requests device vibration.
  */
 
 /** The pentatonic run a combo climbs. Any two of these sound right together. */
@@ -32,7 +31,6 @@ export class Feedback {
   private ctx: AudioContext | undefined;
   private bus: GainNode | undefined;
   private soundOn = true;
-  private hapticsOn = true;
   /** How far up the ladder the current run of clears has climbed. */
   private step = 0;
 
@@ -64,8 +62,9 @@ export class Feedback {
     this.soundOn = on;
   }
 
-  setHaptics(on: boolean): void {
-    this.hapticsOn = on;
+  /** @deprecated Inert compatibility hook for unused copied reference modules. */
+  setHaptics(_on: boolean): void {
+    // Vibration has no state or implementation, even for old enabled saves.
   }
 
   private play(blips: readonly Blip[]): void {
@@ -94,16 +93,6 @@ export class Feedback {
     }
   }
 
-  private buzz(pattern: number | readonly number[]): void {
-    if (!this.hapticsOn) return;
-    // Not every device has a motor, and a browser may refuse outright.
-    try {
-      navigator.vibrate?.(pattern as number | number[]);
-    } catch {
-      // Nothing to do — the sound already carried the message.
-    }
-  }
-
   // ---- the sounds --------------------------------------------------------
 
   /**
@@ -115,7 +104,6 @@ export class Feedback {
   pick(held: number): void {
     const note = LADDER[Math.min(held, LADDER.length) - 1] ?? LADDER[0]!;
     this.play([{ from: note, ms: 90, gain: 0.16, shape: "triangle" }]);
-    this.buzz(8);
   }
 
   /** A selection that made ten. Climbs a step for each clear in a row. */
@@ -129,7 +117,6 @@ export class Feedback {
       // Bigger groups are worth more, and get one more note to say so.
       ...(size >= 4 ? [{ from: root * 2, ms: 260, gain: 0.12, shape: "sine" as Shape, delay: 0.165 }] : []),
     ]);
-    this.buzz(size >= 4 ? [12, 40, 18] : 14);
   }
 
   /** A selection that did not make ten. Down, not up. */
@@ -139,9 +126,6 @@ export class Feedback {
       { from: 196, to: 130.81, ms: 240, gain: 0.2, shape: "square" },
       { from: 98, ms: 260, gain: 0.1, shape: "triangle", delay: 0.02 },
     ]);
-    // Two short knocks: unmistakably "no", without the long angry hum a
-    // single long pulse gives.
-    this.buzz([30, 60, 30]);
   }
 
   /** The run of clears is over — a move was thrown away, or the stage ended. */
@@ -156,13 +140,11 @@ export class Feedback {
       { from: root, ms: 150, gain: 0.16, shape: "sine" },
       { from: root * 2, ms: 100, gain: 0.035, shape: "triangle", delay: .02 },
     ]);
-    this.buzz(10);
   }
 
   /** Anything the player deliberately pressed. */
   tap(): void {
     this.play([{ from: 660, to: 880, ms: 70, gain: 0.12, shape: "sine" }]);
-    this.buzz(6);
   }
 
   /** An item used: hint, undo, split. */
@@ -171,7 +153,6 @@ export class Feedback {
       { from: 880, ms: 90, gain: 0.14, shape: "sine" },
       { from: 1174.66, ms: 130, gain: 0.12, shape: "sine", delay: 0.06 },
     ]);
-    this.buzz(10);
   }
 
   /** The board is empty and the picture is whole. */
@@ -185,7 +166,6 @@ export class Feedback {
       { from: root * 2, ms: 620, gain: 0.2, shape: "sine", delay: 0.36 },
       { from: root * 3, ms: 620, gain: 0.09, shape: "sine", delay: 0.36 },
     ]);
-    this.buzz([16, 70, 16, 70, 30]);
   }
 
   /** The run ended without the board being cleared. */
@@ -196,14 +176,13 @@ export class Feedback {
       { from: 311.13, ms: 300, gain: 0.17, shape: "triangle", delay: 0.16 },
       { from: 233.08, ms: 520, gain: 0.16, shape: "sine", delay: 0.32 },
     ]);
-    this.buzz([40, 80, 40]);
   }
 }
 
 /**
  * The one sound bus.
  *
- * There is only ever one audio output and one motor, and the tutorial board
+ * There is only ever one audio output, and the tutorial board
  * has to sound exactly like the real one, so this is shared rather than
  * threaded through every constructor between here and there.
  */

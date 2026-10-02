@@ -85,8 +85,10 @@
 .title-screen.is-space-limited .title-links { margin-bottom: var(--music-footer-space, 0px); }
 
 .brand-block {
+  --talk-logo-layout-width: min(calc(68 * var(--layout-vw, 1vw)), 250px);
+  --main-logo-width-limit: min(calc(89.76 * var(--layout-vw, 1vw)), 330px);
   text-align: center;
-  /* Match TEN's logo-area height without resizing PICK's artwork. */
+  /* Preserve the existing logo-area height and menu positions. */
   height: calc(min(calc(68 * var(--layout-vw, 1vw)), 250px) * 725.7594137 / 618.4357745);
   flex: 0 0 auto;
   display: grid;
@@ -134,21 +136,26 @@
   text-align: center;
 }
 
-/*
- * The wordmark is drawn artwork, not type — TAPtoTALK-logo.svg. It is
- * vector, so it is sized freely and stays sharp at any density, and it is
- * trimmed to its own edges so the layout aligns to the letters rather than to
- * a margin baked into the file. It is taller than it is wide, which is why
- * the widths below are far smaller than the ones the old landscape mark used.
- */
+/* The main wordmark remains original artwork; resize its display only. */
 .brand {
   margin: 0;
   line-height: 0;
+  /* Keep the pre-resize footprint so only artwork shrinks, not its anchor or
+     the space-evenly menu composition. 990×957 is TEST's unchanged image. */
+  width: var(--main-logo-width-limit);
+  height: calc(var(--main-logo-width-limit) * 957 / 990);
+  display: grid;
+  place-items: center;
 }
 
 .brand-mark {
+  /* TALK fits its 3603×3146 artwork into a 726/618 reference-height area,
+     reserving 24px for KOREAN. Match that actual visible width, not its 330px
+     image-box limit. Both current logos reach their alpha bounds horizontally,
+     so no transparent-padding compensation is needed. TEST keeps its own
+     image/aspect ratio and remains centred in its unchanged layout area. */
   display: block;
-  width: min(calc(89.76 * var(--layout-vw, 1vw)), 330px);
+  width: min(var(--main-logo-width-limit), calc((var(--talk-logo-layout-width) * 726 / 618 - 24px) * 3603 / 3146));
   height: auto;
   /* The artwork's own outline/shadow is untouched; remove only CSS shadow. */
   filter: none;
@@ -250,9 +257,10 @@
  */
 @supports not (container-type: size) {
 @media (max-height: 700px) {
-  .brand-block { height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745); }
-  .brand-mark {
-    width: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
+  .brand-block {
+    height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745);
+    --talk-logo-layout-width: min(calc(58 * var(--layout-vw, 1vw)), 215px);
+    --main-logo-width-limit: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
   }
 
   .mode-btn {
@@ -265,9 +273,10 @@
 }
 }
 @container app (max-height: 700px) {
-  .brand-block { height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745); }
-  .brand-mark {
-    width: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
+  .brand-block {
+    height: calc(min(calc(58 * var(--layout-vw, 1vw)), 215px) * 725.7594137 / 618.4357745);
+    --talk-logo-layout-width: min(calc(58 * var(--layout-vw, 1vw)), 215px);
+    --main-logo-width-limit: min(calc(76.56 * var(--layout-vw, 1vw)), 284px);
   }
 
   .mode-btn {
@@ -282,16 +291,18 @@
 @supports not (container-type: size) {
 
 @media (max-height: 580px) {
-  .brand-block { height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745); }
-  .brand-mark {
-    width: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
+  .brand-block {
+    height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745);
+    --talk-logo-layout-width: min(calc(44 * var(--layout-vw, 1vw)), 165px);
+    --main-logo-width-limit: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
   }
 }
 }
 
 @container app (max-height: 580px) {
-  .brand-block { height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745); }
-  .brand-mark {
-    width: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
+  .brand-block {
+    height: calc(min(calc(44 * var(--layout-vw, 1vw)), 165px) * 725.7594137 / 618.4357745);
+    --talk-logo-layout-width: min(calc(44 * var(--layout-vw, 1vw)), 165px);
+    --main-logo-width-limit: min(calc(58.08 * var(--layout-vw, 1vw)), 218px);
   }
 }

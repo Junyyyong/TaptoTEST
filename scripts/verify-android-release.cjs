@@ -28,6 +28,8 @@ async function main() {
   if (code > 3) assert.equal(hash(fs.readFileSync(path.join(root, 'android/releases/TAPtoTEST-1.0.2-code3-20261001.aab'))), 'f43df7b0fcc5c4635bbb8185346b1735c33e80ad43eed835300103867813a10a', 'Undelivered code3 candidate changed');
   if (code > 4) assert.equal(hash(fs.readFileSync(path.join(root, 'android/releases/TAPtoTEST-1.0.2-code4-20261001.aab'))), 'd8ff29f83f1c0044c8b55e57466a20092a294f3a3c91e8782e8ff3395f883a5a', 'Delivered code4 release changed');
   if (code > 5) assert.equal(hash(fs.readFileSync(path.join(root, 'android/releases/TAPtoTEST-1.0.3-code5-20261001.aab'))), 'cf65ccc675a12b1fed141d20549d60becd21a56c3e6677ba2a319ccc0e18417e', 'Code5 release changed');
+  if (code > 6) assert.equal(hash(fs.readFileSync(path.join(root, 'android/releases/TAPtoTEST-1.0.4-code6-20261001.aab'))), 'ec54e9d3d93cdfc698d80ae2811b050170006ad0dd088e8ffc3975e83b3ec853', 'Code6 release changed');
+  if (code > 7) assert.equal(hash(fs.readFileSync(path.join(root, 'android/releases/TAPtoTEST-1.0.5-code7-20261001.aab'))), 'ec96ad8fee3c71bd11756012c854b18aa2721e59baabcf086ead0127008974b0', 'Code7 release changed');
   bundletool('validate');
   const manifest = bundletool('dump', 'manifest');
   for (const text of ['package="io.github.junyyyong.taptotest"', `android:versionCode="${code}"`, `android:versionName="${version}"`, 'android:minSdkVersion="24"', 'android:targetSdkVersion="36"', 'android:icon="@mipmap/ic_launcher"', 'android:roundIcon="@mipmap/ic_launcher_round"']) assert.ok(manifest.includes(text), text);
@@ -73,8 +75,16 @@ async function main() {
   assert.ok(compiledTextPolicy, 'Compiled MainActivity missing');
   const signature = execFileSync(java, [path.join(root, '.android-tools/VerifyRelease.java'), root], { encoding: 'utf8', maxBuffer: 1024 * 1024 });
   assert.ok(signature.includes('93381e4bf0cc519b6540750e006b87b3e5e9db721390abda3a6e6ae83fb777dc'), 'Original signing certificate must be retained');
-  const unchangedPaths = ['src/core/pick', 'src/content/puzzles.ts', 'src/ui/pickStorage.ts', 'src/ui/persistentStore.ts', 'src/ui/pickRecords.ts', 'src/ui/pickSaveValidation.ts', 'src/config/app.ts', 'public/assets/fonts'];
+  const unchangedPaths = ['src/core/pick', 'src/content/puzzles.ts', 'src/ui/pickStorage.ts', 'src/ui/persistentStore.ts', 'src/ui/pickRecords.ts', 'src/config/app.ts', 'public/assets/fonts'];
   assert.equal(execFileSync('git', ['diff', 'HEAD', '--', ...unchangedPaths], { cwd: root, encoding: 'utf8' }), '', 'Rules, storage, media and fonts unchanged');
+  // Legacy vibration values still validate. Only explanatory line comments may
+  // differ in the validator; keep the actual compatibility rules identical.
+  const commentOnlyPaths = ['src/ui/pickSaveValidation.ts'];
+  const withoutLineComments = source => source.replace(/^\s*\/\/[^\n]*(?:\n|$)/gm, '');
+  for (const file of commentOnlyPaths) {
+    const previous = execFileSync('git', ['show', 'HEAD:' + file], { cwd: root, encoding: 'utf8' });
+    assert.equal(withoutLineComments(fs.readFileSync(path.join(root, file), 'utf8')), withoutLineComments(previous), 'Save validation rules unchanged');
+  }
   const destination = path.join(root, `.android-tools/releases/${date}/TAPtoTEST-v${version}-code${code}.aab`);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   if (fs.existsSync(destination)) assert.equal(hash(fs.readFileSync(destination)), hash(fs.readFileSync(bundle)), 'Never overwrite an existing release with different bytes');
@@ -92,7 +102,7 @@ async function main() {
     baselineCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
     uncommittedChangesIncluded: true, iconsPixelVerified: verified,
     sourceIconSha256: icons.sourceSHA256,
-    signatureAndWebVerification: signature.trim().split('\n'), unchangedSourcePaths: unchangedPaths,
+    signatureAndWebVerification: signature.trim().split('\n'), unchangedSourcePaths: unchangedPaths, commentOnlySourcePaths: commentOnlyPaths,
     checks: ['bundletool validate passed', 'manifest/version/app ID/fontScale flag passed', '15 icon payloads pixel-identical', 'adaptive resources present', `${expectedIconBackground} icon background, correct app label`, 'old delivered AAB hash unchanged', 'DEX contains lifecycle callbacks and setTextZoom(100)'],
     limitations: ['No connected Android device/emulator: real fontScale, launcher and in-place update not tested', 'Not uploaded to Google Play; Git publication is verified separately from this bundle check'],
     capturedAt: new Date().toISOString(),

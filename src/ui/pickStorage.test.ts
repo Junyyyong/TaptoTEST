@@ -76,11 +76,29 @@ it("uses the native adapter for real preferences/results without treating pendin
   const {validatePickSave}=await import("./pickSaveValidation");
   await pickStore.initialize(PICK_STORAGE_KEYS,validatePickSave);
   const {loadTalkPreferences,saveTalkPreferences}=await import("./talkPreferences");
-  expect(loadTalkPreferences()).toEqual(JSON.parse(preferences));
+  expect(loadTalkPreferences()).toEqual({musicOn:false,soundOn:true,tutorialDone:true});
   saveTalkPreferences({...loadTalkPreferences(),musicOn:true});
   const {savePickResult}=await import("./pickRecords");
   const result=savePickResult({...JSON.parse(records).bestByKey["unit:tepee:9"],elapsedMs:6000});
   expect(result.storageAvailable).toBe(true);await pickStore.flush();
   expect(JSON.parse(f.native.get(PICK_RECORDS_STORAGE_KEY)!).bestByKey["unit:tepee:9"].elapsedMs).toBe(6000);
   expect(f.web.get(PICK_RECORDS_STORAGE_KEY)).toBe(records);expect(JSON.parse(f.native.get(PICK_PREFERENCES_KEY)!).musicOn).toBe(true);
+  expect(JSON.parse(f.native.get(PICK_PREFERENCES_KEY)!)).not.toHaveProperty("hapticsOn");
+});
+
+it("ignores retired enabled vibration without resetting music, sound, tutorial or records",async()=>{
+  vi.resetModules();const f=fixture();
+  const legacy=JSON.stringify({musicOn:false,soundOn:false,hapticsOn:true,tutorialDone:true});
+  f.web.set(PICK_PREFERENCES_KEY,legacy);
+  vi.stubGlobal("localStorage",f.browser);
+  vi.doMock("@capacitor/core",()=>({Capacitor:{isNativePlatform:()=>false}}));
+  const {pickStore,PICK_STORAGE_KEYS}=await import("./pickStorage");
+  const {validatePickSave}=await import("./pickSaveValidation");
+  await pickStore.initialize(PICK_STORAGE_KEYS,validatePickSave);
+  const {loadTalkPreferences,saveTalkPreferences}=await import("./talkPreferences");
+  expect(loadTalkPreferences()).toEqual({musicOn:false,soundOn:false,tutorialDone:true});
+  expect(f.web.get(PICK_PREFERENCES_KEY)).toBe(legacy);
+  saveTalkPreferences({...loadTalkPreferences(),soundOn:true});
+  expect(JSON.parse(f.web.get(PICK_PREFERENCES_KEY)!)).toEqual({musicOn:false,soundOn:true,tutorialDone:true});
+  expect(f.web.get(PICK_RECORDS_STORAGE_KEY)).toBe(records);
 });

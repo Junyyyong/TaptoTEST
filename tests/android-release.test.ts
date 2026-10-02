@@ -21,8 +21,8 @@ describe('Android release safeguards (source-level checks)', () => {
     const gradle = read('android/app/build.gradle');
     expect(gradle).toContain('applicationId "io.github.junyyyong.taptotest"');
     expect(gradle).toContain('signingConfig signingConfigs.release');
-    expect(gradle).toContain('versionCode 6');
-    expect(gradle).toContain('versionName "1.0.4"');
+    expect(gradle).toContain('versionCode 8');
+    expect(gradle).toContain('versionName "1.0.6"');
   });
   it('uses the supplied Tepee artwork and yellow background for both adaptive launcher masks', () => {
     for (const name of ['ic_launcher', 'ic_launcher_round']) {
